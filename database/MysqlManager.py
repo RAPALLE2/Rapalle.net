@@ -115,7 +115,9 @@ def LoadConfics():
 
 def WorkbenchOpen():
     try:
-        os.system(f'start "" "{"C:\Program Files\MySQL\MySQL Workbench 8.0\MySQLWorkbench.exe"}"')
+        subprocess.Popen(r'C:\Program Files\MySQL\MySQL Workbench 8.0\MySQLWorkbench.exe')
+    except FileNotFoundError:
+        print("Error", f"Error opening program")
     except Exception as e:
         Output("Error", f"Error opening program: {e}")
 
