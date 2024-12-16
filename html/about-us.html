@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAPALLE.NET/About-Us</title>
+    <link rel="icon" href="img_folder/icons/icon1.jpg" type="image/x-icon">
+
+
+    <style>
+
+        h3{
+            position: relative;
+            left: 25px;
+        }
+
+        .aka{
+            color: rgb(185, 184, 184);
+        }
+        
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container{
+            position: absolute;
+            top: 240px;
+            min-width: 730px;
+            width: 60%;
+        }
+
+        .special{
+            position: relative;
+            width: 300px;
+            background-color: #333;
+            color: white;
+            border-radius: 5px;
+            float: left;
+            border-bottom: 1px solid #444;
+            padding-bottom: 400px;
+        }
+
+        .s-content{
+            padding: 20px 15px;
+            max-height: 0;
+            transition: max-height 0.5s ease-out;
+            font-size: 17px;
+        }
+
+        .accordion{
+            position: relative;
+            width: 400px;
+            background-color: #333;
+            color: white;
+            border-radius: 5px;
+            overflow: hidden;
+            float: right;
+        }
+
+        .a-section{
+            cursor: pointer;
+            padding: 15px;
+            border-bottom: 1px solid #444;
+            transition: background-color 0.3s ease;
+        }
+
+        .a-section:hover{
+            background-color: #555;
+        }
+
+        .a-content{
+            padding: 0 15px;
+            background-color: #222;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out;
+        }
+
+        .a-content p {
+            margin: 10px 0;
+        }
+
+        .active .a-content{
+            max-height: 150px;
+        }
+
+        .scontentdiv{
+            display:grid;
+        }
+
+        @media (max-width: 950px) {
+        .accordion{
+            width: 80%;
+            top: 140px;
+            float:unset;
+            left: calc(100% - 90%)
+
+        }
+        .special{
+            width: calc(80% - 20px);
+            top: 780px;
+            float:unset;
+            left: calc(100% - 90%);
+            padding: 10px;
+            
+        }
+        .container{
+            width: 100%;
+        }
+        }
+    </style>
+
+    <link rel="stylesheet" href="css-data/ultimate.css">
+    <script src="js-data/ultimate.js"></script>
+</head>
+
+<body>
+    <div>
+        <h1 class="nav-bar"> </h1>
+        <img src="img_folder/icons/icon1.jpg" class="profile-icon">
+        <a class="home buttons button_1" href="index.html">Home</a>
+    </div>
+    <div>
+        <a class="social buttons button_2" href="socials.html">Socials</a>
+        <a class="store buttons button_3" target="_blank" href="https://rapallenet.craftingstore.net">Store</a>
+        <a class="support buttons button_4" href="support.html">Support</a>
+        <a class="about_us buttons button_5 page" href="about-us.html">About-Us</a>
+        <a class="gamemode buttons button_6" href="gamemodes.html">Gamemodes</a>
+        <a href="login.html" class="login-button">LogIn</a>
+    </div>
+
+    <div class="container">
+        <div class="special">
+            <h3>Specail thanks to</h3>
+            <div class="scontentdiv">
+                <p class="s-content">HttxMarco/HttpMarco aka Mirco Lindenau for the Polocloud system</p>
+                <p class="s-content">Kasaisora for the plugin and mod ideas/tutorails</p>
+                <p class="s-content">TheJoCraft aka Josef Heinrich for the minigamemode and amongus ideas</p>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="a-section">
+                <h3>RAPALLE</h3>
+                <div class="a-content">
+                    <p>
+                        aka <span class="aka">Tobi</span> is the Admin and head Developer of the Network
+                    </p>
+                </div>
+            </div>
+            <div class="a-section">
+                <h3>NETZGURU_0815</h3>
+                <div class="a-content">
+                    <p>
+                        aka <span class="aka">Christian</span> is the co head Developer and Builder
+                    </p>
+                </div>
+            </div>
+            <div class="a-section">
+                <h3>Jenia</h3>
+                <div class="a-content">
+                    <p>
+                        is the webstylist and promotion producer
+                    </p>
+                </div>
+            </div>
+            <div class="a-section">
+                <h3>Xaver</h3>
+                <div class="a-content">
+                    <p>
+                        is the builder behind the amongus maps
+                        and and its functions
+                    </p>
+                </div>
+            </div>
+            <div class="a-section">
+                <h3>NitratTheNotrat</h3>
+                <div class="a-content">
+                    <p>
+                        aka <span class="aka">Jakob</span> is a product tester
+                    </p>
+                </div>
+            </div>
+            <div class="a-section">
+                <h3>Lycron</h3>
+                <div class="a-content">
+                    <p>
+                        aka <span class="aka">Lukas</span> is a product tester
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script>
+
+        const sections = document.querySelectorAll('.a-section');
+        
+        sections.forEach(section => {
+          section.addEventListener('click', (
+          ) => {
+              section.classList.toggle('active'
+              );
+              sections.forEach(otherSection =>
+                  {
+                  if (otherSection !== section) {
+                      otherSection.classList.remove
+                      ('active');
+              }
+            });
+          });
+        });
+  
+      </script>
+</body>
+
+</html>

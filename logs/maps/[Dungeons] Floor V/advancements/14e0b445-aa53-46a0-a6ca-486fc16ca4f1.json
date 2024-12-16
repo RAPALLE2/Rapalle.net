@@ -1,0 +1,22 @@
+{
+  "minecraft:recipes/misc/iron_nugget_from_blasting": {
+    "criteria": {
+      "has_iron_axe": "2022-10-15 13:32:29 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_nugget_from_smelting": {
+    "criteria": {
+      "has_iron_axe": "2022-10-15 13:32:29 +0800"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:savanna": "2022-10-15 13:33:03 +0800",
+      "minecraft:plains": "2022-10-15 13:32:41 +0800"
+    },
+    "done": false
+  },
+  "DataVersion": 2584
+}

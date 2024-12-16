@@ -1,0 +1,15 @@
+20.10.2024 19:28:14 [Info] The window sizes file is empty, returning empty config. Origin:McssDataImplementation
+20.10.2024 19:28:14 [Info] The settings file is empty, creating new file. Origin:McssDataImplementation
+[Fatal] Program.UnhandledException
+Exception:NullReferenceException
+Object reference not set to an instance of an object.
+AtVoid SaveAppConfig() 
+Origin:
+StackTrace:
+   at LogicLayer.Mcss.SaveAppConfig()
+   at LogicLayer.Mcss.SaveConfigs()
+   at LogicLayer.Mcss..ctor()
+   at McssMain.Program.StartMcss(AppStartupArguments args)
+   at McssMain.Program.StartApplication(AppStartupArguments args)
+   at McssMain.Program.Main(String[] args)
+At :20.10.2024 19:28:14

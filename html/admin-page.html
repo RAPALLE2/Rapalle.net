@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAPALLE.NET/Admin</title>
+    <link rel="icon" href="img_folder/icons/icon1.jpg" type="image/x-icon">
+    <style>
+        .loader{position: absolute;
+            top: 300px;
+            left: 530px;
+        }
+    </style>
+    <link rel="stylesheet" href="css-data/ultimate.css">
+    <style>
+        .impressum {
+            background-color: rgba(33, 33, 33);
+            color: gray;
+            font-size: 120%;
+            position: fixed;
+            bottom: 0px;
+            right: 0px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-right: 70px;
+            padding-left: 100%;
+            text-decoration: none;
+        }
+
+        .impressum:hover {
+            text-decoration: underline;
+        }
+
+        .download-sym {
+            width: 80px;
+            top: 300px;
+            left: 50px;
+            position: absolute;
+        }
+
+        .craftingstore {
+            width: 80px;
+            top: 300px;
+            left: 180px;
+            position: absolute;
+        }
+
+        #colored {
+            position: absolute;
+            height: 50px;
+            width: 56px;
+            border: 1px solid #333;
+            transition: all 0.4s ease;
+            top: 300px;
+            left: 310px;
+        }
+
+        #color {
+            position: absolute;
+            width: 50px;
+            top: 350px;
+            left: 310px;
+        }
+        
+        .time {
+            color: white;
+            font-size: 130%;
+            position: absolute;
+        }
+
+        #load{
+            color: blue;
+            position: absolute;
+            top: 300px;
+            left: 440px;
+        }
+
+        @media (max-Width: 950px) {
+            .download-sym {
+                top: 400px;
+            }
+
+            .craftingstore {
+                top: 400px;
+            }
+
+            #colored {
+                top: 400px;
+            }
+
+            #color {
+                top: 450px
+            }
+            
+            .time {
+                bottom: 9px;
+            }
+            
+            .impressum {
+                padding-right: 20px;
+            }
+
+            #load {
+                top: 530px;
+                left: 80px;
+            }
+        }
+
+        
+    </style>
+    <script src="js-data/ultimate.js"></script>
+</head>
+
+<body>
+    <div>
+        <a href="impressum.html" class="impressum">Impressum</a>
+    </div>
+    <div>
+        <h1 class="nav-bar"> </h1>
+        <img src="img_folder/icons/icon1.jpg" class="profile-icon profile-icon-page">
+        <a class="home buttons button_1" href="index.html">Home</a>
+    </div>
+    <div>
+        <a class="social buttons button_2" href="socials.html">Socials</a>
+        <a class="store buttons button_3" target="_blank" href="https://rapallenet.craftingstore.net">Store</a>
+        <a class="support buttons button_4 page" href="support.html">Support</a>
+        <a class="about_us buttons button_5" href="about-us.html">About-Us</a>
+        <a class="gamemode buttons button_6" href="gamemodes.html">Gamemodes</a>
+        <a href="login.html" class="login-button">LogIn</a>
+    </div>
+    <div>
+        <a href="downloads/3-icons.zip" download><img class="download-sym round"
+                src="img_folder/symbols/icons-download.png"></a>
+        <a target="_blank" href="https://dash.craftingstore.net/admin"><img class="craftingstore"
+                src="img_folder/symbols/dashboard.png"></a>
+        <label class="time" for="timer">TIMER:</label>
+        <p class="time" id="time" name="timer">{time}</p>
+
+    </div>
+    <div>
+        <div id="colored"></div>
+        <input type="text" id="color" placeholder="color">
+    </div>
+    <div>
+        <h1 id="load">\</h1>
+    </div>
+    <div class="loader"></div>
+    <script>
+        function settime() {
+            document.getElementById("time").innerText = FormatTheTime();
+        };
+        setInterval(settime, 1);
+
+        let box = document.getElementById("colored"),
+            input = document.getElementById("color");
+        input.addEventListener("input", () => { box.style.borderRadius = input.value; box.style.background = input.value; });
+
+        function loading() {
+            const loaderElement = document.getElementById("load");
+            const characters = ["|", "/", "--", "\\"];
+            let index = 0;
+
+            setInterval(() => {
+                loaderElement.innerText = characters[index];
+                index = (index + 1) % characters.length;
+            }, 250);
+        }
+
+        window.onload = loading;
+    </script>
+</body>
+
+</html>

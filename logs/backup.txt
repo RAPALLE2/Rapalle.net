@@ -1,0 +1,6 @@
+path: '/media/rapalle/X/backups'
+type: sftp
+host: '192.168.178.48'
+port: 22
+user: 'rapalle'
+pass: '1234'

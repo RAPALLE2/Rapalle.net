@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAPALLE.NET/Home</title>
+    <link rel="icon" href="img_folder/icons/icon1.jpg" type="image/x-icon">
+
+
+    <style>
+        .txt {
+            position: absolute;
+            font-size: 300%;
+        }
+
+        .txt1 {
+            color: rgb(179, 147, 8);
+            left: calc(50% - 165px);
+            top: 450px;
+        }
+
+        .txt2 {
+            color: rgb(228, 204, 96);
+            left: calc(50% - 190px);
+            top: 390px;
+        }
+
+        .impressum {
+            background-color: rgba(33, 33, 33);
+            color: gray;
+            font-size: 120%;
+            position: fixed;
+            bottom: 0px;
+            right: 0px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-right: 70px;
+            padding-left: 100%;
+            text-decoration: none;
+        }
+
+        .impressum:hover {
+            text-decoration: underline;
+        }
+
+
+        .frame-dc {
+            position: absolute;
+            right: calc(100% - 450px);
+            top: 300px;
+        }
+
+        .frame-yt {
+            position: absolute;
+            right: 100px;
+            top: 300px;
+            border-radius: 10px;
+        }
+
+        @media (max-Width: 1300px) {
+
+            .frame-dc {
+                right: calc(100% - 450px);
+                top: 550px;
+            }
+
+            .frame-yt {
+                right: 100px;
+                top: 550px;
+            }
+
+            .impressum {
+                bottom: -1150px;
+                position: absolute;
+            }
+
+        }
+
+        @media (max-Width: 950px) {
+
+            .frame-dc {
+                right: calc(100% - 350px);
+            }
+
+            .frame-yt {
+                right: 0;
+            }
+
+        }
+
+        @media (max-Width: 775px) {
+
+            .frame-dc {
+                right: calc(50% - 175px);
+                top: 600px;
+            }
+
+            .frame-yt {
+                right: calc(50% - 175px);
+                top: 1150px;
+            }
+
+        }
+
+        @media (max-Width: 454px) {
+            .txt1 {
+                top: 510px;
+                left: 10px;
+            }
+
+            .txt2 {
+                top: 390px;
+                left: 10px;
+            }
+
+            .impressum {
+                position: absolute;
+                bottom: -1150px;
+            }
+
+        }
+    </style>
+    <script></script>
+
+    <script src="js-data/ultimate.js"></script>
+    <link rel="stylesheet" href="css-data/ultimate.css">
+</head>
+
+<body>
+    <div>
+        <a href="impressum.html" class="impressum">Impressum</a>
+    </div>
+    <div>
+        <h1 class="nav-bar"> </h1>
+        <img src="img_folder/icons/icon1.jpg" class="profile-icon">
+        <a class="home buttons button_1 page" href="index.html">Home</a>
+    </div>
+    <div>
+        <a class="social buttons button_2" href="socials.html">Socials</a>
+        <a class="store buttons button_3" target="_blank" href="https://rapallenet.craftingstore.net">Store</a>
+        <a class="support buttons button_4" href="support.html">Support</a>
+        <a class="about_us buttons button_5" href="about-us.html">About-Us</a>
+        <a class="gamemode buttons button_6" href="gamemodes.html">Gamemodes</a>
+        <a href="login.html" class="login-button">LogIn</a>
+    </div>
+    <div>
+        <h1 class="txt2 txt">Minecraft-Server</h1>
+        <h1 class="txt1 txt">RAPALLE.NET</h1>
+    </div>
+    <iframe class="frame-dc" src="https://discord.com/widget?id=1094208372745703465&theme=dark" width="350" height="500"
+        allowtransparency="true" frameborder="0"
+        sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+    <iframe class="frame-yt" width="350" height="500"
+        src="https://www.youtube.com/embed/EBsqyiDkf1w?si=uhwWUiw09xPiMRRT" title="YouTube video" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+{
+  "minecraft:recipes/misc/beacon": {
+    "criteria": {
+      "has_nether_star": "2024-09-23 21:41:52 +0200"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:snowy_tundra": "2024-09-23 21:41:54 +0200",
+      "minecraft:jungle": "2024-09-23 21:41:52 +0200",
+      "minecraft:badlands": "2024-09-23 21:42:42 +0200"
+    },
+    "done": false
+  },
+  "DataVersion": 2586
+}
