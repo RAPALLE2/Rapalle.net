@@ -4,8 +4,8 @@ import os
 import platform
 from colorama import Fore, Style, init  # pip install colorama
 import pyperclip #pip install pyperclip
-import mysql.connector #pip install mysql-connector-python
-from mysql.connector import Error
+#import mysql.connector #pip install mysql-connector-python
+#from mysql.connector import Error
 import urllib.request
 import subprocess
 import sys
@@ -19,13 +19,13 @@ import json
 import logging
 import traceback
 
-if "1" == "1":
-    logger = logging.getLogger(__name__)
-    logger.setLevel(logging.INFO)
-    formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
-    file_handler = logging.FileHandler("error.log")
-    file_handler.setFormatter(formatter)
-    logger.addHandler(file_handler)
+
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
+formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
+file_handler = logging.FileHandler("error.log")
+file_handler.setFormatter(formatter)
+logger.addHandler(file_handler)
 
 init(autoreset=True)
 
@@ -212,6 +212,7 @@ def InstallDb():
         
         Tutorial()
         subprocess.run(["msiexec", "/i", NewName], check=True)
+        time.sleep(1)
         input("Press Enter to go back if you are finished ")
         os.remove(NewName)
         Clear()
@@ -308,6 +309,7 @@ def CreateDatabaseQuestions():
             MyIp = GetIp()
             if MyIp:
                 Clear()
+                Host = host
                 Output("Warning", f"Your IP address is {Fore.LIGHTBLACK_EX}{Host}{Style.RESET_ALL}, copy and paste it to the config of the client")
                 Output("System", "Ip copyed to clipboard")
                 pyperclip.copy(Host)
