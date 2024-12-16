@@ -27,7 +27,7 @@ if "1" == "1":
     file_handler.setFormatter(formatter)
     logger.addHandler(file_handler)
 
-    init(autoreset=True)
+init(autoreset=True)
 
 Version = "1.0.0 Alpha Pre-release"
 
