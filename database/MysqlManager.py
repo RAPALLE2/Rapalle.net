@@ -19,7 +19,7 @@ import http.client
 import json
 import logging
 import traceback
-
+import keyboard #pip install keyboard
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
