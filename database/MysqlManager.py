@@ -500,8 +500,8 @@ def Execute(Command):
     Install = ["download", "install", "inst"]
     Create = ["create", "add", "crea"]
     Import = ["import", "in", "im", "impo"]
-    Export = ["export", "ex", "expo"]
-    List = ["list", "ls"]
+    Export = ["export", "ex", "expo", "out"]
+    List = ["list", "ls", "l"]
     Workbench = ["workbench", "wb", "workb", "wbench"]
     Java = ["java", "jre", "jav", "jv"]
 
