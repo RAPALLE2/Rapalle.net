@@ -10,6 +10,7 @@ git push -u origin master
 git fetch
 git merge origin/main
 
+git clone https://github.com/RAPALLE2/Rapalle.net.git
 
 
 Set up GitHub Copilot
