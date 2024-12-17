@@ -1,0 +1,8 @@
+de\rapallenet\chattar\Chattar.class
+de\rapallenet\chattar\listeners\BlockListeners.class
+de\rapallenet\chattar\commands\reload.class
+de\rapallenet\chattar\commands\help.class
+de\rapallenet\chattar\commands\version.class
+de\rapallenet\chattar\listeners\ConnectionListeners.class
+de\rapallenet\chattar\util\Config.class
+de\rapallenet\chattar\commands\reset.class
