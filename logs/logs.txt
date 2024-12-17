@@ -7,7 +7,8 @@ git commit -m "Initial commit"
 git remote add origin https://github.com/RAPALLE2/Rapalle.net.git
 git push -u origin master
 
-
+git fetch
+git merge origin/main
 
 
 
