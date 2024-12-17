@@ -1,3 +1,2 @@
-start ./http-server/Simple-Web-Server.exe
+start .\html\http-server\Simple-Web-Server.exe
 exit
-
