@@ -1,0 +1,18 @@
+[
+  {
+    "Name": "WorldEdit",
+    "IsSpigetPlugin": false,
+    "SpigetId": 0,
+    "InstalledVersion": 0,
+    "IsDownloaded": true,
+    "IsEnabled": true,
+    "LocalId": 664483373,
+    "LocalPlugin": {
+      "actualType": "jar",
+      "type": "jar",
+      "size": 5811833.0,
+      "sizeUnit": "bytes",
+      "url": "C:\\Users\\RAPALLE\\AppData\\Roaming\\Fork\\servers\\amongus\\plugins\\WorldEdit.jar"
+    }
+  }
+]

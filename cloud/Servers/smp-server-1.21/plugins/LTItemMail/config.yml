@@ -1,0 +1,35 @@
+plugin:
+    #Enable or disable this plugin. Default: true
+    enable: true
+    #INTERNAL languages support: portuguese, english, vietnamese. Default: english
+    language: "english"
+    #Here you can customize the name tag that appears in chat. Default: LTIM
+    tag: "&6[LTIM]"
+    #Show error messages if something go wrong
+    debug: false
+
+hook:
+    #Set 'true' if you wish to use area protection plugins. Defaults: false
+    vault: false #Set 'true' if you wish to use economy plugins (see mail costs below)
+    griefprevention: false
+    redprotect: false
+    towny: false
+    worldguard: false
+
+mail:
+    #If 'true' titles will be used instead of chat messages. Default: false
+    use-title: false
+    cost:
+        #If 'true' cost value will be multiplied by the number of items. Default: false
+        per-item: false
+        #Cost value to send items. Default: 1.5 (per item) and 30.0 (per mailbox)
+        value: 30.0
+    #Name of the mail inventory. Default: Mailbox.
+    name: "&3&lMail&r&4"
+
+#Should administrators be warned about new updates? Default: true
+update:
+    check: true
+
+#Do not change this under any circumstances!
+config-version: 9

@@ -1,0 +1,20 @@
+[
+  {
+    "uuid": "04126681-9099-3107-8f05-5d3053dfc30f",
+    "name": "MINECRAFTER_TOBI",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "d13a9c77-34ae-3d7d-8b19-f7e4fdf8aa55",
+    "name": "RAPALLE",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "d0a66567-dc4d-410a-9f31-1debb1ff51ad",
+    "name": "RAPALLE",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  }
+]

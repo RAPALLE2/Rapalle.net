@@ -1,0 +1,403 @@
+panels:
+  panel-3:
+    perm: default
+    rows: 3
+    title: 'Download'
+    empty: BLACK_STAINED_GLASS_PANE
+    animatevalue: 1000
+    item:
+      '0':
+        material: WHITE_STAINED_GLASS_PANE
+        stack: 1
+        name: ''
+        refresh-commands:
+        - execute as %cp-player-name% unless score %cp-player-name% task_time matches 1.. run scoreboard players set %cp-player-name% task_time 1
+      '1':
+        material: WHITE_STAINED_GLASS_PANE
+        stack: 1
+        name: ''
+      '2':
+        material: WHITE_STAINED_GLASS_PANE
+        stack: 1
+        name: ''
+      '3':
+        material: WHITE_STAINED_GLASS_PANE
+        stack: 1
+        name: ''
+      '4':
+        material: WHITE_STAINED_GLASS_PANE
+        stack: 1
+        name: ''
+      '5':
+        material: WHITE_STAINED_GLASS_PANE
+        stack: 1
+        name: ''
+      '6':
+        material: WHITE_STAINED_GLASS_PANE
+        stack: 1
+        name: ''
+      '7':
+        material: WHITE_STAINED_GLASS_PANE
+        stack: 1
+        name: ''
+      '8':
+        material: WHITE_STAINED_GLASS_PANE
+        stack: 1
+        name: ''
+      '9':
+        material: WHITE_STAINED_GLASS_PANE
+        stack: 1
+        name: ''
+      '10':
+        material: WHITE_STAINED_GLASS_PANE
+        stack: 1
+        name: ''
+      '11':
+        material: LIGHT_BLUE_STAINED_GLASS_PANE
+        stack: 5
+        name: ''
+        animate0:
+          material: LIGHT_BLUE_STAINED_GLASS_PANE
+          stack: 1
+        animate1:
+          material: LIGHT_BLUE_STAINED_GLASS_PANE
+          stack: 2
+        animate2:
+          material: LIGHT_BLUE_STAINED_GLASS_PANE
+          stack: 3
+        animate3:
+          material: LIGHT_BLUE_STAINED_GLASS_PANE
+          stack: 4
+      '12':
+        material: LIGHT_BLUE_STAINED_GLASS_PANE
+        stack: 5
+        name: ''
+        animate0:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate1:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate2:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate3:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate4:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate5:
+          material: LIGHT_BLUE_STAINED_GLASS_PANE
+          stack: 1
+        animate6:
+          material: LIGHT_BLUE_STAINED_GLASS_PANE
+          stack: 2
+        animate7:
+          material: LIGHT_BLUE_STAINED_GLASS_PANE
+          stack: 3
+        animate8:
+          material: LIGHT_BLUE_STAINED_GLASS_PANE
+          stack: 4
+      '13':
+        material: LIGHT_BLUE_STAINED_GLASS_PANE
+        stack: 5
+        name: ''
+        animate0:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate1:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate2:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate3:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate4:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate5:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate6:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate7:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate8:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate9:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate10:
+          material: LIGHT_BLUE_STAINED_GLASS_PANE
+          stack: 1
+        animate11:
+          material: LIGHT_BLUE_STAINED_GLASS_PANE
+          stack: 2
+        animate12:
+          material: LIGHT_BLUE_STAINED_GLASS_PANE
+          stack: 3
+        animate13:
+          material: LIGHT_BLUE_STAINED_GLASS_PANE
+          stack: 4
+      '14':
+        material: LIGHT_BLUE_STAINED_GLASS_PANE
+        stack: 5
+        name: ''
+        animate0:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate1:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate2:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate3:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate4:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate5:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate6:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate7:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate8:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate9:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate10:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate11:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate12:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate13:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate14:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate15:
+          material: LIGHT_BLUE_STAINED_GLASS_PANE
+          stack: 1
+        animate16:
+          material: LIGHT_BLUE_STAINED_GLASS_PANE
+          stack: 2
+        animate17:
+          material: LIGHT_BLUE_STAINED_GLASS_PANE
+          stack: 3
+        animate18:
+          material: LIGHT_BLUE_STAINED_GLASS_PANE
+          stack: 4
+      '15':
+        material: LIGHT_BLUE_STAINED_GLASS_PANE
+        stack: 5
+        name: ''
+        animate0:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate1:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate2:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate3:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate4:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate5:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate6:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate7:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate8:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate9:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate10:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate11:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate12:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate13:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate14:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate15:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate16:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate17:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate18:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate19:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate20:
+          material: LIGHT_BLUE_STAINED_GLASS_PANE
+          stack: 1
+        animate21:
+          material: LIGHT_BLUE_STAINED_GLASS_PANE
+          stack: 2
+        animate22:
+          material: LIGHT_BLUE_STAINED_GLASS_PANE
+          stack: 3
+        animate23:
+          material: LIGHT_BLUE_STAINED_GLASS_PANE
+          stack: 4
+      '16':
+        material: WHITE_STAINED_GLASS_PANE
+        stack: 1
+        name: ''
+      '17':
+        material: WHITE_STAINED_GLASS_PANE
+        stack: 1
+        name: ''
+      '18':
+        material: WHITE_STAINED_GLASS_PANE
+        stack: 1
+        name: ''
+      '19':
+        material: WHITE_STAINED_GLASS_PANE
+        stack: 1
+        name: ''
+      '20':
+        material: WHITE_STAINED_GLASS_PANE
+        stack: 1
+        name: ''
+      '21':
+        material: WHITE_STAINED_GLASS_PANE
+        stack: 1
+        name: ''
+      '22':
+        material: LIME_STAINED_GLASS_PANE
+        stack: 1
+        name: 'Complete'
+        commands:
+        - execute as %cp-player-name% unless score %cp-player-name% task_time matches 14.. run say hi #cp panel-4 %cp-player-name%
+        - cpc
+        animate0:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate1:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate2:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate3:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate4:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate5:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate6:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate7:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate8:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate9:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate10:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate11:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate12:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate13:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate14:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate15:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate16:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate17:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate18:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate19:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate20:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate21:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate22:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+        animate23:
+          material: WHITE_STAINED_GLASS_PANE
+          stack: 1
+      '23':
+        material: WHITE_STAINED_GLASS_PANE
+        stack: 1
+        name: ''
+      '24':
+        material: WHITE_STAINED_GLASS_PANE
+        stack: 1
+        name: ''
+      '25':
+        material: WHITE_STAINED_GLASS_PANE
+        stack: 1
+        name: ''
+      '26':
+        material: WHITE_STAINED_GLASS_PANE
+        stack: 1
+        name: ''
