@@ -21,7 +21,6 @@ public class Utilman implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("Utilman: starting");
-		LOGGER.info("Utilman: successfully started");
-		LOGGER.info("Utilman: Have Fun!");
+		LOGGER.info("Utilman: successfully started, Have Fun!");
 	}
 }
