@@ -1,0 +1,293 @@
+[21:17:45] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[21:17:47] [ServerMain/INFO]: Loaded 1175 recipes
+[21:17:47] [ServerMain/INFO]: Loaded 1276 advancements
+[21:17:47] [Server thread/INFO]: Starting minecraft server version 1.20.6
+[21:17:47] [Server thread/INFO]: Loading properties
+[21:17:47] [Server thread/INFO]: This server is running Paper version 1.20.6-148-ver/1.20.6@20f5165 (2024-07-02T15:37:33Z) (Implementing API version 1.20.6-R0.1-SNAPSHOT)
+[21:17:48] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[21:17:48] [Server thread/INFO]: Using 4 threads for Netty based IO
+[21:17:48] [Server thread/WARN]: [Configurations] The global config file didn't have a version set, assuming latest
+[21:17:48] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 3 worker threads, and gen parallelism of 3 threads
+[21:17:48] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
+    We recommend installing the spark profiler as a replacement: https://spark.lucko.me/
+    For more information please visit: https://github.com/PaperMC/Paper/issues/8948
+[21:17:49] [Server thread/INFO]: Default game type: SURVIVAL
+[21:17:49] [Server thread/INFO]: Generating keypair
+[21:17:49] [Server thread/INFO]: Starting Minecraft server on *:20000
+[21:17:49] [Server thread/INFO]: Using default channel type
+[21:17:49] [Server thread/INFO]: Paper: Using Java compression from Velocity.
+[21:17:49] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
+[21:17:49] [Server thread/INFO]: [PoloCloud-Plugin] Loading server plugin PoloCloud-Plugin v1.0.0
+[21:17:49] [Server thread/INFO]: [DeluxeHub] Loading server plugin DeluxeHub v3.5.5
+[21:17:49] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[21:17:49] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[21:17:49] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[21:17:49] [Server thread/WARN]: Whilst this makes it possible to use Velocity, unless access to your server is properly restricted, it also opens up the ability for hackers to connect with any username they choose.
+[21:17:49] [Server thread/WARN]: Please see https://docs.papermc.io/velocity/security for further information.
+[21:17:49] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[21:17:49] [Server thread/INFO]: Preparing level "world"
+[21:17:49] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[21:17:50] [Server thread/INFO]: Time elapsed: 614 ms
+[21:17:50] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[21:17:50] [Server thread/INFO]: Time elapsed: 72 ms
+[21:17:50] [Server thread/INFO]: [PoloCloud-Plugin] Enabling PoloCloud-Plugin v1.0.0
+[21:17:50] [Server thread/INFO]: [DeluxeHub] Enabling DeluxeHub v3.5.5
+[21:17:50] [Server thread/INFO]: [DeluxeHub]  _   _            _          _    _ 
+[21:17:50] [Server thread/INFO]: [DeluxeHub] | \ |_ |  | | \/ |_ |_| | | |_)   _)
+[21:17:50] [Server thread/INFO]: [DeluxeHub] |_/ |_ |_ |_| /\ |_ | | |_| |_)   _)
+[21:17:50] [Server thread/INFO]: [DeluxeHub] 
+[21:17:50] [Server thread/INFO]: [DeluxeHub] Version: 3.5.5
+[21:17:50] [Server thread/INFO]: [DeluxeHub] Author: ItsLewizzz
+[21:17:50] [Server thread/INFO]: [DeluxeHub] 
+[21:17:50] [Server thread/INFO]: [DeluxeHub] Loaded custom menu 'serverselector'.
+[21:17:50] [Server thread/WARN]: [NBTAPI] [NBTAPI] Error while trying to resolve the class 'inventory.CraftItemStack'!
+java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3
+	at DeluxeHub-3.5.5.jar/fun.lewisdev.deluxehub.libs.nbt.utils.MinecraftVersion.getVersion(MinecraftVersion.java:111) ~[DeluxeHub-3.5.5.jar:?]
+	at DeluxeHub-3.5.5.jar/fun.lewisdev.deluxehub.libs.nbt.utils.MinecraftVersion.isAtLeastVersion(MinecraftVersion.java:88) ~[DeluxeHub-3.5.5.jar:?]
+	at DeluxeHub-3.5.5.jar/fun.lewisdev.deluxehub.libs.nbt.utils.nmsmappings.ClassWrapper.<init>(ClassWrapper.java:86) ~[DeluxeHub-3.5.5.jar:?]
+	at DeluxeHub-3.5.5.jar/fun.lewisdev.deluxehub.libs.nbt.utils.nmsmappings.ClassWrapper.<init>(ClassWrapper.java:72) ~[DeluxeHub-3.5.5.jar:?]
+	at DeluxeHub-3.5.5.jar/fun.lewisdev.deluxehub.libs.nbt.utils.nmsmappings.ClassWrapper.<clinit>(ClassWrapper.java:17) ~[DeluxeHub-3.5.5.jar:?]
+	at DeluxeHub-3.5.5.jar/fun.lewisdev.deluxehub.libs.nbt.utils.nmsmappings.ReflectionMethod.<clinit>(ReflectionMethod.java:24) ~[DeluxeHub-3.5.5.jar:?]
+	at DeluxeHub-3.5.5.jar/fun.lewisdev.deluxehub.libs.nbt.NBTCompound.setString(NBTCompound.java:176) ~[DeluxeHub-3.5.5.jar:?]
+	at DeluxeHub-3.5.5.jar/fun.lewisdev.deluxehub.module.modules.hotbar.HotbarItem.<init>(HotbarItem.java:37) ~[DeluxeHub-3.5.5.jar:?]
+	at DeluxeHub-3.5.5.jar/fun.lewisdev.deluxehub.module.modules.hotbar.items.CustomItem.<init>(CustomItem.java:16) ~[DeluxeHub-3.5.5.jar:?]
+	at DeluxeHub-3.5.5.jar/fun.lewisdev.deluxehub.module.modules.hotbar.HotbarManager.onEnable(HotbarManager.java:34) ~[DeluxeHub-3.5.5.jar:?]
+	at DeluxeHub-3.5.5.jar/fun.lewisdev.deluxehub.module.ModuleManager.loadModules(ModuleManager.java:73) ~[DeluxeHub-3.5.5.jar:?]
+	at DeluxeHub-3.5.5.jar/fun.lewisdev.deluxehub.DeluxeHubPlugin.onEnable(DeluxeHubPlugin.java:95) ~[DeluxeHub-3.5.5.jar:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:288) ~[paper-api-1.20.6-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.enablePlugin(PaperPluginInstanceManager.java:202) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.enablePlugin(PaperPluginManagerImpl.java:109) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:520) ~[paper-api-1.20.6-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.CraftServer.enablePlugin(CraftServer.java:626) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at org.bukkit.craftbukkit.CraftServer.enablePlugins(CraftServer.java:575) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at net.minecraft.server.MinecraftServer.loadWorld0(MinecraftServer.java:675) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at net.minecraft.server.MinecraftServer.loadLevel(MinecraftServer.java:437) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:323) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1136) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[21:17:50] [Server thread/WARN]: [NBTAPI] [NBTAPI] Error while trying to resolve the class 'inventory.CraftMetaItem'!
+java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3
+	at DeluxeHub-3.5.5.jar/fun.lewisdev.deluxehub.libs.nbt.utils.MinecraftVersion.getVersion(MinecraftVersion.java:111) ~[DeluxeHub-3.5.5.jar:?]
+	at DeluxeHub-3.5.5.jar/fun.lewisdev.deluxehub.libs.nbt.utils.MinecraftVersion.isAtLeastVersion(MinecraftVersion.java:88) ~[DeluxeHub-3.5.5.jar:?]
+	at DeluxeHub-3.5.5.jar/fun.lewisdev.deluxehub.libs.nbt.utils.nmsmappings.ClassWrapper.<init>(ClassWrapper.java:86) ~[DeluxeHub-3.5.5.jar:?]
+	at DeluxeHub-3.5.5.jar/fun.lewisdev.deluxehub.libs.nbt.utils.nmsmappings.ClassWrapper.<init>(ClassWrapper.java:72) ~[DeluxeHub-3.5.5.jar:?]
+	at DeluxeHub-3.5.5.jar/fun.lewisdev.deluxehub.libs.nbt.utils.nmsmappings.ClassWrapper.<clinit>(ClassWrapper.java:18) ~[DeluxeHub-3.5.5.jar:?]
+	at DeluxeHub-3.5.5.jar/fun.lewisdev.deluxehub.libs.nbt.utils.nmsmappings.ReflectionMethod.<clinit>(ReflectionMethod.java:24) ~[DeluxeHub-3.5.5.jar:?]
+	at DeluxeHub-3.5.5.jar/fun.lewisdev.deluxehub.libs.nbt.NBTCompound.setString(NBTCompound.java:176) ~[DeluxeHub-3.5.5.jar:?]
+	at DeluxeHub-3.5.5.jar/fun.lewisdev.deluxehub.module.modules.hotbar.HotbarItem.<init>(HotbarItem.java:37) ~[DeluxeHub-3.5.5.jar:?]
+	at DeluxeHub-3.5.5.jar/fun.lewisdev.deluxehub.module.modules.hotbar.items.CustomItem.<init>(CustomItem.java:16) ~[DeluxeHub-3.5.5.jar:?]
+	at DeluxeHub-3.5.5.jar/fun.lewisdev.deluxehub.module.modules.hotbar.HotbarManager.onEnable(HotbarManager.java:34) ~[DeluxeHub-3.5.5.jar:?]
+	at DeluxeHub-3.5.5.jar/fun.lewisdev.deluxehub.module.ModuleManager.loadModules(ModuleManager.java:73) ~[DeluxeHub-3.5.5.jar:?]
+	at DeluxeHub-3.5.5.jar/fun.lewisdev.deluxehub.DeluxeHubPlugin.onEnable(DeluxeHubPlugin.java:95) ~[DeluxeHub-3.5.5.jar:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:288) ~[paper-api-1.20.6-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.enablePlugin(PaperPluginInstanceManager.java:202) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.enablePlugin(PaperPluginManagerImpl.java:109) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:520) ~[paper-api-1.20.6-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.CraftServer.enablePlugin(CraftServer.java:626) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at org.bukkit.craftbukkit.CraftServer.enablePlugins(CraftServer.java:575) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at net.minecraft.server.MinecraftServer.loadWorld0(MinecraftServer.java:675) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at net.minecraft.server.MinecraftServer.loadLevel(MinecraftServer.java:437) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:323) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1136) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[21:17:50] [Server thread/WARN]: [NBTAPI] [NBTAPI] Error while trying to resolve the class 'entity.CraftEntity'!
+java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3
+	at DeluxeHub-3.5.5.jar/fun.lewisdev.deluxehub.libs.nbt.utils.MinecraftVersion.getVersion(MinecraftVersion.java:111) ~[DeluxeHub-3.5.5.jar:?]
+	at DeluxeHub-3.5.5.jar/fun.lewisdev.deluxehub.libs.nbt.utils.MinecraftVersion.isAtLeastVersion(MinecraftVersion.java:88) ~[DeluxeHub-3.5.5.jar:?]
+	at DeluxeHub-3.5.5.jar/fun.lewisdev.deluxehub.libs.nbt.utils.nmsmappings.ClassWrapper.<init>(ClassWrapper.java:86) ~[DeluxeHub-3.5.5.jar:?]
+	at DeluxeHub-3.5.5.jar/fun.lewisdev.deluxehub.libs.nbt.utils.nmsmappings.ClassWrapper.<init>(ClassWrapper.java:72) ~[DeluxeHub-3.5.5.jar:?]
+	at DeluxeHub-3.5.5.jar/fun.lewisdev.deluxehub.libs.nbt.utils.nmsmappings.ClassWrapper.<clinit>(ClassWrapper.java:19) ~[DeluxeHub-3.5.5.jar:?]
+	at DeluxeHub-3.5.5.jar/fun.lewisdev.deluxehub.libs.nbt.utils.nmsmappings.ReflectionMethod.<clinit>(ReflectionMethod.java:24) ~[DeluxeHub-3.5.5.jar:?]
+	at DeluxeHub-3.5.5.jar/fun.lewisdev.deluxehub.libs.nbt.NBTCompound.setString(NBTCompound.java:176) ~[DeluxeHub-3.5.5.jar:?]
+	at DeluxeHub-3.5.5.jar/fun.lewisdev.deluxehub.module.modules.hotbar.HotbarItem.<init>(HotbarItem.java:37) ~[DeluxeHub-3.5.5.jar:?]
+	at DeluxeHub-3.5.5.jar/fun.lewisdev.deluxehub.module.modules.hotbar.items.CustomItem.<init>(CustomItem.java:16) ~[DeluxeHub-3.5.5.jar:?]
+	at DeluxeHub-3.5.5.jar/fun.lewisdev.deluxehub.module.modules.hotbar.HotbarManager.onEnable(HotbarManager.java:34) ~[DeluxeHub-3.5.5.jar:?]
+	at DeluxeHub-3.5.5.jar/fun.lewisdev.deluxehub.module.ModuleManager.loadModules(ModuleManager.java:73) ~[DeluxeHub-3.5.5.jar:?]
+	at DeluxeHub-3.5.5.jar/fun.lewisdev.deluxehub.DeluxeHubPlugin.onEnable(DeluxeHubPlugin.java:95) ~[DeluxeHub-3.5.5.jar:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:288) ~[paper-api-1.20.6-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.enablePlugin(PaperPluginInstanceManager.java:202) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.enablePlugin(PaperPluginManagerImpl.java:109) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:520) ~[paper-api-1.20.6-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.CraftServer.enablePlugin(CraftServer.java:626) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at org.bukkit.craftbukkit.CraftServer.enablePlugins(CraftServer.java:575) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at net.minecraft.server.MinecraftServer.loadWorld0(MinecraftServer.java:675) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at net.minecraft.server.MinecraftServer.loadLevel(MinecraftServer.java:437) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:323) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1136) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[21:17:50] [Server thread/WARN]: [NBTAPI] [NBTAPI] Error while trying to resolve the class 'CraftWorld'!
+java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3
+	at DeluxeHub-3.5.5.jar/fun.lewisdev.deluxehub.libs.nbt.utils.MinecraftVersion.getVersion(MinecraftVersion.java:111) ~[DeluxeHub-3.5.5.jar:?]
+	at DeluxeHub-3.5.5.jar/fun.lewisdev.deluxehub.libs.nbt.utils.MinecraftVersion.isAtLeastVersion(MinecraftVersion.java:88) ~[DeluxeHub-3.5.5.jar:?]
+	at DeluxeHub-3.5.5.jar/fun.lewisdev.deluxehub.libs.nbt.utils.nmsmappings.ClassWrapper.<init>(ClassWrapper.java:86) ~[DeluxeHub-3.5.5.jar:?]
+	at DeluxeHub-3.5.5.jar/fun.lewisdev.deluxehub.libs.nbt.utils.nmsmappings.ClassWrapper.<init>(ClassWrapper.java:72) ~[DeluxeHub-3.5.5.jar:?]
+	at DeluxeHub-3.5.5.jar/fun.lewisdev.deluxehub.libs.nbt.utils.nmsmappings.ClassWrapper.<clinit>(ClassWrapper.java:20) ~[DeluxeHub-3.5.5.jar:?]
+	at DeluxeHub-3.5.5.jar/fun.lewisdev.deluxehub.libs.nbt.utils.nmsmappings.ReflectionMethod.<clinit>(ReflectionMethod.java:24) ~[DeluxeHub-3.5.5.jar:?]
+	at DeluxeHub-3.5.5.jar/fun.lewisdev.deluxehub.libs.nbt.NBTCompound.setString(NBTCompound.java:176) ~[DeluxeHub-3.5.5.jar:?]
+	at DeluxeHub-3.5.5.jar/fun.lewisdev.deluxehub.module.modules.hotbar.HotbarItem.<init>(HotbarItem.java:37) ~[DeluxeHub-3.5.5.jar:?]
+	at DeluxeHub-3.5.5.jar/fun.lewisdev.deluxehub.module.modules.hotbar.items.CustomItem.<init>(CustomItem.java:16) ~[DeluxeHub-3.5.5.jar:?]
+	at DeluxeHub-3.5.5.jar/fun.lewisdev.deluxehub.module.modules.hotbar.HotbarManager.onEnable(HotbarManager.java:34) ~[DeluxeHub-3.5.5.jar:?]
+	at DeluxeHub-3.5.5.jar/fun.lewisdev.deluxehub.module.ModuleManager.loadModules(ModuleManager.java:73) ~[DeluxeHub-3.5.5.jar:?]
+	at DeluxeHub-3.5.5.jar/fun.lewisdev.deluxehub.DeluxeHubPlugin.onEnable(DeluxeHubPlugin.java:95) ~[DeluxeHub-3.5.5.jar:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:288) ~[paper-api-1.20.6-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.enablePlugin(PaperPluginInstanceManager.java:202) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.enablePlugin(PaperPluginManagerImpl.java:109) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:520) ~[paper-api-1.20.6-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.CraftServer.enablePlugin(CraftServer.java:626) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at org.bukkit.craftbukkit.CraftServer.enablePlugins(CraftServer.java:575) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at net.minecraft.server.MinecraftServer.loadWorld0(MinecraftServer.java:675) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at net.minecraft.server.MinecraftServer.loadLevel(MinecraftServer.java:437) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:323) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1136) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[21:17:50] [Server thread/ERROR]: Error occurred while enabling DeluxeHub v3.5.5 (Is it up to date?)
+java.lang.ExceptionInInitializerError: null
+	at DeluxeHub-3.5.5.jar/fun.lewisdev.deluxehub.libs.nbt.utils.nmsmappings.ReflectionMethod.<clinit>(ReflectionMethod.java:24) ~[DeluxeHub-3.5.5.jar:?]
+	at DeluxeHub-3.5.5.jar/fun.lewisdev.deluxehub.libs.nbt.NBTCompound.setString(NBTCompound.java:176) ~[DeluxeHub-3.5.5.jar:?]
+	at DeluxeHub-3.5.5.jar/fun.lewisdev.deluxehub.module.modules.hotbar.HotbarItem.<init>(HotbarItem.java:37) ~[DeluxeHub-3.5.5.jar:?]
+	at DeluxeHub-3.5.5.jar/fun.lewisdev.deluxehub.module.modules.hotbar.items.CustomItem.<init>(CustomItem.java:16) ~[DeluxeHub-3.5.5.jar:?]
+	at DeluxeHub-3.5.5.jar/fun.lewisdev.deluxehub.module.modules.hotbar.HotbarManager.onEnable(HotbarManager.java:34) ~[DeluxeHub-3.5.5.jar:?]
+	at DeluxeHub-3.5.5.jar/fun.lewisdev.deluxehub.module.ModuleManager.loadModules(ModuleManager.java:73) ~[DeluxeHub-3.5.5.jar:?]
+	at DeluxeHub-3.5.5.jar/fun.lewisdev.deluxehub.DeluxeHubPlugin.onEnable(DeluxeHubPlugin.java:95) ~[DeluxeHub-3.5.5.jar:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:288) ~[paper-api-1.20.6-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.enablePlugin(PaperPluginInstanceManager.java:202) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.enablePlugin(PaperPluginManagerImpl.java:109) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:520) ~[paper-api-1.20.6-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.CraftServer.enablePlugin(CraftServer.java:626) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at org.bukkit.craftbukkit.CraftServer.enablePlugins(CraftServer.java:575) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at net.minecraft.server.MinecraftServer.loadWorld0(MinecraftServer.java:675) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at net.minecraft.server.MinecraftServer.loadLevel(MinecraftServer.java:437) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:323) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1136) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3
+	at DeluxeHub-3.5.5.jar/fun.lewisdev.deluxehub.libs.nbt.utils.MinecraftVersion.getVersion(MinecraftVersion.java:111) ~[DeluxeHub-3.5.5.jar:?]
+	at DeluxeHub-3.5.5.jar/fun.lewisdev.deluxehub.libs.nbt.utils.nmsmappings.ClassWrapper.<init>(ClassWrapper.java:78) ~[DeluxeHub-3.5.5.jar:?]
+	at DeluxeHub-3.5.5.jar/fun.lewisdev.deluxehub.libs.nbt.utils.nmsmappings.ClassWrapper.<init>(ClassWrapper.java:72) ~[DeluxeHub-3.5.5.jar:?]
+	at DeluxeHub-3.5.5.jar/fun.lewisdev.deluxehub.libs.nbt.utils.nmsmappings.ClassWrapper.<clinit>(ClassWrapper.java:21) ~[DeluxeHub-3.5.5.jar:?]
+	... 19 more
+[21:17:50] [Server thread/INFO]: [DeluxeHub] Disabling DeluxeHub v3.5.5
+[21:17:50] [Server thread/WARN]: java.lang.NullPointerException: Cannot invoke "java.util.List.clear()" because "this.vanished" is null
+[21:17:50] [Server thread/WARN]: 	at DeluxeHub-3.5.5.jar//fun.lewisdev.deluxehub.module.modules.player.PlayerVanish.onDisable(PlayerVanish.java:34)
+[21:17:50] [Server thread/WARN]: 	at DeluxeHub-3.5.5.jar//fun.lewisdev.deluxehub.module.ModuleManager.unloadModules(ModuleManager.java:92)
+[21:17:50] [Server thread/WARN]: 	at DeluxeHub-3.5.5.jar//fun.lewisdev.deluxehub.DeluxeHubPlugin.onDisable(DeluxeHubPlugin.java:113)
+[21:17:50] [Server thread/WARN]: 	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:291)
+[21:17:50] [Server thread/WARN]: 	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.disablePlugin(PaperPluginInstanceManager.java:237)
+[21:17:50] [Server thread/WARN]: 	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.disablePlugin(PaperPluginManagerImpl.java:114)
+[21:17:50] [Server thread/WARN]: 	at org.bukkit.plugin.SimplePluginManager.disablePlugin(SimplePluginManager.java:550)
+[21:17:50] [Server thread/WARN]: 	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.enablePlugin(PaperPluginInstanceManager.java:206)
+[21:17:50] [Server thread/WARN]: 	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.enablePlugin(PaperPluginManagerImpl.java:109)
+[21:17:50] [Server thread/WARN]: 	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:520)
+[21:17:50] [Server thread/WARN]: 	at org.bukkit.craftbukkit.CraftServer.enablePlugin(CraftServer.java:626)
+[21:17:50] [Server thread/WARN]: 	at org.bukkit.craftbukkit.CraftServer.enablePlugins(CraftServer.java:575)
+[21:17:50] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.loadWorld0(MinecraftServer.java:675)
+[21:17:50] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.loadLevel(MinecraftServer.java:437)
+[21:17:50] [Server thread/WARN]: 	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:323)
+[21:17:50] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1136)
+[21:17:50] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
+[21:17:50] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[21:17:50] [Server thread/ERROR]: [DeluxeHub] There was an error unloading the VANISH module.
+[21:17:50] [Server thread/WARN]: java.lang.NullPointerException: Cannot invoke "java.util.Set.forEach(java.util.function.Consumer)" because "this.holograms" is null
+[21:17:50] [Server thread/WARN]: 	at DeluxeHub-3.5.5.jar//fun.lewisdev.deluxehub.module.modules.hologram.HologramManager.saveHolograms(HologramManager.java:61)
+[21:17:50] [Server thread/WARN]: 	at DeluxeHub-3.5.5.jar//fun.lewisdev.deluxehub.module.modules.hologram.HologramManager.onDisable(HologramManager.java:36)
+[21:17:50] [Server thread/WARN]: 	at DeluxeHub-3.5.5.jar//fun.lewisdev.deluxehub.module.ModuleManager.unloadModules(ModuleManager.java:92)
+[21:17:50] [Server thread/WARN]: 	at DeluxeHub-3.5.5.jar//fun.lewisdev.deluxehub.DeluxeHubPlugin.onDisable(DeluxeHubPlugin.java:113)
+[21:17:50] [Server thread/WARN]: 	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:291)
+[21:17:50] [Server thread/WARN]: 	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.disablePlugin(PaperPluginInstanceManager.java:237)
+[21:17:50] [Server thread/WARN]: 	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.disablePlugin(PaperPluginManagerImpl.java:114)
+[21:17:50] [Server thread/WARN]: 	at org.bukkit.plugin.SimplePluginManager.disablePlugin(SimplePluginManager.java:550)
+[21:17:50] [Server thread/WARN]: 	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.enablePlugin(PaperPluginInstanceManager.java:206)
+[21:17:50] [Server thread/WARN]: 	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.enablePlugin(PaperPluginManagerImpl.java:109)
+[21:17:50] [Server thread/WARN]: 	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:520)
+[21:17:50] [Server thread/WARN]: 	at org.bukkit.craftbukkit.CraftServer.enablePlugin(CraftServer.java:626)
+[21:17:50] [Server thread/WARN]: 	at org.bukkit.craftbukkit.CraftServer.enablePlugins(CraftServer.java:575)
+[21:17:50] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.loadWorld0(MinecraftServer.java:675)
+[21:17:50] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.loadLevel(MinecraftServer.java:437)
+[21:17:50] [Server thread/WARN]: 	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:323)
+[21:17:50] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1136)
+[21:17:50] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
+[21:17:50] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[21:17:50] [Server thread/ERROR]: [DeluxeHub] There was an error unloading the HOLOGRAMS module.
+[21:17:51] [Server thread/INFO]: Running delayed init tasks
+[21:17:51] [Server thread/INFO]: Done (3.479s)! For help, type "help"
+[21:17:51] [Server thread/INFO]: Timings Reset
+[21:17:52] [User Authenticator #0/INFO]: UUID of player RAPALLE is d0a66567-dc4d-410a-9f31-1debb1ff51ad
+[21:17:52] [Server thread/INFO]: RAPALLE joined the game
+[21:17:52] [Server thread/INFO]: RAPALLE[/127.0.0.1:58912] logged in with entity id 6 at ([world]-1378.8503755091676, 64.0, 327.51807625605613)
+[21:17:56] [Server thread/INFO]: RAPALLE issued server command: /pl
+[21:17:59] [Server thread/INFO]: RAPALLE issued server command: /version DeluxeHub
+[21:28:58] [Server thread/INFO]: RAPALLE issued server command: /deluxehub RAPALLE
+[21:28:58] [Server thread/ERROR]: Command exception: /deluxehub RAPALLE
+java.lang.IllegalStateException: zip file closed
+	at java.base/java.util.zip.ZipFile.ensureOpen(ZipFile.java:846) ~[?:?]
+	at java.base/java.util.zip.ZipFile.getEntry(ZipFile.java:338) ~[?:?]
+	at java.base/java.util.jar.JarFile.getEntry(JarFile.java:516) ~[?:?]
+	at java.base/java.util.jar.JarFile.getJarEntry(JarFile.java:471) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:209) ~[paper-api-1.20.6-R0.1-SNAPSHOT.jar:?]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:593) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:169) ~[paper-api-1.20.6-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:164) ~[paper-api-1.20.6-R0.1-SNAPSHOT.jar:?]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+	at DeluxeHub-3.5.5.jar/fun.lewisdev.deluxehub.libs.command.minecraft.util.commands.CommandsManager.scopeMatches(CommandsManager.java:657) ~[DeluxeHub-3.5.5.jar:?]
+	at DeluxeHub-3.5.5.jar/fun.lewisdev.deluxehub.libs.command.minecraft.util.commands.CommandsManager.executeMethod(CommandsManager.java:525) ~[DeluxeHub-3.5.5.jar:?]
+	at DeluxeHub-3.5.5.jar/fun.lewisdev.deluxehub.libs.command.minecraft.util.commands.CommandsManager.executeMethod(CommandsManager.java:475) ~[DeluxeHub-3.5.5.jar:?]
+	at DeluxeHub-3.5.5.jar/fun.lewisdev.deluxehub.libs.command.minecraft.util.commands.CommandsManager.execute(CommandsManager.java:451) ~[DeluxeHub-3.5.5.jar:?]
+	at DeluxeHub-3.5.5.jar/fun.lewisdev.deluxehub.command.CommandManager.execute(CommandManager.java:52) ~[DeluxeHub-3.5.5.jar:?]
+	at DeluxeHub-3.5.5.jar/fun.lewisdev.deluxehub.DeluxeHubPlugin.onCommand(DeluxeHubPlugin.java:136) ~[DeluxeHub-3.5.5.jar:?]
+	at DeluxeHub-3.5.5.jar/fun.lewisdev.deluxehub.libs.command.bukkit.util.DynamicPluginCommand.execute(DynamicPluginCommand.java:55) ~[DeluxeHub-3.5.5.jar:?]
+	at io.papermc.paper.command.brigadier.bukkit.BukkitCommandNode$BukkitBrigCommand.run(BukkitCommandNode.java:91) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at com.mojang.brigadier.context.ContextChain.runExecutable(ContextChain.java:73) ~[brigadier-1.2.9.jar:?]
+	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:31) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:19) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at net.minecraft.commands.execution.UnboundEntryAction.lambda$bind$0(UnboundEntryAction.java:8) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at net.minecraft.commands.execution.CommandQueueEntry.execute(CommandQueueEntry.java:5) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at net.minecraft.commands.execution.ExecutionContext.runCommandQueue(ExecutionContext.java:103) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at net.minecraft.commands.Commands.executeCommandInContext(Commands.java:448) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:355) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:342) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:337) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.performUnsignedChatCommand(ServerGamePacketListenerImpl.java:2202) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.lambda$handleChatCommand$14(ServerGamePacketListenerImpl.java:2176) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:151) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1511) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:195) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:125) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1488) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1411) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:135) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1377) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1238) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323) ~[paper-1.20.6.jar:1.20.6-148-20f5165]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[21:36:01] [Server thread/INFO]: RAPALLE issued server command: /transfer 0.0.0.0 25565 RAPALLE
+[21:36:01] [Server thread/INFO]: [RAPALLE: Transferring RAPALLE to 0.0.0.0:25565]
+[21:36:01] [Server thread/INFO]: RAPALLE lost connection: Disconnected
+[21:36:01] [Server thread/INFO]: RAPALLE left the game
+[22:12:56] [Server thread/INFO]: Stopping the server
+[22:12:56] [Server thread/INFO]: Stopping server
+[22:12:56] [Server thread/INFO]: [PoloCloud-Plugin] Disabling PoloCloud-Plugin v1.0.0
+[22:12:56] [Server thread/INFO]: Saving players
+[22:12:56] [Server thread/INFO]: Saving worlds
+[22:12:56] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[22:12:56] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[22:12:56] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[22:12:56] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[22:12:56] [Server thread/INFO]: [ChunkHolderManager] Saved 7 block chunks, 0 entity chunks, 0 poi chunks in world 'world' in 0,01s
+[22:12:56] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[22:12:56] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[22:12:56] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[22:12:56] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[22:12:56] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[22:12:56] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 2 entity chunks, 0 poi chunks in world 'world_nether' in 0,00s
+[22:12:56] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[22:12:56] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[22:12:56] [Server thread/INFO]: Flushing Chunk IO
+[22:12:56] [Server thread/INFO]: Closing Thread Pool
+[22:12:56] [Server thread/INFO]: Closing Server

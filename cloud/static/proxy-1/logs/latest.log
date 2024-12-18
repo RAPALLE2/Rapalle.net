@@ -1,0 +1,64 @@
+[21:10:49] [Thread-1/INFO] [com.velocitypowered.proxy.VelocityServer]: Booting up Velocity 3.3.0-SNAPSHOT (git-09f687e5-b413)...
+[21:10:49] [Thread-1/INFO] [com.velocitypowered.proxy.VelocityServer]: Loading localizations...
+[21:10:49] [Thread-1/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Connections will use NIO channels, Java compression, Java ciphers
+[21:10:49] [Thread-1/INFO] [com.velocitypowered.proxy.VelocityServer]: Loading plugins...
+[21:10:50] [Thread-1/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin pistonmotd 5.1.1 by AlexProgrammerDE
+[21:10:50] [Thread-1/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin polocloud 1.0.0 by HttpMarco
+[21:10:50] [Thread-1/INFO] [com.velocitypowered.proxy.VelocityServer]: Loaded 2 plugins
+[21:10:50] [Velocity Async Event Executor - #0/INFO] [pistonmotd]:   _____  _       _                 __  __   ____  _______  _____  
+[21:10:50] [Velocity Async Event Executor - #0/INFO] [pistonmotd]:  |  __ \(_)     | |               |  \/  | / __ \|__   __||  __ \ 
+[21:10:50] [Velocity Async Event Executor - #0/INFO] [pistonmotd]:  | |__) |_  ___ | |_  ___   _ __  | \  / || |  | |  | |   | |  | |
+[21:10:50] [Velocity Async Event Executor - #0/INFO] [pistonmotd]:  |  ___/| |/ __|| __|/ _ \ | '_ \ | |\/| || |  | |  | |   | |  | |
+[21:10:50] [Velocity Async Event Executor - #0/INFO] [pistonmotd]:  | |    | |\__ \| |_| (_) || | | || |  | || |__| |  | |   | |__| |
+[21:10:50] [Velocity Async Event Executor - #0/INFO] [pistonmotd]:  |_|    |_||___/ \__|\___/ |_| |_||_|  |_| \____/   |_|   |_____/ 
+[21:10:50] [Velocity Async Event Executor - #0/INFO] [pistonmotd]: 
+[21:10:50] [Velocity Async Event Executor - #0/INFO] [pistonmotd]: Loading config
+[21:10:50] [Velocity Async Event Executor - #0/INFO] [pistonmotd]: Registering placeholders
+[21:10:50] [Velocity Async Event Executor - #0/INFO] [pistonmotd]: Looking for hooks
+[21:10:50] [Velocity Async Event Executor - #0/INFO] [pistonmotd]: Registering listeners
+[21:10:50] [Velocity Async Event Executor - #0/INFO] [pistonmotd]: Registering command
+[21:10:50] [Velocity Async Event Executor - #0/INFO] [pistonmotd]: Checking for a newer version
+[21:10:50] [Velocity Async Event Executor - #0/INFO] [pistonmotd]: You're up to date!
+[21:10:50] [Velocity Async Event Executor - #0/INFO] [pistonmotd]: Loading metrics
+[21:10:50] [Velocity Async Event Executor - #0/INFO] [pistonmotd]: Done! :D
+[21:10:50] [Netty NIO Boss #0/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Listening on /[0:0:0:0:0:0:0:0]:25565
+[21:10:50] [Thread-1/INFO] [com.velocitypowered.proxy.Velocity]: Done (1,61s)!
+[21:10:55] [Netty NIO Worker #2/INFO] [com.velocitypowered.proxy.connection.client.AuthSessionHandler]: [connected player] RAPALLE (/127.0.0.1:58359) has connected
+[21:10:55] [Netty NIO Worker #2/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] RAPALLE -> lobby-1 has connected
+[21:12:33] [Netty NIO Worker #2/INFO] [com.velocitypowered.proxy.connection.client.ConnectedPlayer]: [connected player] RAPALLE (/127.0.0.1:58359): kicked from server lobby-1: Server closed
+[21:12:33] [Netty NIO Worker #2/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] RAPALLE -> lobby-1 has disconnected
+[21:12:33] [Netty NIO Worker #2/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] RAPALLE -> limbo-1 has connected
+[21:13:00] [Netty NIO Worker #2/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [connected player] RAPALLE (/127.0.0.1:58359) has disconnected
+[21:13:00] [Netty NIO Worker #2/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] RAPALLE -> limbo-1 has disconnected
+[21:13:01] [Netty NIO Worker #16/INFO] [com.velocitypowered.proxy.connection.client.AuthSessionHandler]: [connected player] RAPALLE (/127.0.0.1:58569) has connected
+[21:13:01] [Netty NIO Worker #16/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] RAPALLE -> limbo-1 has connected
+[21:13:05] [Netty NIO Worker #16/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] RAPALLE -> lobby-1 has connected
+[21:13:06] [Netty NIO Worker #16/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] RAPALLE -> limbo-1 has disconnected
+[21:14:15] [Netty NIO Worker #16/INFO] [com.velocitypowered.proxy.connection.client.ConnectedPlayer]: [connected player] RAPALLE (/127.0.0.1:58569): kicked from server lobby-1: Server closed
+[21:14:15] [Netty NIO Worker #16/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] RAPALLE -> lobby-1 has disconnected
+[21:14:15] [Netty NIO Worker #16/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] RAPALLE -> limbo-1 has connected
+[21:14:35] [Netty NIO Worker #16/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] RAPALLE -> lobby-1 has connected
+[21:14:35] [Netty NIO Worker #16/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] RAPALLE -> limbo-1 has disconnected
+[21:15:14] [Netty NIO Worker #16/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [connected player] RAPALLE (/127.0.0.1:58569) has disconnected
+[21:15:14] [Netty NIO Worker #16/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] RAPALLE -> lobby-1 has disconnected
+[21:15:15] [Netty NIO Worker #8/INFO] [com.velocitypowered.proxy.connection.client.AuthSessionHandler]: [connected player] RAPALLE (/127.0.0.1:58741) has connected
+[21:15:15] [Netty NIO Worker #8/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] RAPALLE -> limbo-1 has connected
+[21:15:22] [Netty NIO Worker #8/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] RAPALLE -> lobby-1 has connected
+[21:15:22] [Netty NIO Worker #8/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] RAPALLE -> limbo-1 has disconnected
+[21:17:16] [Netty NIO Worker #8/INFO] [com.velocitypowered.proxy.connection.client.ConnectedPlayer]: [connected player] RAPALLE (/127.0.0.1:58741): kicked from server lobby-1: Server closed
+[21:17:16] [Netty NIO Worker #8/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] RAPALLE -> lobby-1 has disconnected
+[21:17:16] [Netty NIO Worker #8/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] RAPALLE -> limbo-1 has connected
+[21:17:52] [Netty NIO Worker #8/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] RAPALLE -> lobby-1 has connected
+[21:17:52] [Netty NIO Worker #8/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] RAPALLE -> limbo-1 has disconnected
+[21:36:01] [Netty NIO Worker #8/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [connected player] RAPALLE (/127.0.0.1:58741) has disconnected
+[21:36:01] [Netty NIO Worker #8/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] RAPALLE -> lobby-1 has disconnected
+[21:36:01] [Netty NIO Worker #9/INFO] [com.velocitypowered.proxy.connection.client.AuthSessionHandler]: [connected player] RAPALLE (/127.0.0.1:60529) has connected
+[21:36:01] [Netty NIO Worker #9/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] RAPALLE -> limbo-1 has connected
+[21:36:06] [Netty NIO Worker #9/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [connected player] RAPALLE (/127.0.0.1:60529) has disconnected
+[21:36:06] [Netty NIO Worker #9/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] RAPALLE -> limbo-1 has disconnected
+[21:36:06] [Netty NIO Worker #20/INFO] [com.velocitypowered.proxy.connection.client.AuthSessionHandler]: [connected player] RAPALLE (/127.0.0.1:60537) has connected
+[21:36:06] [Netty NIO Worker #20/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] RAPALLE -> limbo-1 has connected
+[22:12:55] [Thread-2/INFO] [com.velocitypowered.proxy.VelocityServer]: Shutting down the proxy...
+[22:12:55] [Thread-2/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Closing endpoint /0.0.0.0:25565
+[22:12:55] [Netty NIO Worker #20/INFO] [com.velocitypowered.proxy.connection.client.ConnectedPlayer]: [connected player] RAPALLE (/127.0.0.1:60537) has disconnected: The RAPALLE.NET Network is shutting down. Try again later or contact an admin. Greetings RAPALLE.NET TEAM
+[22:12:55] [Netty NIO Worker #20/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] RAPALLE -> limbo-1 has disconnected

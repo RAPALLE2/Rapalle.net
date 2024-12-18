@@ -1,0 +1,23 @@
+{
+  "name": "limbo",
+  "platform": {
+    "platform": "paper",
+    "version": "1.20.6",
+    "type": "SERVER"
+  },
+  "templates": [
+    "every",
+    "every_server",
+    "limbo"
+  ],
+  "nodes": [
+    "node-4od5"
+  ],
+  "maxMemory": 1024,
+  "maxPlayers": 100,
+  "staticService": true,
+  "minOnlineServerInstances": 1,
+  "maxOnlineServerInstances": 1,
+  "properties": {},
+  "fallback": true
+}

@@ -2,6 +2,7 @@ package com.rapalle.net;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.event.lifecycle.v1.ServerEntityEvents;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -19,6 +20,8 @@ public class Utilman implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
-		LOGGER.info("Hello Fabric world!");
+		LOGGER.info("Utilman: starting");
+		LOGGER.info("Utilman: successfully started");
+		LOGGER.info("Utilman: Have Fun!");
 	}
 }
