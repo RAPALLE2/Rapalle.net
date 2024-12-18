@@ -1,25 +1,34 @@
-from datetime import datetime
-import time
-import os
-import platform
-from colorama import Fore, Style, init  # pip install colorama
-import pyperclip #pip install pyperclip
-import mysql.connector # pip install mysql-connector-python
-from mysql.connector import Error
-from mysql.connector import errorcode
-import urllib.request
-import subprocess
-import sys
-import ctypes
-import re
-import random
-import string
-import socket
-import http.client
-import json
-import logging
-import traceback
-import keyboard # pip install keyboard
+while True:
+    try:
+        from colorama import Fore, Style, init  # pip install colorama
+        import pyperclip #pip install pyperclip
+        import mysql.connector # pip install mysql-connector-python
+        import keyboard # pip install keyboard
+        from dotenv import load_dotenv # pip install python-dotenv
+        from datetime import datetime
+        import time
+        import os
+        import platform
+        from mysql.connector import Error
+        from mysql.connector import errorcode
+        import urllib.request
+        import sys
+        import ctypes
+        import re
+        import random
+        import string
+        import socket
+        import http.client
+        import json
+        import logging
+        import traceback
+        import subprocess
+        break
+    except Exception as e:
+        import subprocess
+        import time
+        subprocess.run(['start', 'cmd', '/c', 'pip install colorama pyperclip mysql-connector-python keyboard python-dotenv'], shell=True)
+        time.sleep(20)
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
@@ -210,6 +219,8 @@ def Clear():
         os.system('clear')
 
 def Headder():
+    load_dotenv()
+
     print()
     Output("Info", "      ______  ___  ______  ___   _      _      _____  _   _  _____ _____")
     Output("Info", "      | ___ \\/ _ \\ | ___ \\/ _ \\ | |    | |    |  ___|| \\ | ||  ___|_   _|")
@@ -221,7 +232,7 @@ def Headder():
     print()
     print()
     print()
-    Output("System", "Running version " + Fore.LIGHTBLACK_EX + Version)
+    Output("System", "Running version " + Fore.LIGHTBLACK_EX + os.getenv("Version"))
     print()
 
 def ExecuteAdmin(command):
@@ -555,10 +566,10 @@ def ExecuteAtStart():
 ExecuteAtStart()
 
 if __name__ == "__main__":
+    Stop = ["stop", "exit", "shutdown", "close", "s", "down", "close", "shut", "e"]
     while True:
         try:
             Command = input(f"Enter Command {Fore.LIGHTBLACK_EX}»{Style.RESET_ALL} ")
-            Stop = ["stop", "exit", "shutdown", "close"]
             if Command in Stop:
                 Clear()
                 time.sleep(0.1)
@@ -566,6 +577,7 @@ if __name__ == "__main__":
             else:
                 Execute(Command)
         except Exception as e:
+            Clear()
             Output("Error", f"An error occurred: {e}")
             time.sleep(0.1)
             traceback.print_exc()
