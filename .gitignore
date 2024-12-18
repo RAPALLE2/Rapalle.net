@@ -21,4 +21,5 @@ html/http-server/Simple-Web-Server.exe
 logs/software/*.exe
 logs/software/*.msi
 database/error.log
+cloud/software/
 .*/
