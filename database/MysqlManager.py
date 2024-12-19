@@ -1,8 +1,8 @@
 trys = 5
 while True:
     trys -= 1
-    if trys = 0
-        Output("Error", "Could not import all required libarys, you need to fix this before you can continue, maybe reinstall python")
+    if trys == 0:
+        print("Error | Could not install or import all required libarys, you need to fix this before you can continue, maybe reinstall python")
         break
     try:
         from colorama import Fore, Style, init  # pip install colorama
@@ -10,30 +10,34 @@ while True:
         import mysql.connector # pip install mysql-connector-python
         import keyboard # pip install keyboard
         from dotenv import load_dotenv # pip install python-dotenv
-        from datetime import datetime
-        import time
-        import os
-        import platform
         from mysql.connector import Error
         from mysql.connector import errorcode
-        import urllib.request
-        import sys
-        import ctypes
-        import re
-        import random
-        import string
-        import socket
-        import http.client
-        import json
-        import logging
-        import traceback
-        import subprocess
         break
     except Exception as e:
         import subprocess
         import time
+        print("Error | Could not import all required librarys, installing all required librarys, please dont touch the new opend cmd")
         subprocess.run(['start', 'cmd', '/c', 'pip install colorama pyperclip mysql-connector-python keyboard python-dotenv'], shell=True)
-        time.sleep(20)
+        time.sleep(10)
+try:
+    from datetime import datetime
+    import time
+    import os
+    import platform
+    import urllib.request
+    import sys
+    import ctypes
+    import re
+    import random
+    import string
+    import socket
+    import http.client
+    import json
+    import logging
+    import traceback
+    import subprocess
+except Exception as e:
+    print("Error | could not import all preinstalled librarys, you need to fix this before you can continue, maybe reinstall python")
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
