@@ -1,4 +1,9 @@
+trys = 5
 while True:
+    trys -= 1
+    if trys = 0
+        Output("Error", "Could not import all required libarys, you need to fix this before you can continue, maybe reinstall python")
+        break
     try:
         from colorama import Fore, Style, init  # pip install colorama
         import pyperclip #pip install pyperclip
