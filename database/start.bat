@@ -1,1 +1,1 @@
-python start.py
+python MysqlManager.py
