@@ -56,9 +56,6 @@ logger.addHandler(file_handler)
 
 init(autoreset=True)
 
-Version = "1.0.0 Alpha Pre-release"
-
-
 def ask():
     current = 1
     while True:
