@@ -74,7 +74,7 @@ repo_name = 'Rapalle.net'
 branch = 'main'  # The branch to check for new commits
 repo_path = 'C:\\Users\\Tobi\\Desktop\\Neuer Ordner\\Rapalle.net'  # Path to the local cloned repository
 service_name = 'your_application_service_name'  # Name of the service to stop/start
-check_interval = 5  # Time interval to check for new commits (in seconds)
+check_interval = 60  # Time interval to check for new commits (in seconds)
 
 # GitHub API URL for the repository commits
 api_url = f'https://api.github.com/repos/{repo_owner}/{repo_name}/commits?sha={branch}'
