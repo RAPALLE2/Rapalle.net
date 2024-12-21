@@ -36,3 +36,5 @@ git push -u origin main
 git remote add origin https://github.com/RAPALLE2/Rapalle.net.git
 git branch -M main
 git push -u origin main
+
+or use GithubAutoUpdater.py
