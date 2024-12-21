@@ -1,4 +1,3 @@
-# Import all librarys
 import subprocess
 import os
 import time
