@@ -72,12 +72,13 @@ print()
 repo_owner = 'RAPALLE2'
 repo_name = 'Rapalle.net'
 branch = 'main'  # The branch to check for new commits
-repo_path = 'C:\\Users\\Tobi\\Desktop\\Neuer Ordner\\Rapalle.net'  # Path to the local cloned repository
+repo_path = 'C:\\Users\\Tobi\\Desktop\\Neuer Ordner\\Rapalle.net'  # !!!!! Path to the local cloned repository, the one in which the Rapalle.net folder lies, not in the Rapalle.net folder!!
 service_name = 'your_application_service_name'  # Name of the service to stop/start
 default_check_interval = 600 # Default time interval to check for new commits (in seconds)
 intensive_check_interval = 60 # Intensive time interval to check for new commits (in seconds)
 intensive_check_duration = 3600 # Duration to check intensively (in seconds)
 
+formatted_check_interval = default_check_interval / 60
 
 # GitHub API URL for the repository commits
 api_url = f'https://api.github.com/repos/{repo_owner}/{repo_name}/commits?sha={branch}'
@@ -162,7 +163,7 @@ def wait_for_new_commit():
                     Output("System", 'No new commit yet. Checking again intensively...')
 
         else:
-            Output("System", 'No new commit yet. Checking again in 10 minutes...')
+            Output("System", f'No new commit yet. Checking again in {formatted_check_interval} minutes...')
 
 if __name__ == "__main__":
 
