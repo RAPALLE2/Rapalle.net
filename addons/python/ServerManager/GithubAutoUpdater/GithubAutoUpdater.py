@@ -6,6 +6,7 @@ try:
     import traceback
     import urllib.request
     import json
+    import os
 except Exception as e:
     print("Error | could not import all preinstalled librarys, you need to fix this before you can continue, maybe reinstall python")
 trys = 5
@@ -16,10 +17,12 @@ while True:
         break
     try:
         from colorama import Fore, Style, init  # pip install colorama
+        import psutil  # pip install psutil
+        import pyautogui  # pip install pyautogui
         break
     except Exception as e:
         print("Error | Could not import all required librarys, installing all required librarys, please dont touch the new opend cmd")
-        subprocess.run(['start', 'cmd', '/c', 'pip install colorama'],shell=True)
+        subprocess.run(['start', 'cmd', '/c', 'pip install colorama psutil pyautogui'],shell=True)
         time.sleep(10)
 
 logger = logging.getLogger(__name__)
@@ -72,14 +75,12 @@ print()
 repo_owner = 'RAPALLE2'
 repo_name = 'Rapalle.net'
 branch = 'main'  # The branch to check for new commits
-repo_path = 'C:\\Users\\Tobi\\Desktop\\Neuer Ordner\\Rapalle.net'  # !!!!! Path to the local cloned repository, the one in which the Rapalle.net folder lies, not in the Rapalle.net folder!!
-service_name = 'your_application_service_name'  # Name of the service to stop/start
+repo_path = 'L:\\Rapalle.net'  # Path to the local cloned repository
 default_check_interval = 600 # Default time interval to check for new commits (in seconds)
 intensive_check_interval = 60 # Intensive time interval to check for new commits (in seconds)
 intensive_check_duration = 3600 # Duration to check intensively (in seconds)
 
 formatted_check_interval = default_check_interval / 60
-
 # GitHub API URL for the repository commits
 api_url = f'https://api.github.com/repos/{repo_owner}/{repo_name}/commits?sha={branch}'
 
@@ -98,23 +99,38 @@ def get_latest_commit_sha():
 
 def stop_application():
     pass
-    # try:
-    #    print(f'Stopping the application: {service_name}')
-    #    subprocess.run(['systemctl', 'stop', service_name], check=True)
-    #    print('Application stopped.')
-    # except Exception as e:
-    #    print(f'An error occurred while stopping the application: {e}')
+    try:
+       Output("Info", f'Stopping the Network')
+       # Simulate Alt+F4 to close windows
+       pyautogui.hotkey('alt', 'f4')
+       time.sleep(1)  # Wait for a second
+       pyautogui.hotkey('alt', 'f4')
+       time.sleep(1)  # Wait for a second
+
+       # Simulate typing "stop" and pressing Enter
+       pyautogui.typewrite('s')
+       time.sleep(1)
+       pyautogui.typewrite('t')
+       time.sleep(1)
+       pyautogui.typewrite('o')
+       time.sleep(1)
+       pyautogui.typewrite('p')
+       time.sleep(1)
+       pyautogui.press('enter')
+       Output("Successfully", 'Network stopped.')
+    except Exception as e:
+       Output("Error", f'An error occurred while stopping the Network: {e}')
 
 
 def start_application():
-    pass
-    # try:
-    #    print(f'Starting the application: {service_name}')
-    #    subprocess.run(['systemctl', 'start', service_name], check=True)
-    #    print('Application started.')
-    # except Exception as e:
-    #    print(f'An error occurred while starting the application: {e}')
-
+    try:
+       Output("Info", f'Starting the Network')
+       os.chdir(repo_path)
+       bat_file_path = os.path.join(repo_path, "start.bat")
+       subprocess.run(['cmd', '/c', bat_file_path], check=True)
+       Output("Successfully", 'Network started.')
+    except Exception as e:
+       Output("Error", f'An error occurred while starting the Network: {e}')
 
 def pull_latest_changes():
     try:

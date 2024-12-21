@@ -1,9 +1,10 @@
 @echo off
 ::winget upgrade -h --id DevelopedMethodsLLC.playit
-start /min ./playit/playit.exe
+start ./playit/playit.exe
 
-start /min L:\Rapalle.net\html\start-http-server.bat
+start ./html/http-server/Simple-Web-Server.exe
 
 cd ./cloud/
-java -jar ./polocloud.jar
+::java -jar ./polocloud.jar
+python start.py
 cd ..
