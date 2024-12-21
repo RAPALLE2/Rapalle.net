@@ -81,6 +81,7 @@ intensive_check_interval = 60 # Intensive time interval to check for new commits
 intensive_check_duration = 3600 # Duration to check intensively (in seconds)
 
 formatted_check_interval = default_check_interval / 60
+time.sleep(1)
 # GitHub API URL for the repository commits
 api_url = f'https://api.github.com/repos/{repo_owner}/{repo_name}/commits?sha={branch}'
 
@@ -102,10 +103,8 @@ def stop_application():
     try:
        Output("Info", f'Stopping the Network')
        # Simulate Alt+F4 to close windows
-       pyautogui.hotkey('alt', 'f4')
-       time.sleep(1)  # Wait for a second
-       pyautogui.hotkey('alt', 'f4')
-       time.sleep(1)  # Wait for a second
+       #pyautogui.hotkey('alt', 'f4')
+       #time.sleep(1)  # Wait for a second
 
        # Simulate typing "stop" and pressing Enter
        pyautogui.typewrite('s')
@@ -117,6 +116,8 @@ def stop_application():
        pyautogui.typewrite('p')
        time.sleep(1)
        pyautogui.press('enter')
+       time.sleep(1)  # Wait for a second
+       pyautogui.hotkey('alt', 'f4')
        Output("Successfully", 'Network stopped.')
     except Exception as e:
        Output("Error", f'An error occurred while stopping the Network: {e}')
