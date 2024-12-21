@@ -23,3 +23,11 @@ logs/software/*.msi
 database/error.log
 cloud/software/
 .*/
+Simple-Web-Server-Installer.exe
+jdk-21.msi
+jdk-21_windows-x64_bin.msi
+mysql-installer-web-community-8.0.40.0.msi
+mysql-installer.msi
+Simple-Web-Server-Installer-1.2.12-x64.exe
+python-installer.exe
+python-3.13.1-amd64.exe
