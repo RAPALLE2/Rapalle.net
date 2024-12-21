@@ -169,6 +169,7 @@ if __name__ == "__main__":
     while True:
         try:
             selected = ask()
+            Clear()
             if selected == 1:
                 Java()
             elif selected == 2:
