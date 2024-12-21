@@ -74,7 +74,10 @@ repo_name = 'Rapalle.net'
 branch = 'main'  # The branch to check for new commits
 repo_path = 'C:\\Users\\Tobi\\Desktop\\Neuer Ordner\\Rapalle.net'  # Path to the local cloned repository
 service_name = 'your_application_service_name'  # Name of the service to stop/start
-check_interval = 60  # Time interval to check for new commits (in seconds)
+default_check_interval = 600 # Default time interval to check for new commits (in seconds)
+intensive_check_interval = 60 # Intensive time interval to check for new commits (in seconds)
+intensive_check_duration = 3600 # Duration to check intensively (in seconds)
+
 
 # GitHub API URL for the repository commits
 api_url = f'https://api.github.com/repos/{repo_owner}/{repo_name}/commits?sha={branch}'
@@ -129,11 +132,11 @@ def wait_for_new_commit():
     Output("System", 'Checking for new commits...')
     last_commit_sha = get_latest_commit_sha()
     if not last_commit_sha:
-        Output("Info", 'No commits found in the repository.')
+        Output("System", 'No commits found in the repository.')
         return
 
     while True:
-        time.sleep(check_interval)
+        time.sleep(default_check_interval)
         new_commit_sha = get_latest_commit_sha()
         if new_commit_sha != last_commit_sha:
             Output("Info", 'New commit detected:')
@@ -142,8 +145,24 @@ def wait_for_new_commit():
             pull_latest_changes()
             start_application()
             last_commit_sha = new_commit_sha
+
+            # Switch to intensive checking
+            intensive_end_time = time.time() + intensive_check_duration
+            while time.time() < intensive_end_time:
+                time.sleep(intensive_check_interval)
+                new_commit_sha = get_latest_commit_sha()
+                if new_commit_sha != last_commit_sha:
+                    Output("Info", 'New commit detected:')
+                    Output("Commit", f'Commit SHA: {new_commit_sha}')
+                    stop_application()
+                    pull_latest_changes()
+                    start_application()
+                    last_commit_sha = new_commit_sha
+                else:
+                    Output("System", 'No new commit yet. Checking again intensively...')
+
         else:
-            Output("System"'No new commit yet. Checking again...')
+            Output("System", 'No new commit yet. Checking again in 10 minutes...')
 
 if __name__ == "__main__":
 
