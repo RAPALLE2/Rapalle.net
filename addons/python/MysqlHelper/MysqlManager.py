@@ -1,30 +1,3 @@
-trys = 5
-while True:
-    trys -= 1
-    if trys == 0:
-        print(
-            "Error | Could not install or import all required libarys, you need to fix this before you can continue, maybe reinstall python")
-        break
-    try:
-        from colorama import Fore, Style, init  # pip install colorama
-        import pyperclip  # pip install pyperclip
-        import mysql.connector  # pip install mysql-connector-python
-        import keyboard  # pip install keyboard
-        from dotenv import load_dotenv  # pip install python-dotenv
-        from mysql.connector import Error
-        from mysql.connector import errorcode
-
-        break
-    except Exception as e:
-        import subprocess
-        import time
-
-        print(
-            "Error | Could not import all required librarys, installing all required librarys, please dont touch the new opend cmd")
-        subprocess.run(
-            ['start', 'cmd', '/c', 'pip install colorama pyperclip mysql-connector-python keyboard python-dotenv'],
-            shell=True)
-        time.sleep(10)
 try:
     from datetime import datetime
     import time
@@ -38,7 +11,6 @@ try:
     import string
     import socket
     import http.client
-    import json
     import logging
     import traceback
     import subprocess
@@ -46,6 +18,34 @@ try:
 except Exception as e:
     print(
         "Error | could not import all preinstalled librarys, you need to fix this before you can continue, maybe reinstall python")
+
+trys = 5
+while True:
+    trys -= 1
+    if trys == 0:
+        print(
+            "Error | Could not install or import all required libarys, you need to fix this before you can continue, maybe reinstall python")
+        break
+    try:
+        from colorama import Fore, Style, init  # pip install colorama
+        import pyperclip  # pip install pyperclip
+        #import mysql.connector  # pip install mysql-connector-python
+        #import keyboard  # pip install keyboard
+        from dotenv import load_dotenv  # pip install python-dotenv
+        #from mysql.connector import Error
+        #from mysql.connector import errorcode
+
+        break
+    except Exception as e:
+        import subprocess
+        import time
+
+        print(
+            "Error | Could not import all required librarys, installing all required librarys, please dont touch the new opend cmd")
+        subprocess.run(
+            ['start', 'cmd', '/c', 'pip install colorama pyperclip python-dotenv'], # + --> " mysql-connector-python keyboard"
+            shell=True)
+        time.sleep(10)
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
@@ -55,58 +55,6 @@ file_handler.setFormatter(formatter)
 logger.addHandler(file_handler)
 
 init(autoreset=True)
-
-def ask():
-    current = 1
-    while True:
-        event = keyboard.read_event()
-        if event.event_type == keyboard.KEY_DOWN:
-            if event.name == 'nach-oben':
-                if current == 1:
-                    current = 5
-                else:
-                    current -= 1
-            elif event.name == 'nach-unten':
-                if current == 5:
-                    current = 1
-                else:
-                    current += 1
-            elif event.name == 'enter':
-                return current
-        Clear()
-        if current == 1:
-            print(f"({Fore.CYAN}X{Style.RESET_ALL}) Option 1")
-            print(f"{Fore.LIGHTBLACK_EX}( ) Option 2")
-            print(f"{Fore.LIGHTBLACK_EX}( ) Option 3")
-            print(f"{Fore.LIGHTBLACK_EX}( ) Option 4")
-            print(f"{Fore.LIGHTBLACK_EX}( ) Option 5")
-        elif current == 2:
-            print(f"{Fore.LIGHTBLACK_EX}( ) Option 1")
-            print(f"({Fore.CYAN}X{Style.RESET_ALL}) Option 2")
-            print(f"{Fore.LIGHTBLACK_EX}( ) Option 3")
-            print(f"{Fore.LIGHTBLACK_EX}( ) Option 4")
-            print(f"{Fore.LIGHTBLACK_EX}( ) Option 5")
-        elif current == 3:
-            print(f"{Fore.LIGHTBLACK_EX}( ) Option 1")
-            print(f"{Fore.LIGHTBLACK_EX}( ) Option 2")
-            print(f"({Fore.CYAN}X{Style.RESET_ALL}) Option 3")
-            print(f"{Fore.LIGHTBLACK_EX}( ) Option 4")
-            print(f"{Fore.LIGHTBLACK_EX}( ) Option 5")
-        elif current == 4:
-            print(f"{Fore.LIGHTBLACK_EX}( ) Option 1")
-            print(f"{Fore.LIGHTBLACK_EX}( ) Option 2")
-            print(f"{Fore.LIGHTBLACK_EX}( ) Option 3")
-            print(f"({Fore.CYAN}X{Style.RESET_ALL}) Option 4")
-            print(f"{Fore.LIGHTBLACK_EX}( ) Option 5")
-        elif current == 5:
-            print(f"{Fore.LIGHTBLACK_EX}( ) Option 1")
-            print(f"{Fore.LIGHTBLACK_EX}( ) Option 2")
-            print(f"{Fore.LIGHTBLACK_EX}( ) Option 3")
-            print(f"{Fore.LIGHTBLACK_EX}( ) Option 4")
-            print(f"({Fore.CYAN}X{Style.RESET_ALL}) Option 5")
-        time.sleep(0.1)
-
-
 
 
 def CreateStartScript():
@@ -481,7 +429,7 @@ def Execute(Command):
                 if action in Install:
                     InstallJv()
                 elif action in Info:
-                    ask()
+                    pass
             elif category in Database:
                 if action in Create:
                     CreateDatabaseQuestions()
