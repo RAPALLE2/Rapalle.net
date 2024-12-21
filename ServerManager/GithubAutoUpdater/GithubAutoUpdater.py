@@ -4,6 +4,8 @@ try:
     import time
     import logging
     import traceback
+    import urllib.request
+    import json
 except Exception as e:
     print("Error | could not import all preinstalled librarys, you need to fix this before you can continue, maybe reinstall python")
 trys = 5
@@ -43,7 +45,7 @@ def Output(Type, Message):
         color = Fore.GREEN
     elif Type.lower() == "successfully":
         color = Fore.GREEN
-    elif Type.lower() == "warning":
+    elif Type.lower() == "commit":
         color = Fore.YELLOW
     elif Type.lower() == "system":
         color = Fore.LIGHTBLACK_EX
@@ -66,55 +68,88 @@ print()
 Output("System", "Running version " + Fore.LIGHTBLACK_EX + Version)
 print()
 
+# Configuration
+repo_owner = 'RAPALLE2'
+repo_name = 'Rapalle.net'
+branch = 'main'  # The branch to check for new commits
+repo_path = 'C:\\Users\\Tobi\\Desktop\\Neuer Ordner\\Rapalle.net'  # Path to the local cloned repository
+service_name = 'your_application_service_name'  # Name of the service to stop/start
+check_interval = 5  # Time interval to check for new commits (in seconds)
+
+# GitHub API URL for the repository commits
+api_url = f'https://api.github.com/repos/{repo_owner}/{repo_name}/commits?sha={branch}'
+
+
+def get_latest_commit_sha():
+    try:
+        with urllib.request.urlopen(api_url) as response:
+            if response.status == 200:
+                commits = json.loads(response.read().decode())
+                if commits:
+                    return commits[0]['sha']
+    except Exception as e:
+        Output("Error", f'An error occurred while fetching the latest commit: {e}')
+    return None
+
+
+def stop_application():
+    pass
+    # try:
+    #    print(f'Stopping the application: {service_name}')
+    #    subprocess.run(['systemctl', 'stop', service_name], check=True)
+    #    print('Application stopped.')
+    # except Exception as e:
+    #    print(f'An error occurred while stopping the application: {e}')
+
+
+def start_application():
+    pass
+    # try:
+    #    print(f'Starting the application: {service_name}')
+    #    subprocess.run(['systemctl', 'start', service_name], check=True)
+    #    print('Application started.')
+    # except Exception as e:
+    #    print(f'An error occurred while starting the application: {e}')
+
+
+def pull_latest_changes():
+    try:
+        Output("Info", 'Pulling the latest changes from the repository...')
+        result = subprocess.run(['git', 'pull', 'origin', branch], cwd=repo_path, capture_output=True,
+                                text=True)
+        if result.returncode == 0:
+            Output("Successfully", 'Repository successfully pulled.')
+        else:
+            raise RuntimeError(f"Git pull command failed: {result.stderr}")
+    except Exception as e:
+        Output("Error", f'An error occurred while pulling the latest changes: {e}')
+
+
+def wait_for_new_commit():
+    Output("System", 'Checking for new commits...')
+    last_commit_sha = get_latest_commit_sha()
+    if not last_commit_sha:
+        Output("Info", 'No commits found in the repository.')
+        return
+
+    while True:
+        time.sleep(check_interval)
+        new_commit_sha = get_latest_commit_sha()
+        if new_commit_sha != last_commit_sha:
+            Output("Info", 'New commit detected:')
+            Output("Commit", f'Commit SHA: {new_commit_sha}')
+            stop_application()
+            pull_latest_changes()
+            start_application()
+            last_commit_sha = new_commit_sha
+        else:
+            Output("System"'No new commit yet. Checking again...')
 
 if __name__ == "__main__":
 
     while True:
         try:
-
-            # GitHub repository details
-            repo_path = 'https://github.com/RAPALLE2/Rapalle.net'
-
-            # Time interval to check for new commits (in seconds)
-            check_interval = 60
-
-
-            def get_latest_commit_sha():
-                try:
-                    # Navigate to the repository and get the latest commit SHA
-                    result = subprocess.run(['git', 'rev-parse', 'HEAD'], cwd=repo_path, capture_output=True, text=True)
-                    if result.returncode == 0:
-                        return result.stdout.strip()
-                except Exception as e:
-                    print(f'An error occurred: {e}')
-                return None
-
-
-            def wait_for_new_commit():
-                print('Checking for new commits...')
-                last_commit_sha = get_latest_commit_sha()
-                if not last_commit_sha:
-                    print('No commits found in the repository.')
-                    return
-
-                while True:
-                    time.sleep(check_interval)
-                    current_commit_sha = get_latest_commit_sha()
-                    if current_commit_sha != last_commit_sha:
-                        print('New commit detected:')
-                        print(f'Commit SHA: {current_commit_sha}')
-                        break
-                    else:
-                        print('No new commit yet. Checking again...')
-
-
             wait_for_new_commit()
-
-
-
-
-
-
         except Exception as e:
             Output("Error", f"An error occurred: {e}")
             time.sleep(0.1)
