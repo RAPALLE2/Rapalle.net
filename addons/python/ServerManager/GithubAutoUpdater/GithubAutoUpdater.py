@@ -1,5 +1,3 @@
-from addons.python.MysqlHelper.MysqlManager import Clear
-
 try:
     import subprocess
     from datetime import datetime
@@ -9,6 +7,7 @@ try:
     import urllib.request
     import json
     import os
+    import platform
 except Exception as e:
     print("Error | could not import all preinstalled librarys, you need to fix this before you can continue, maybe reinstall python")
 trys = 5
@@ -38,6 +37,12 @@ init(autoreset=True)
 
 Version = "1.0.0 Alpha Pre-release"
 
+def Clear():
+    if platform.system() == "Windows":
+        os.system('cls')
+    else:
+        os.system('clear')
+
 def Output(Type, Message):
     Now = datetime.now()
     Time = Now.strftime("%H:%M:%S")
@@ -58,6 +63,8 @@ def Output(Type, Message):
         color = Fore.WHITE
 
     print(f"{Time} | {color}{Type.capitalize()}{Style.RESET_ALL} | {Message}")
+
+Clear()
 
 print()
 Output("Info", "      ______  ___  ______  ___   _      _      _____  _   _  _____ _____")
@@ -100,13 +107,9 @@ def get_latest_commit_sha():
     return None
 
 
-def stop_application():
+def stop_cloud():
     try:
        Output("Info", f'Stopping the Network')
-       # Simulate Alt+F4 to close windows
-       #pyautogui.hotkey('alt', 'f4')
-       #time.sleep(1)  # Wait for a second
-       # Simulate typing "stop" and pressing Enter
        pyautogui.typewrite('s')
        time.sleep(1)
        pyautogui.typewrite('t')
@@ -116,22 +119,34 @@ def stop_application():
        pyautogui.typewrite('p')
        time.sleep(1)
        pyautogui.press('enter')
-       time.sleep(1)  # Wait for a second
-       pyautogui.hotkey('alt', 'f4')
+       time.sleep(1)
        Output("Successfully", 'Network stopped.')
     except Exception as e:
        Output("Error", f'An error occurred while stopping the Network: {e}')
 
 
-def start_application():
+def start_all_applications():
     try:
        Output("Info", f'Starting the Network')
        os.chdir(repo_path)
-       bat_file_path = os.path.join(repo_path, "start.bat")
+       bat_file_path = os.path.join(repo_path + "\\scripts\\StartScripts\\StartScriptsAutoUpdater", "start_all.bat")
        subprocess.run(['cmd', '/c', bat_file_path], check=True)
+       Output("Successfully", "Started Playit")
+       Output("Successfully", "Started Http-Web-Server")
+       Output("Successfully", "Started Cloud")
        Output("Successfully", 'Network started.')
     except Exception as e:
        Output("Error", f'An error occurred while starting the Network: {e}')
+
+def start_cloud():
+    try:
+       Output("Info", f'Starting the Cloud')
+       os.chdir(repo_path)
+       bat_file_path = os.path.join(repo_path + "\\scripts\\StartScripts\\StartScriptsAutoUpdater", "start_cloud.bat")
+       subprocess.run(['cmd', '/c', bat_file_path], check=True)
+       Output("Successfully", 'Cloud started.')
+    except Exception as e:
+       Output("Error", f'An error occurred while starting the Cloud: {e}')
 
 def pull_latest_changes():
     try:
@@ -159,9 +174,9 @@ def wait_for_new_commit():
         if new_commit_sha != last_commit_sha:
             Output("Info", 'New commit detected:')
             Output("Commit", f'Commit SHA: {new_commit_sha}')
-            #stop_application()
+            stop_cloud()
             pull_latest_changes()
-            #start_application()
+            start_cloud()
             last_commit_sha = new_commit_sha
 
             # Switch to intensive checking
@@ -172,9 +187,9 @@ def wait_for_new_commit():
                 if new_commit_sha != last_commit_sha:
                     Output("Info", 'New commit detected:')
                     Output("Commit", f'Commit SHA: {new_commit_sha}')
-                    #stop_application()
+                    stop_cloud()
                     pull_latest_changes()
-                    #start_application()
+                    start_cloud()
                     last_commit_sha = new_commit_sha
                 else:
                     Output("System", 'No new commit yet. Checking again intensively...')
@@ -183,7 +198,7 @@ def wait_for_new_commit():
             Output("System", f'No new commit yet. Checking again in {formatted_check_interval} minutes...')
 
 if __name__ == "__main__":
-    Clear()
+    start_all_applications()
     while True:
         try:
             wait_for_new_commit()
