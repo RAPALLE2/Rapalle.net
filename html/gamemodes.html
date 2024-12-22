@@ -9,6 +9,11 @@
 
 
     <style>
+        .AmongUs-link{
+            text-decoration: none;
+            color: rgb(216, 215, 215);
+            font-size: 18px;
+        }
         .empty {
             color: rgb(43, 42, 42);
             position: absolute;
@@ -51,6 +56,7 @@
             --hight_game_2: 550px;
             --hight_game_3: 740px;
             --hight_game_4: 930px;
+            --hight_game_5: 1120px;
         }
 
 
@@ -134,6 +140,26 @@
             top: calc(var(--hight_game_4) + 115px);
         }
 
+        .game-title-5 {
+            top: var(--hight_game_5)
+        }
+
+        .game-logo-5 {
+            top: calc(var(--hight_game_5) + 40px);
+        }
+
+        .game-info-5-1 {
+            top: calc(var(--hight_game_5) + 75px);
+        }
+
+        .game-info-5-2 {
+            top: calc(var(--hight_game_5) + 95px);
+        }
+
+        .game-info-5-3 {
+            top: calc(var(--hight_game_5) + 115px);
+        }
+
 
         @media (max-Width: 850px) {
             .game-title {
@@ -177,6 +203,7 @@
                 --hight_game_2: 800px;
                 --hight_game_3: 1200px;
                 --hight_game_4: 1600px;
+                --hight_game_5: 2000px;
             }
 
             .game-info-1-1 {
@@ -225,6 +252,17 @@
 
             .game-info-4-3 {
                 top: calc(var(--hight_game_4) + 160px + 115px);
+            }
+            .game-info-5-1 {
+                top: calc(var(--hight_game_5) + 100px + 75px);
+            }
+
+            .game-info-5-2 {
+                top: calc(var(--hight_game_5) + 130px + 95px);
+            }
+
+            .game-info-5-3 {
+                top: calc(var(--hight_game_5) + 160px + 115px);
             }
         }
     </style>
@@ -281,6 +319,13 @@
             other&nbsp;players&nbsp;is&nbsp;a&nbsp;sky&nbsp;world,</span>
         <span class="game game-info game-info-4-3">or kill them with wepons you
             can&nbsp;find&nbsp;randomly&nbsp;in&nbsp;chests.</span>
+    </div>
+    <div>
+        <h1 class="game game-title game-title-5">AmongUs</h1>
+        <img class=" game game-logo game-logo-5 round" src="img_folder/games/game-5.jpg">
+        <span class="game game-info game-info-5-1">AmongUs in Minecraft, with all cool Soundeffects,</span>
+        <span class="game game-info game-info-5-2">Models and Funktions like the Real.</span>
+        <span class="game game-info game-info-5-3"> <a href="https://store.steampowered.com/app/945360/Among_Us/" class="AmongUs-link"> AmongUs by Innersloth </a> </span>
     </div>
 </body>
 
