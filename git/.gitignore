@@ -31,3 +31,4 @@ mysql-installer.msi
 Simple-Web-Server-Installer-1.2.12-x64.exe
 python-installer.exe
 python-3.13.1-amd64.exe
+*.msi
