@@ -1,33 +1,7 @@
-# Ignore all .log files
-#*.log
-
-# Ignore the node_modules directory
-#node_modules/
-
-# Ignore all .env files
-#*.env
-
-# Ignore a specific file
-#secret_config.py
-
-# Ignore all files in the temp directory
-#temp/
-
-#cloud/software/
-#*.exe
-#*.msi
-
 html/http-server/Simple-Web-Server.exe
-logs/software/*.exe
-logs/software/*.msi
-database/error.log
-cloud/software/
+error.log
 .*/
 Simple-Web-Server-Installer.exe
-jdk-21.msi
-jdk-21_windows-x64_bin.msi
-mysql-installer-web-community-8.0.40.0.msi
-mysql-installer.msi
 Simple-Web-Server-Installer-1.2.12-x64.exe
 python-installer.exe
 python-3.13.1-amd64.exe
