@@ -1,0 +1,44 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "o2.power.1": {
+                "min": 0,
+                "max": 0
+              }
+            }
+          }
+        ],
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:villager",
+              "nbt": "{Tags:[\"amongus.task\",\"o2.power\"]}",
+              "distance": {
+                "x": {
+                  "min": 0,
+                  "max": 1.2
+                },
+                "z": {
+                  "min": 0,
+                  "max": 1.2
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "amongus:tasks/power1/o2/init"
+  }
+}

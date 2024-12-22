@@ -1,0 +1,19 @@
+
+team remove uploadP10
+team remove manifoldsP10
+team remove cardP10
+team remove scanP10
+team remove reactorP10
+team remove steeringP10
+team remove shieldsP10
+team remove sampleP10
+team remove fuelP10
+team remove garbageP10
+team remove chuteP10
+team remove powerP10
+team remove courseP10
+team remove asteroidsP10
+team remove cleanP10
+team remove alignP10
+team remove calibrateP10
+team remove wiringP10

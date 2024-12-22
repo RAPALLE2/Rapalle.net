@@ -1,0 +1,32 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "item/barrier"
+  },
+  "overrides": [
+    {
+      "predicate": { "custom_model_data": 1 },
+      "model": "item/overview_map"
+    },
+    {
+      "predicate": { "custom_model_data": 2 },
+      "model": "item/kill_cd"
+    },
+    {
+      "predicate": { "custom_model_data": 3 },
+      "model": "item/noreport"
+    },
+    {
+      "predicate": { "custom_model_data": 4 },
+      "model": "item/novent"
+    },
+    {
+      "predicate": { "custom_model_data": 5 },
+      "model": "item/sabotage"
+    },
+    {
+      "predicate": { "custom_model_data": 6 },
+      "model": "item/noaction"
+    }
+  ]
+}

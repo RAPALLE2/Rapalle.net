@@ -1,0 +1,2 @@
+
+function amongus:init/main

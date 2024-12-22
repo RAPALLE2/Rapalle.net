@@ -1,0 +1,11 @@
+
+execute if score @s rnA matches 1 run data modify storage tasks:manifolds numA set value '{"text":"❶","color":"green","clickEvent":{"action":"run_command","value":"/trigger reac.btn.num set 1"}}'
+execute if score @s rnB matches 1 run data modify storage tasks:manifolds numB set value '{"text":"❶","color":"green","clickEvent":{"action":"run_command","value":"/trigger reac.btn.num set 2"}}'
+execute if score @s rnC matches 1 run data modify storage tasks:manifolds numC set value '{"text":"❶","color":"green","clickEvent":{"action":"run_command","value":"/trigger reac.btn.num set 3"}}'
+execute if score @s rnD matches 1 run data modify storage tasks:manifolds numD set value '{"text":"❶","color":"green","clickEvent":{"action":"run_command","value":"/trigger reac.btn.num set 4"}}'
+execute if score @s rnE matches 1 run data modify storage tasks:manifolds numE set value '{"text":"❶","color":"green","clickEvent":{"action":"run_command","value":"/trigger reac.btn.num set 5"}}'
+execute if score @s rnF matches 1 run data modify storage tasks:manifolds numF set value '{"text":"❶","color":"green","clickEvent":{"action":"run_command","value":"/trigger reac.btn.num set 6"}}'
+execute if score @s rnG matches 1 run data modify storage tasks:manifolds numG set value '{"text":"❶","color":"green","clickEvent":{"action":"run_command","value":"/trigger reac.btn.num set 7"}}'
+execute if score @s rnH matches 1 run data modify storage tasks:manifolds numH set value '{"text":"❶","color":"green","clickEvent":{"action":"run_command","value":"/trigger reac.btn.num set 8"}}'
+execute if score @s rnI matches 1 run data modify storage tasks:manifolds numI set value '{"text":"❶","color":"green","clickEvent":{"action":"run_command","value":"/trigger reac.btn.num set 9"}}'
+execute if score @s rnJ matches 1 run data modify storage tasks:manifolds numJ set value '{"text":"❶","color":"green","clickEvent":{"action":"run_command","value":"/trigger reac.btn.num set 10"}}'
