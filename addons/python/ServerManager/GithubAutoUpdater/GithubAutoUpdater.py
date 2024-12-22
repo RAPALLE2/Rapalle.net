@@ -99,13 +99,11 @@ def get_latest_commit_sha():
 
 
 def stop_application():
-    pass
     try:
        Output("Info", f'Stopping the Network')
        # Simulate Alt+F4 to close windows
        #pyautogui.hotkey('alt', 'f4')
        #time.sleep(1)  # Wait for a second
-
        # Simulate typing "stop" and pressing Enter
        pyautogui.typewrite('s')
        time.sleep(1)
@@ -159,9 +157,9 @@ def wait_for_new_commit():
         if new_commit_sha != last_commit_sha:
             Output("Info", 'New commit detected:')
             Output("Commit", f'Commit SHA: {new_commit_sha}')
-            stop_application()
+            #stop_application()
             pull_latest_changes()
-            start_application()
+            #start_application()
             last_commit_sha = new_commit_sha
 
             # Switch to intensive checking
@@ -172,9 +170,9 @@ def wait_for_new_commit():
                 if new_commit_sha != last_commit_sha:
                     Output("Info", 'New commit detected:')
                     Output("Commit", f'Commit SHA: {new_commit_sha}')
-                    stop_application()
+                    #stop_application()
                     pull_latest_changes()
-                    start_application()
+                    #start_application()
                     last_commit_sha = new_commit_sha
                 else:
                     Output("System", 'No new commit yet. Checking again intensively...')
