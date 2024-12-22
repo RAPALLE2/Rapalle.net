@@ -1,3 +1,5 @@
+from addons.python.MysqlHelper.MysqlManager import Clear
+
 try:
     import subprocess
     from datetime import datetime
@@ -181,7 +183,7 @@ def wait_for_new_commit():
             Output("System", f'No new commit yet. Checking again in {formatted_check_interval} minutes...')
 
 if __name__ == "__main__":
-
+    Clear()
     while True:
         try:
             wait_for_new_commit()
