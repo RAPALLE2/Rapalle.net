@@ -8,20 +8,20 @@ Check out our Discord: https://discord.gg/zBmcWdAwsT
 
 ### Information according to § 5 TMG:<br>
 <br>
-Tobias Neudert<br>
-An der Leiten 23<br>
-91795 Obereichstätt<br>
+[//]: # (Tobias Neudert<br>)
+[//]: # (An der Leiten 23<br>)
+[//]: # (91795 Obereichstätt<br>)
 
 ### Contact:<br>
 <br>
-Phone: +49 0162 8738577<br>
-Email: RAPALLE@web.de<br>
+[//]: # (Phone: +49 0162 8738577<br>)
+Email: RAPALLE.net@web.de<br>
 
 #### Responsible for the content according to § 55 Abs. 2 RStV:<br>
 <br>
-Tobias Neudert<br>
-An der Leiten 23<br>
-91795 Obereichstätt<br>
+[//]: # (Tobias Neudert<br>)
+[//]: # (An der Leiten 23<br>)
+[//]: # (91795 Obereichstätt<br>)
 
 #### Liability for Content
 The contents of our pages were created with the greatest care. However, we cannot assume any liability for the correctness, completeness, and up-to-dateness of the contents. As a service provider, we are responsible for our own content on these pages according to § 7 Abs.1 TMG under the general laws. According to §§ 8 to 10 TMG, we are not obligated as a service provider to monitor transmitted or stored external information or to investigate circumstances that indicate illegal activity. Obligations to remove or block the use of information under general laws remain unaffected. However, liability in this regard is only possible from the time of knowledge of a specific infringement. Upon becoming aware of such legal violations, we will remove this content immediately.<br>
