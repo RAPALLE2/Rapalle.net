@@ -13,6 +13,10 @@ git merge origin/main
 git clone https://github.com/RAPALLE2/Rapalle.net.git
 
 
+or quick
+first time: git init && git remote add origin https://github.com/RAPALLE2/Rapalle.net.git && git clone origin
+commit: git add --all && git commit -m "test" && git push -u origin main
+fetch: git fetch && git merge origin/main
 
 
 
