@@ -105,7 +105,6 @@ def get_latest_commit_sha():
 def stop_cloud():
     try:
        Output("Info", f'Stopping the Network')
-       time.sleep(1)
        pyautogui.typewrite('s')
        time.sleep(1)
        pyautogui.typewrite('t')
@@ -115,7 +114,7 @@ def stop_cloud():
        pyautogui.typewrite('p')
        time.sleep(1)
        pyautogui.press('enter')
-       time.sleep(30)
+       time.sleep(20)
        Output("Successfully", 'Network stopped.')
     except Exception as e:
        Output("Error", f'An error occurred while stopping the Network: {e}')
@@ -147,15 +146,14 @@ def start_cloud():
 
 def pull_latest_changes():
     try:
-        subprocess.run(["cmd", "/c", "start C:\\Users\\Rapalle\\Desktop\\RAPALLE.NET\\GithubAutoInstaller\\fetch.bat"], check=True)
-        time.sleep(60)
+        subprocess.run(["cmd", "/c", "start fetch.bat"], check=True)
     except Exception as e:
         Output("Error", f'An error occurred while pulling the latest changes: {e}')
 
 
 def wait_for_new_commit():
-    default_check_interval = 5 #600  # 10 minutes in seconds
-    intensive_check_interval = 5 #60  # 1 minute in seconds
+    default_check_interval = 600  # 10 minutes in seconds
+    intensive_check_interval = 60  # 1 minute in seconds
     intensive_check_duration = 600  # 10 minutes in seconds
 
     while True:
@@ -194,7 +192,7 @@ def wait_for_new_commit():
                         Output("System", 'No new commit yet. Checking again intensively...')
 
             else:
-                Output("System", f'No new commit yet. Checking again in {default_check_interval / 60} minutes...')
+                Output("System", f'No new commit yet. Checking again in 10 minutes...')
 
 if __name__ == "__main__":
     pull_latest_changes()
