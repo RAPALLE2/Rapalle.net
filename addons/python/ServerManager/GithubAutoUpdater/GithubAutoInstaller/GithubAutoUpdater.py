@@ -192,7 +192,7 @@ def wait_for_new_commit():
                         Output("System", 'No new commit yet. Checking again intensively...')
 
             else:
-                Output("System", f'No new commit yet. Checking again in {default_check_interval / 60} minutes...')
+                Output("System", f'No new commit yet. Checking again in 10 minutes...')
 
 if __name__ == "__main__":
     pull_latest_changes()
