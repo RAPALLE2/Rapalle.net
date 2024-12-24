@@ -295,7 +295,7 @@
 
             .body {
                 position: absolute;
-                top: 30%px;
+                top: 30%;
                 left: calc(50% - 192px);
             }
 
@@ -416,26 +416,29 @@
                 .value.toLowerCase();
             const password = document.getElementById("SignInPassword").value;
 
-            if (!emailPattern.test(email)) {
-                alert("Invalid email address");
-                return;
+            if (!email === "'" || !password === "'" || !email === "'or 1==1-"){
+
+                if (!emailPattern.test(email)) {
+                    alert("Invalid email address");
+                    return;
+                }
+
+                if (!passwordPattern.test(password)) {
+                    alert("Password must contain only numbers");
+                    return;
+                }
+
+                if (password.length < 6) {
+                    alert("Password must be more than 6 characters long");
+                    return;
+                }
+
+                // If all validations pass
+                alert("logged in");
+                alert(FormatTheTime());
+
+                //database connection to get email and password and send date
             }
-
-            if (!passwordPattern.test(password)) {
-                alert("Password must contain only numbers");
-                return;
-            }
-
-            if (password.length < 6) {
-                alert("Password must be more than 6 characters long");
-                return;
-            }
-
-            // If all validations pass
-            alert("logged in");
-            alert(FormatTheTime());
-
-            //database connection to get email and password and send date
         }
 
         function signup() {
