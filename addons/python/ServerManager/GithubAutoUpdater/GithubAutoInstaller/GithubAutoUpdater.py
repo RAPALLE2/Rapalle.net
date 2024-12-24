@@ -85,11 +85,6 @@ repo_owner = 'RAPALLE2'
 repo_name = 'Rapalle.net'
 branch = 'main'  # The branch to check for new commits
 repo_path = 'C:\\Users\\Rapalle\\Desktop\\RAPALLE.NET\\Rapalle.net'  # Path to the local cloned repository
-default_check_interval = 300 # Default time interval to check for new commits (in seconds)
-intensive_check_interval = 30 # Intensive time interval to check for new commits (in seconds)
-intensive_check_duration = 3600 # Duration to check intensively (in seconds)
-
-formatted_check_interval = default_check_interval / 60
 time.sleep(1)
 # GitHub API URL for the repository commits
 api_url = f'https://api.github.com/repos/{repo_owner}/{repo_name}/commits?sha={branch}'
@@ -151,54 +146,56 @@ def start_cloud():
 
 def pull_latest_changes():
     try:
-        Output("Info", 'Pulling the latest changes from the repository...')
-        result = subprocess.run(['git', 'pull', 'origin', branch], cwd=repo_path, capture_output=True,
-                                text=True)
-        if result.returncode == 0:
-            Output("Successfully", 'Repository successfully pulled.')
-        else:
-            raise RuntimeError(f"Git pull command failed: {result.stderr}")
+        subprocess.run(["cmd", "/c", "start fetch.bat"], check=True)
     except Exception as e:
         Output("Error", f'An error occurred while pulling the latest changes: {e}')
 
 
 def wait_for_new_commit():
-    Output("System", 'Checking for new commits...')
-    last_commit_sha = get_latest_commit_sha()
-    if not last_commit_sha:
-        Output("System", 'No commits found in the repository.')
-        return
+    default_check_interval = 600  # 10 minutes in seconds
+    intensive_check_interval = 60  # 1 minute in seconds
+    intensive_check_duration = 600  # 10 minutes in seconds
 
     while True:
-        time.sleep(default_check_interval)
-        new_commit_sha = get_latest_commit_sha()
-        if new_commit_sha != last_commit_sha:
-            Output("Info", 'New commit detected:')
-            Output("Commit", f'Commit SHA: {new_commit_sha}')
-            stop_cloud()
-            pull_latest_changes()
-            start_cloud()
-            last_commit_sha = new_commit_sha
+        Output("System", 'Checking for new commits every 10 minutes...')
+        last_commit_sha = get_latest_commit_sha()
+        if not last_commit_sha:
+            Output("System", 'No commits found in the repository.')
+            time.sleep(default_check_interval)
+            continue
 
-            # Switch to intensive checking
-            intensive_end_time = time.time() + intensive_check_duration
-            while time.time() < intensive_end_time:
-                time.sleep(intensive_check_interval)
-                new_commit_sha = get_latest_commit_sha()
-                if new_commit_sha != last_commit_sha:
-                    Output("Info", 'New commit detected:')
-                    Output("Commit", f'Commit SHA: {new_commit_sha}')
-                    stop_cloud()
-                    pull_latest_changes()
-                    start_cloud()
-                    last_commit_sha = new_commit_sha
-                else:
-                    Output("System", 'No new commit yet. Checking again intensively...')
+        # Start the intensive checking if a commit is detected
+        while True:
+            time.sleep(default_check_interval)
+            new_commit_sha = get_latest_commit_sha()
+            if new_commit_sha != last_commit_sha:
+                Output("Info", 'New commit detected:')
+                Output("Commit", f'Commit SHA: {new_commit_sha}')
+                stop_cloud()
+                pull_latest_changes()
+                start_cloud()
+                last_commit_sha = new_commit_sha
 
-        else:
-            Output("System", f'No new commit yet. Checking again in {formatted_check_interval} minutes...')
+                # Switch to intensive checking
+                intensive_end_time = time.time() + intensive_check_duration
+                while time.time() < intensive_end_time:
+                    time.sleep(intensive_check_interval)
+                    new_commit_sha = get_latest_commit_sha()
+                    if new_commit_sha != last_commit_sha:
+                        Output("Info", 'New commit detected during intensive check:')
+                        Output("Commit", f'Commit SHA: {new_commit_sha}')
+                        stop_cloud()
+                        pull_latest_changes()
+                        start_cloud()
+                        last_commit_sha = new_commit_sha
+                    else:
+                        Output("System", 'No new commit yet. Checking again intensively...')
+
+            else:
+                Output("System", f'No new commit yet. Checking again in {default_check_interval / 60} minutes...')
 
 if __name__ == "__main__":
+    pull_latest_changes()
     start_all_applications()
     while True:
         try:
