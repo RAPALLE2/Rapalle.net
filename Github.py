@@ -52,7 +52,7 @@ def ask():
                     current = 1
                 else:
                     current += 1
-            elif event.name == 'enter':
+            elif event.name == 'nach-rechts':
                 return current
         Clear()
         Headder()
@@ -127,6 +127,7 @@ Headder()
 if __name__ == "__main__":
 
     selected = ask()
+    time.sleep(5)
 
     repo = "https://github.com/RAPALLE2/Rapalle.net.git"
     branch = "main"
