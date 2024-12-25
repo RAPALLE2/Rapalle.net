@@ -135,7 +135,7 @@ if __name__ == "__main__":
             if selected == 1:
                 time.sleep(1)
                 Message = input(f"Enter commit message {Fore.LIGHTBLACK_EX}»{Style.RESET_ALL} ")
-
+                time.sleep(1)
                 Commit = f'git init && git add --all && git commit -m "{Message}" && git push -u {repo} {branch}'
                 subprocess.run(['cmd.exe', '/k', Commit])
 
