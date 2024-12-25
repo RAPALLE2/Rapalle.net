@@ -130,6 +130,7 @@ if __name__ == "__main__":
     branch = "main"
 
     while True:
+        Message = input("Enter commit message: ")
         try:
             selected = ask()
             if selected == 1:
