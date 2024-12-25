@@ -1,6 +1,7 @@
 try:
     import subprocess
     from datetime import datetime
+    import datetime
     import time
     import logging
     import traceback
@@ -84,12 +85,7 @@ print()
 repo_owner = 'RAPALLE2'
 repo_name = 'Rapalle.net'
 branch = 'main'  # The branch to check for new commits
-repo_path = 'L:\\Rapalle.net'  # Path to the local cloned repository
-default_check_interval = 600 # Default time interval to check for new commits (in seconds)
-intensive_check_interval = 60 # Intensive time interval to check for new commits (in seconds)
-intensive_check_duration = 3600 # Duration to check intensively (in seconds)
-
-formatted_check_interval = default_check_interval / 60
+repo_path = 'C:\\Users\\Rapalle\\Desktop\\RAPALLE.NET\\Rapalle.net'  # Path to the local cloned repository
 time.sleep(1)
 # GitHub API URL for the repository commits
 api_url = f'https://api.github.com/repos/{repo_owner}/{repo_name}/commits?sha={branch}'
@@ -110,6 +106,7 @@ def get_latest_commit_sha():
 def stop_cloud():
     try:
        Output("Info", f'Stopping the Network')
+       time.sleep(1)
        pyautogui.typewrite('s')
        time.sleep(1)
        pyautogui.typewrite('t')
@@ -119,7 +116,7 @@ def stop_cloud():
        pyautogui.typewrite('p')
        time.sleep(1)
        pyautogui.press('enter')
-       time.sleep(1)
+       time.sleep(30)
        Output("Successfully", 'Network stopped.')
     except Exception as e:
        Output("Error", f'An error occurred while stopping the Network: {e}')
@@ -129,11 +126,12 @@ def start_all_applications():
     try:
        Output("Info", f'Starting the Network')
        os.chdir(repo_path)
-       bat_file_path = os.path.join(repo_path + "\\scripts\\StartScripts\\StartScriptsAutoUpdater", "start_all.bat")
+       bat_file_path = os.path.join("C:\\Users\\Rapalle\\Desktop\\RAPALLE.NET\\GithubAutoInstaller", "start_all.bat")
        subprocess.run(['cmd', '/c', bat_file_path], check=True)
        Output("Successfully", "Started Playit")
        Output("Successfully", "Started Http-Web-Server")
-       Output("Successfully", "Started Cloud")
+       time.sleep(2)
+       start_cloud()
        Output("Successfully", 'Network started.')
     except Exception as e:
        Output("Error", f'An error occurred while starting the Network: {e}')
@@ -142,7 +140,7 @@ def start_cloud():
     try:
        Output("Info", f'Starting the Cloud')
        os.chdir(repo_path)
-       bat_file_path = os.path.join(repo_path + "\\scripts\\StartScripts\\StartScriptsAutoUpdater", "start_cloud.bat")
+       bat_file_path = os.path.join("C:\\Users\\Rapalle\\Desktop\\RAPALLE.NET\\GithubAutoInstaller", "start_cloud.bat")
        subprocess.run(['cmd', '/c', bat_file_path], check=True)
        Output("Successfully", 'Cloud started.')
     except Exception as e:
@@ -150,54 +148,67 @@ def start_cloud():
 
 def pull_latest_changes():
     try:
-        Output("Info", 'Pulling the latest changes from the repository...')
-        result = subprocess.run(['git', 'pull', 'origin', branch], cwd=repo_path, capture_output=True,
-                                text=True)
-        if result.returncode == 0:
-            Output("Successfully", 'Repository successfully pulled.')
-        else:
-            raise RuntimeError(f"Git pull command failed: {result.stderr}")
+        subprocess.run(["cmd", "/c", "start C:\\Users\\Rapalle\\Desktop\\RAPALLE.NET\\GithubAutoInstaller\\fetch.bat"], check=True)
+        time.sleep(60)
     except Exception as e:
         Output("Error", f'An error occurred while pulling the latest changes: {e}')
 
 
 def wait_for_new_commit():
-    Output("System", 'Checking for new commits...')
-    last_commit_sha = get_latest_commit_sha()
-    if not last_commit_sha:
-        Output("System", 'No commits found in the repository.')
-        return
+    default_check_interval = 60  # 60 minutes in seconds
+    intensive_check_interval = 60  # 1 minute in seconds
+    intensive_check_duration = 600  # 10 minutes in seconds
 
     while True:
-        time.sleep(default_check_interval)
-        new_commit_sha = get_latest_commit_sha()
-        if new_commit_sha != last_commit_sha:
-            Output("Info", 'New commit detected:')
-            Output("Commit", f'Commit SHA: {new_commit_sha}')
-            stop_cloud()
-            pull_latest_changes()
-            start_cloud()
-            last_commit_sha = new_commit_sha
+        now = datetime.datetime.now()
+        current_hour = now.hour
+        current_weekday = now.weekday()  # Monday is 0 and Sunday is 6
 
-            # Switch to intensive checking
-            intensive_end_time = time.time() + intensive_check_duration
-            while time.time() < intensive_end_time:
-                time.sleep(intensive_check_interval)
-                new_commit_sha = get_latest_commit_sha()
-                if new_commit_sha != last_commit_sha:
-                    Output("Info", 'New commit detected:')
-                    Output("Commit", f'Commit SHA: {new_commit_sha}')
-                    stop_cloud()
-                    pull_latest_changes()
-                    start_cloud()
-                    last_commit_sha = new_commit_sha
-                else:
-                    Output("System", 'No new commit yet. Checking again intensively...')
-
+        # Determine if we are in the special scanning times
+        if (3 <= current_hour < 6) or (8 <= current_hour < 13 and current_weekday < 5):
+            check_interval = default_check_interval  # 60 minutes
         else:
-            Output("System", f'No new commit yet. Checking again in {formatted_check_interval} minutes...')
+            check_interval = 600  # 10 minutes in seconds
+
+        Output("System", f'Checking for new commits every {check_interval / 60} minutes...')
+        last_commit_sha = get_latest_commit_sha()
+        if not last_commit_sha:
+            Output("System", 'No commits found in the repository.')
+            time.sleep(check_interval)
+            continue
+
+        # Start the intensive checking if a commit is detected
+        while True:
+            time.sleep(check_interval)
+            new_commit_sha = get_latest_commit_sha()
+            if new_commit_sha != last_commit_sha:
+                Output("Info", 'New commit detected:')
+                Output("Commit", f'Commit SHA: {new_commit_sha}')
+                stop_cloud()
+                pull_latest_changes()
+                start_cloud()
+                last_commit_sha = new_commit_sha
+
+                # Switch to intensive checking
+                intensive_end_time = time.time() + intensive_check_duration
+                while time.time() < intensive_end_time:
+                    time.sleep(intensive_check_interval)
+                    new_commit_sha = get_latest_commit_sha()
+                    if new_commit_sha != last_commit_sha:
+                        Output("Info", 'New commit detected during intensive check:')
+                        Output("Commit", f'Commit SHA: {new_commit_sha}')
+                        stop_cloud()
+                        pull_latest_changes()
+                        start_cloud()
+                        last_commit_sha = new_commit_sha
+                    else:
+                        Output("System", 'No new commit yet. Checking again intensively...')
+
+            else:
+                Output("System", f'No new commit yet. Checking again in {check_interval / 60} minutes...')
 
 if __name__ == "__main__":
+    pull_latest_changes()
     start_all_applications()
     while True:
         try:
