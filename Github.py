@@ -147,6 +147,9 @@ if __name__ == "__main__":
     repo = "https://github.com/RAPALLE2/Rapalle.net.git"
     branch = "main"
 
+    subprocess.run(['cmd.exe', '/c', "git init"])
+    time.sleep(2)
+
     while True:
         try:
             selected = ask()
@@ -154,21 +157,21 @@ if __name__ == "__main__":
             if selected == 1:
                 Message = input(f"Enter commit message {Fore.LIGHTBLACK_EX}»{Style.RESET_ALL} ")
                 print()
-                Commit = f'git init && git add --all && git commit -m "{Message}" && git push -u {repo} {branch}'
+                Commit = f'git add --all && git commit -m "{Message}" && git push -u {repo} {branch}'
                 subprocess.run(['cmd.exe', '/c', Commit])
                 print()
                 Output("Successfully", "Successfully commited the changes")
 
 
             elif selected == 2:
-                Fetch = f'git init && git fetch && git merge {repo} {branch}'
+                Fetch = f'git fetch && git merge {repo} {branch}'
                 subprocess.run(['cmd.exe', '/c', Fetch])
                 print()
                 Output("Successfully", "Successfully fetched the changes")
 
 
             elif selected == 3:
-                Clone = f'git init && git clone {repo}'
+                Clone = f'git clone {repo}'
                 subprocess.run(['cmd.exe', '/c', Clone])
                 print()
                 Output("Successfully", "Successfully cloned the repository")
