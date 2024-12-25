@@ -127,27 +127,31 @@ Headder()
 if __name__ == "__main__":
     repo = "https://github.com/RAPALLE2/Rapalle.net.git"
     branch = "main"
-    while True:
-        try:
-            selected = ask()
-            if selected == 1:
-                #Commit
-                Message = input("Enter commit meassag: ")
-                Commit = '''git add --all && git commit -m  "''' + Message + '''" && git push -u ''' + repo + branch
-                subprocess.run(['start', 'cmd', '/c', Commit],shell=True)
-            elif selected == 2:
-                #Fetch
-                Fetch = "git fetch && git merge " + repo + "/" + branch
-                subprocess.run(['start', 'cmd', '/c', Fetch],shell=True)
-            elif selected == 3:
-                #Clone
-                Clone = "git init && git clone " + repo
-                subprocess.run(['start', 'cmd', '/c', Clone],shell=True)
-        except Exception as e:
-            Output("Error", f"An error occurred: {e}")
-            time.sleep(0.1)
-            traceback.print_exc()
-            time.sleep(0.1)
-            Output("System", "Continue program")
-            time.sleep(3)
-            Headder()
+    Message = input("Enter commit meassag: ")
+    Commit = '''git add --all && git commit -m "''' + Message + '''" && git push -u ''' + repo + " " + branch
+    print(Commit)
+    subprocess.run(['start', 'cmd', 'c', Commit],shell=True)
+#    while True:
+#        try:
+#            selected = ask()
+#            if selected == 1:
+#                #Commit
+#                Message = input("Enter commit meassag: ")
+#                Commit = '''git add --all && git commit -m  "''' + Message + '''" && git push -u ''' + repo + branch
+#                subprocess.run(['start', 'cmd', 'c', Commit],shell=True)
+#            elif selected == 2:
+#                #Fetch
+#                Fetch = "git fetch && git merge " + repo + "/" + branch
+#                subprocess.run(['start', 'cmd', 'c', Fetch],shell=True)
+#            elif selected == 3:
+#                #Clone
+#                Clone = "git init && git clone " + repo
+#                subprocess.run(['start', 'cmd', '/c', Clone],shell=True)
+#        except Exception as e:
+#            Output("Error", f"An error occurred: {e}")
+#            time.sleep(0.1)
+#            traceback.print_exc()
+#            time.sleep(0.1)
+#            Output("System", "Continue program")
+#            time.sleep(3)
+#            Headder()
