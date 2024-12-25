@@ -1,6 +1,7 @@
 try:
     import subprocess
     from datetime import datetime
+    import datetime
     import time
     import logging
     import traceback
@@ -154,21 +155,31 @@ def pull_latest_changes():
 
 
 def wait_for_new_commit():
-    default_check_interval = 5 #600  # 10 minutes in seconds
-    intensive_check_interval = 5 #60  # 1 minute in seconds
+    default_check_interval = 60  # 60 minutes in seconds
+    intensive_check_interval = 60  # 1 minute in seconds
     intensive_check_duration = 600  # 10 minutes in seconds
 
     while True:
-        Output("System", 'Checking for new commits every 10 minutes...')
+        now = datetime.datetime.now()
+        current_hour = now.hour
+        current_weekday = now.weekday()  # Monday is 0 and Sunday is 6
+
+        # Determine if we are in the special scanning times
+        if (3 <= current_hour < 6) or (8 <= current_hour < 13 and current_weekday < 5):
+            check_interval = default_check_interval  # 60 minutes
+        else:
+            check_interval = 600  # 10 minutes in seconds
+
+        Output("System", f'Checking for new commits every {check_interval / 60} minutes...')
         last_commit_sha = get_latest_commit_sha()
         if not last_commit_sha:
             Output("System", 'No commits found in the repository.')
-            time.sleep(default_check_interval)
+            time.sleep(check_interval)
             continue
 
         # Start the intensive checking if a commit is detected
         while True:
-            time.sleep(default_check_interval)
+            time.sleep(check_interval)
             new_commit_sha = get_latest_commit_sha()
             if new_commit_sha != last_commit_sha:
                 Output("Info", 'New commit detected:')
@@ -194,7 +205,7 @@ def wait_for_new_commit():
                         Output("System", 'No new commit yet. Checking again intensively...')
 
             else:
-                Output("System", f'No new commit yet. Checking again in {default_check_interval / 60} minutes...')
+                Output("System", f'No new commit yet. Checking again in {check_interval / 60} minutes...')
 
 if __name__ == "__main__":
     pull_latest_changes()
