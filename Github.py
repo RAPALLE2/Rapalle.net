@@ -135,17 +135,17 @@ if __name__ == "__main__":
             if selected == 1:
                 Message = input(f"Enter commit message {Fore.LIGHTBLACK_EX}»{Style.RESET_ALL} ")
                 Commit = f'git init && git add --all && git commit -m "{Message}" && git push -u {repo} {branch}'
-                subprocess.run(['cmd.exe', '/k', Commit])
+                subprocess.run(['cmd.exe', '/c', Commit])
 
 
             elif selected == 2:
                 Fetch = f'git init && git fetch && git merge {repo} {branch}'
-                subprocess.run(['cmd.exe', '/k', Fetch])
+                subprocess.run(['cmd.exe', '/c', Fetch])
 
 
             elif selected == 3:
                 Clone = f'git init && git clone {repo}'
-                subprocess.run(['cmd.exe', '/k', Clone])
+                subprocess.run(['cmd.exe', '/c', Clone])
 
 
         except Exception as e:
