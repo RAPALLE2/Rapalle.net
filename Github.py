@@ -113,7 +113,7 @@ def Headder():
     Output("Info", "      |    /|  _  ||  __/|  _  || |    | |    |  __| | . ` ||  __|  | |")
     Output("Info", "      | |\\ \\| | | || |   | | | || |____| |____| |____| |\\  || |___  | |")
     Output("Info", "      \\_| \\_\\_| |_/\\_|   \\_| |_/\\_____/\\_____/\\____(_)_| \\_/\\____/  \\_/")
-    Output("Info", "      Made by Rapalle      Automatic Software Install And Download Manager")
+    Output("Info", "      Made by Rapalle                                    Github Manager")
     print()
     Output("System", "Running version " + Fore.LIGHTBLACK_EX + Version)
     print()
