@@ -133,20 +133,21 @@ if __name__ == "__main__":
         try:
             selected = ask()
             if selected == 1:
+                time.sleep(1)
                 Message = input(f"Enter commit message {Fore.LIGHTBLACK_EX}»{Style.RESET_ALL} ")
-                event = keyboard.read_event()
-                if event.name == 'enter':
-                    
-                    Commit = f'git init && git add --all && git commit -m "{Message}" && git push -u {repo} {branch}'
-                    subprocess.run(['cmd.exe', '/k', Commit])
+
+                Commit = f'git init && git add --all && git commit -m "{Message}" && git push -u {repo} {branch}'
+                subprocess.run(['cmd.exe', '/k', Commit])
 
 
             elif selected == 2:
+                time.sleep(1)
                 Fetch = f'git init && git fetch && git merge {repo} {branch}'
                 subprocess.run(['cmd.exe', '/k', Fetch])
 
 
             elif selected == 3:
+                time.sleep(1)
                 Clone = f'git init && git clone {repo}'
                 subprocess.run(['cmd.exe', '/k', Clone])
 
