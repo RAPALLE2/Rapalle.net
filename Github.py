@@ -32,6 +32,24 @@ init(autoreset=True)
 
 Version = "1.0.0 Alpha Pre-release"
 
+
+def CreateStartScript():
+    if platform.system() == "Windows":
+        FileName = 'start.bat'
+        if os.path.exists(FileName):
+            pass
+        else:
+            with open(FileName, 'w') as file:
+                file.write('python Github.py')
+    else:
+        FileName = 'start.sh'
+        if os.path.exists(FileName):
+            pass
+        else:
+            with open(FileName, 'w') as file:
+                file.write('python Github.py')
+
+
 def ask():
     current = 1
     Output("Info", "Select option")
