@@ -126,14 +126,12 @@ Headder()
 
 if __name__ == "__main__":
 
-    selected = ask()
-    time.sleep(5)
-
     repo = "https://github.com/RAPALLE2/Rapalle.net.git"
     branch = "main"
 
     while True:
         try:
+            selected = ask()
             if selected == 1:
                 Message = input(f"Enter commit message {Fore.LIGHTBLACK_EX}»{Style.RESET_ALL} ")
                 Commit = f'git init && git add --all && git commit -m "{Message}" && git push -u {repo} {branch}'
