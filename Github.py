@@ -125,12 +125,15 @@ Clear()
 Headder()
 
 if __name__ == "__main__":
+
     repo = "https://github.com/RAPALLE2/Rapalle.net.git"
     branch = "main"
-    Message = input("Enter commit meassag: ")
-    Commit = '''git add --all && git commit -m "''' + Message + '''" && git push -u ''' + repo + " " + branch
-    print(Commit)
-    subprocess.run(['start', 'cmd', 'c', Commit],shell=True)
+
+    message = input("Enter commit message: ")
+    commit_command = f'git add --all && git commit -m "{message}" && git push -u {repo} {branch}'
+    print("Running command:", commit_command)
+    subprocess.run(['cmd.exe', '/k', commit_command])
+
 #    while True:
 #        try:
 #            selected = ask()
