@@ -138,7 +138,7 @@ def Headder():
     print()
     print()
 
-
+CreateStartScript()
 Clear()
 Headder()
 
