@@ -130,13 +130,15 @@ if __name__ == "__main__":
     branch = "main"
 
     while True:
-        Message = input("Enter commit message: ")
         try:
             selected = ask()
             if selected == 1:
-                Message = input("Enter commit message: ")
-                Commit = f'git init && git add --all && git commit -m "{Message}" && git push -u {repo} {branch}'
-                subprocess.run(['cmd.exe', '/k', Commit])
+                Message = input(f"Enter commit message {Fore.LIGHTBLACK_EX}»{Style.RESET_ALL} ")
+                event = keyboard.read_event()
+                if event.name == 'enter':
+                    
+                    Commit = f'git init && git add --all && git commit -m "{Message}" && git push -u {repo} {branch}'
+                    subprocess.run(['cmd.exe', '/k', Commit])
 
 
             elif selected == 2:
