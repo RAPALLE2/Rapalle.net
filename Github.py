@@ -35,7 +35,7 @@ Version = "1.0.0 Alpha Pre-release"
 
 def CreateStartScript():
     if platform.system() == "Windows":
-        FileName = 'start.bat'
+        FileName = 'Github.bat'
         if os.path.exists(FileName):
             pass
         else:
