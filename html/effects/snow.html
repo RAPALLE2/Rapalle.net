@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winter Wonderland</title>
+    <link rel="icon" href="img_folder/icons/icon1.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css-data/ultimate.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            background-color: #000000;
+            display: flex;
+            position: relative;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .snowflake {
+            position: absolute;
+            top: -10vh;
+            background-color: white;
+            border-radius: 50%;
+            aspect-ratio: 1;
+            animation: fall linear infinite;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateY(110vh);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        const snowflakeArea = document.body;
+
+        const getRandomX = () => `${Math.random() * 100}vw`;
+        const getRandomSize = () => `${Math.random() * 3 + 1}px`;
+        const getRandomDelay = () => `${Math.random() * 5}s`;
+
+        for (let i = 0; i < 800; i++) {
+            const snowflake = document.createElement("div");
+            snowflake.classList.add("snowflake");
+            const randomX = getRandomX();
+            const randomSize = getRandomSize();
+            const animationDelay = getRandomDelay();
+            const animationDuration = Math.random() * 5 + 3 + 's';
+
+            snowflake.style.left = randomX;
+            snowflake.style.width = randomSize;
+            snowflake.style.height = randomSize;
+            snowflake.style.animationDelay = animationDelay;
+            snowflake.style.animationDuration = animationDuration;
+
+            snowflakeArea.appendChild(snowflake);
+        }
+    </script>
+</body>
+
+</html>

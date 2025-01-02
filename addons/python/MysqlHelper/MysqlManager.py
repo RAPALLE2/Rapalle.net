@@ -43,9 +43,9 @@ while True:
         print(
             "Error | Could not import all required librarys, installing all required librarys, please dont touch the new opend cmd")
         subprocess.run(
-            ['start', 'cmd', '/c', 'pip install colorama pyperclip python-dotenv'], # + --> " mysql-connector-python keyboard"
+            ['start', 'cmd', '/k', 'pip install colorama pyperclip python-dotenv'], # + --> " mysql-connector-python keyboard"
             shell=True)
-        time.sleep(10)
+        time.sleep(40)
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
@@ -459,9 +459,8 @@ def ExecuteAtStart():
     Headder()
 
 
-ExecuteAtStart()
-
 if __name__ == "__main__":
+    ExecuteAtStart()
     Stop = ["stop", "exit", "shutdown", "close", "s", "down", "close", "shut", "e"]
     while True:
         try:

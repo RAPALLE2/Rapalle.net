@@ -3160,3 +3160,27 @@ Spectator Name: RAPALLE
 Taken         : []
 Given         : [PINK_SHULKER_BOX & TILE_ENTITY_META:{meta-type=TILE_ENTITY, display-name="Movement", internal=H4sIAAAAAAAA/6XUQW7CMBAF0CkJFFJKKJRSUK/ABVhxk8g4A1gktjUYRe3pa1Z2Flkw2c2X/lv+yQAyWB8rI6871E653500tTXah9sElrXSKEmc3F4a7YRPlAHANoH0VhnnT+9T5bAew0CVMTjftTVNiZTAUJq7fpQPAEG+sOWALRO2TNlyyJYjtnxlyzFbTloyD9IK260ylnpjqSlLvbPUjKVylpqz1AdLLVpqE9RJETaGrgX5Z4Kuyy97+lXLfwZ/JMQ/9LqM6CimXy26CrRRuizkRdAZI/sT23WXRe0nUVgUVEV2HtvvHnbTw26ftgD/WsFVLBEGAAA=, blockMaterial=PINK_SHULKER_BOX} x 1]
 Target        : RAPALLE
+[2025-01-01 23:24:54] [INFORMATION]:
+Spectator UUID: d0a66567-dc4d-410a-9f31-1debb1ff51ad
+Spectator Name: RAPALLE
+Taken         : [ELYTRA & UNSPECIFIC_META:{meta-type=UNSPECIFIC, enchants={minecraft:mending=1, minecraft:unbreaking=3}, repair-cost=3, Damage=63} x 1]
+Given         : []
+Target        : netzguru0815
+[2025-01-01 23:25:07] [INFORMATION]:
+Spectator UUID: d0a66567-dc4d-410a-9f31-1debb1ff51ad
+Spectator Name: RAPALLE
+Taken         : []
+Given         : [ELYTRA & UNSPECIFIC_META:{meta-type=UNSPECIFIC, enchants={minecraft:mending=1, minecraft:unbreaking=3}, repair-cost=3, Damage=63} x 1]
+Target        : Lykron
+[2025-01-02 01:00:48] [INFORMATION]:
+Spectator UUID: d0a66567-dc4d-410a-9f31-1debb1ff51ad
+Spectator Name: RAPALLE
+Taken         : []
+Given         : [LIGHT_GRAY_SHULKER_BOX & TILE_ENTITY_META:{meta-type=TILE_ENTITY, display-name="Building", internal=H4sIAAAAAAAA/6XU7U7DIBQG4LN1063afdePi9gN+Ms7aWjBSUahATrj3cuMhnM0mKwm/VESnpzDe2hzgBzua2Wa415oL/37vjFtZ3RYuDlsW6lFY9mLf2qM9iysbA4AZQYTp4wPr8FPpBftDMaSwy4Cw46VEuwkXAbTxvT6vDs7P990ROgiUi6tR+gZo/EQlBG0jOjtVTCsCqymRJVROSVbUX2mhuwI26tURedDuKk+r4lC6XOmuVDSaCTHWM5S9TrWCZtSc6LufnRZ1b33pCQZX07wQ8RW8C//V0I3hK/RWa3paM+k7C1xRXRtz1O1CmJW6Jxh/tal2CIV6kExl1TL1LU52KB+hUIuwGrQtVkP+SY2/2hze5l9xHZH7Ab9MGon7IkMnuRaXjJEgA+Cjtzs2wQAAA==, blockMaterial=LIGHT_GRAY_SHULKER_BOX} x 1, RED_SHULKER_BOX & TILE_ENTITY_META:{meta-type=TILE_ENTITY, display-name="Redstone", internal=H4sIAAAAAAAA/53US1PCMBAA4AjlVRV5F2X8A45cPHLyn3TSNECGtKlpKoO/3pRxprvCevCSaRm+2c0+GjIWsijRRhzWMnfKndbCZIXJ/Us5YNNM5VJYvnUbYXLH/ZsNGWOrNgtKbZx/9D5QTmZ91lIpmzTAykJyJ22bdYSp8vq/r4w18AbBeQNLrTIZn3MCNoS2RVlhkkTL0vkLAPsObRvZRWMLc5RWprHlSgMcQBxQgfc+4uki6SG0HbpS6e+MNxB2qaCpTKpdXDqFgvrChk0TQ7a6Cvzpu9NnESh8/fspLlSdDetuuVD5rm5xk0oPpbK8vEPsjBV7kE0f8j7i0RWueVZQdRhQBTw/cetgESAMERw10HG7k5D1ILulJuVYz3WcVOIgyZh3VMy9KQq0FSjmPWKzi63gGs5mG9IhomOwFPWJQqJMH/5b1hGCQ9BNvEEvEI0RQh8YP7IlzvMZygnVjoRniTEXyzeHeEpN3g8uNM8PJdAtqGfU2J9PvyWx4/67Q/E5VWGTlNJ+oit3IVxQ06CsyWMf18DmvEEaUbSuM7fc7ymgA0iXVLqCVzr1kal7PlIz//eqPFHso/LT9wXYpP4afQPbXkxKtAYAAA==, blockMaterial=RED_SHULKER_BOX} x 1, CRAFTING_TABLE x 1]
+Target        : RAPALLE
+[2025-01-02 01:02:24] [INFORMATION]:
+Spectator UUID: d0a66567-dc4d-410a-9f31-1debb1ff51ad
+Spectator Name: RAPALLE
+Taken         : [ANCIENT_DEBRIS x 25]
+Given         : []
+Target        : Lykron
