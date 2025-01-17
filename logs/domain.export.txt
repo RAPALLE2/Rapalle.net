@@ -1,0 +1,56 @@
+;;
+;; Domain:     rapalle.net.
+;; Exported:   2025-01-17 14:56:29
+;;
+;; This file is intended for use for informational and archival
+;; purposes ONLY and MUST be edited before use on a production
+;; DNS server.  In particular, you must:
+;;   -- update the SOA record with the correct authoritative name server
+;;   -- update the SOA record with the contact e-mail address information
+;;   -- update the NS record(s) with the authoritative name servers for this domain.
+;;
+;; For further information, please consult the BIND documentation
+;; located on the following website:
+;;
+;; http://www.isc.org/
+;;
+;; And RFC 1035:
+;;
+;; http://www.ietf.org/rfc/rfc1035.txt
+;;
+;; Please note that we do NOT offer technical support for any use
+;; of this zone data, the BIND name server, or any other third-party
+;; DNS software.
+;;
+;; Use at your own risk.
+;; SOA Record
+rapalle.net	3600	IN	SOA	leonidas.ns.cloudflare.com. dns.cloudflare.com. 2048879238 10000 2400 604800 3600
+
+;; NS Records
+rapalle.net.	86400	IN	NS	leonidas.ns.cloudflare.com.
+rapalle.net.	86400	IN	NS	teagan.ns.cloudflare.com.
+
+;; A Records
+bedrock.rapalle.net.	120	IN	A	147.185.221.24 ; r cf_tags=cf-proxied:false
+java.rapalle.net.	120	IN	A	147.185.221.24 ; r cf_tags=cf-proxied:false
+rapalle.net.	120	IN	A	147.185.221.24 ; r cf_tags=cf-proxied:false
+
+;; CNAME Records
+www.rapalle.net.	120	IN	CNAME	rapalle.net. ; cf_tags=cf-proxied:false
+
+;; MX Records
+rapalle.net.	1	IN	MX	81 route3.mx.cloudflare.net.
+rapalle.net.	1	IN	MX	42 route2.mx.cloudflare.net.
+rapalle.net.	1	IN	MX	2 route1.mx.cloudflare.net.
+support.rapalle.net.	1	IN	MX	81 route3.mx.cloudflare.net.
+support.rapalle.net.	1	IN	MX	42 route2.mx.cloudflare.net.
+support.rapalle.net.	1	IN	MX	2 route1.mx.cloudflare.net.
+
+;; SRV Records
+_minecraft._tcp.be.rapalle.net.	1	IN	SRV	10 5 2665 bedrock.rapalle.net. ; r
+_minecraft._tcp.play.rapalle.net.	120	IN	SRV	0 0 44275 java.rapalle.net. ; r
+_minecraft._tcp.rapalle.net.	120	IN	SRV	10 5 44275 java.rapalle.net. ; r
+
+;; TXT Records
+rapalle.net.	1	IN	TXT	"v=spf1 include:_spf.mx.cloudflare.net ~all"
+support.rapalle.net.	1	IN	TXT	"v=spf1 include:_spf.mx.cloudflare.net ~all"
