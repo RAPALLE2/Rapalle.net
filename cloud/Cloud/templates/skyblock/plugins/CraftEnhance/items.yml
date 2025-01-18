@@ -1,0 +1,9 @@
+COBBLESTONE:
+  ==: org.bukkit.inventory.ItemStack
+  v: 3700
+  type: COBBLESTONE
+  amount: 64
+COBBLESTONE1:
+  ==: org.bukkit.inventory.ItemStack
+  v: 3700
+  type: COBBLESTONE

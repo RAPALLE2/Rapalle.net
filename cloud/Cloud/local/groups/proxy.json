@@ -1,0 +1,22 @@
+{
+  "name": "proxy",
+  "platform": {
+    "platform": "velocity",
+    "version": "3.3.0-SNAPSHOT",
+    "type": "PROXY"
+  },
+  "templates": [
+    "every",
+    "every_proxy",
+    "proxy"
+  ],
+  "nodes": [
+    "node-Fwkv"
+  ],
+  "maxMemory": 512,
+  "maxPlayers": 100,
+  "staticService": true,
+  "minOnlineServerInstances": 1,
+  "maxOnlineServerInstances": 1,
+  "properties": {}
+}

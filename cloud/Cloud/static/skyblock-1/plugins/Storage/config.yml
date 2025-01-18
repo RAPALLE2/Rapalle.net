@@ -1,0 +1,121 @@
+# Do not touch it
+config_version: 1
+
+# Send a notification to console when a new version is available
+check_update: true
+
+# Prefix for every message from plugin
+prefix: '&7[&fStorage&7]'
+
+settings:
+  # Default max storage for all item
+  default_max_storage: 1000
+  # Default auto pickup on first join
+  default_auto_pickup: true
+
+# Sell command | I don't want to require Vault as an economy so use command to give balance when sell
+sell:
+- 'eco give #player# #money#'
+
+# Number format of worth
+number_format: '#.##'
+
+# Prevent re-place and re-break block to get more item
+prevent_rebreak: false
+
+# Fortune enchantment can apply for list block(s) below here
+whitelist_fortune:
+- COAL_ORE
+- IRON_ORE
+- GOLD_ORE
+- REDSTONE_ORE
+- LAPIS_ORE
+- DIAMOND_ORE
+- EMERALD_ORE
+
+# Worth of per item
+worth:
+  COBBLESTONE;0: 1
+  COAL;0: 2
+  COAL_BLOCK;0: 18
+  IRON_INGOT;0: 3
+  IRON_BLOCK;0: 27
+  GOLD_INGOT;0: 4
+  GOLD_BLOCK;0: 36
+  REDSTONE;0: 5
+  REDSTONE_BLOCK;0: 45
+  LAPIS_LAZULI;0: 6
+  LAPIS_BLOCK;0: 54
+  DIAMOND;0: 7
+  DIAMOND_BLOCK;0: 43
+  EMERALD;0: 8
+  EMERALD_BLOCK;0: 72
+
+# Player can storage list blocks below here
+blocks:
+  # MUST REMEMBER: DON'T CONFIG 2 SAME MATERIAL_1 BELOW THIS!
+  # MATERIAL_1;DATA_NUMBER:
+  # drop: MATERIAL_2;DATA_NUMBER
+  # For 1.12.2 and below, MATERIAL;0 | 0 -> item data
+  # For example, If you want LAPIS_LAZULI for 1.12.2 and below -> INK_SACK;4
+  # If you want diamond for all versions -> DIAMOND;0
+  # Don't remove ;0 if you don't want to make a new issue!
+  COBBLESTONE;0:
+    drop: COBBLESTONE;0
+  STONE;0:
+    drop: COBBLESTONE;0
+  COAL_ORE;0:
+    drop: COAL;0
+  COAL_BLOCK;0:
+    drop: COAL_BLOCK;0
+  IRON_ORE;0:
+    drop: IRON_INGOT;0
+  IRON_BLOCK;0:
+    drop: IRON_BLOCK;0
+  GOLD_ORE;0:
+    drop: GOLD_INGOT;0
+  GOLD_BLOCK;0:
+    drop: GOLD_BLOCK;0
+  REDSTONE_ORE;0:
+    drop: REDSTONE;0
+  REDSTONE_BLOCK;0:
+    drop: REDSTONE_BLOCK;0
+  LAPIS_ORE;0:
+    drop: LAPIS_LAZULI;0
+  LAPIS_BLOCK;0:
+    drop: LAPIS_BLOCK;0
+  DIAMOND_ORE;0:
+    drop: DIAMOND;0
+  DIAMOND_BLOCK;0:
+    drop: DIAMOND_BLOCK;0
+  EMERALD_ORE;0:
+    drop: EMERALD;0
+  EMERALD_BLOCK;0:
+    drop: EMERALD_BLOCK;0
+  ICE;0:
+    drop: ICE;0
+items:
+  COBBLESTONE;0: '&7Cobblestone'
+  COAL;0: '&8Coal'
+  COAL_BLOCK;0: '&8Coal Block'
+  IRON_INGOT;0: '&fIron Ingot'
+  IRON_BLOCK;0: '&fIron Block'
+  GOLD_INGOT;0: '&eGolden Ingot'
+  GOLD_BLOCK;0: '&eGold Block'
+  REDSTONE;0: '&cRedstone'
+  REDSTONE_BLOCK;0: '&cRedstone Block'
+  LAPIS_LAZULI;0: '&1Lapis Lazuli'
+  LAPIS_BLOCK;0: '&1Lapis Block'
+  DIAMOND;0: '&bDiamond'
+  DIAMOND_BLOCK;0: '&bDiamond Block'
+  EMERALD;0: '&aEmerald'
+  EMERALD_BLOCK;0: '&aEmerald Block'
+  ICE;0: '&bIce'
+mine:
+  title:
+    enable: true
+    title: '&e+#amount# #item#'
+    subtitle: '&b#storage#/#max#'
+  actionbar:
+    enable: true
+    action: '&6+#amount# #item# [#storage#/#max#]'

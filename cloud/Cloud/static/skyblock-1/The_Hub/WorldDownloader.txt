@@ -1,0 +1,4 @@
+#These settings are shared across an entire server.  If multiworld is enabled, they act as the default values for the individual world properties; otherwise, they are used directly.
+#Fri Oct 14 20:42:29 SGT 2022
+LinkedWorlds=
+LastSaved=1665751349036

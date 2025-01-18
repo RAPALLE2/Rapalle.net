@@ -1,0 +1,83 @@
+[15:59:57] [Thread-1/INFO]: Booting up Velocity 3.3.0-SNAPSHOT (git-09f687e5-b413)...
+[15:59:57] [Thread-1/INFO]: Loading localizations...
+[15:59:57] [Thread-1/INFO]: Connections will use NIO channels, Java compression, Java ciphers
+[15:59:57] [Thread-1/INFO]: Loading plugins...
+[15:59:57] [Thread-1/ERROR]: Unable to load plugin plugins\Geyser-ViaProxy.jar
+com.velocitypowered.api.plugin.InvalidPluginException: Did not find a valid velocity-plugin.json.
+	at com.velocitypowered.proxy.plugin.loader.java.JavaPluginLoader.loadCandidate(JavaPluginLoader.java:65) ~[velocity-3.3.0-SNAPSHOT.jar:3.3.0-SNAPSHOT (git-09f687e5-b413)]
+	at com.velocitypowered.proxy.plugin.VelocityPluginManager.loadPlugins(VelocityPluginManager.java:96) ~[velocity-3.3.0-SNAPSHOT.jar:3.3.0-SNAPSHOT (git-09f687e5-b413)]
+	at com.velocitypowered.proxy.VelocityServer.loadPlugins(VelocityServer.java:362) ~[velocity-3.3.0-SNAPSHOT.jar:3.3.0-SNAPSHOT (git-09f687e5-b413)]
+	at com.velocitypowered.proxy.VelocityServer.start(VelocityServer.java:239) ~[velocity-3.3.0-SNAPSHOT.jar:3.3.0-SNAPSHOT (git-09f687e5-b413)]
+	at com.velocitypowered.proxy.Velocity.main(Velocity.java:71) ~[velocity-3.3.0-SNAPSHOT.jar:3.3.0-SNAPSHOT (git-09f687e5-b413)]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at dev.httpmarco.polocloud.instance.ClusterInstanceFactory.lambda$startPlatform$3(ClusterInstanceFactory.java:40) ~[polocloud-instance.jar:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+[15:59:57] [Thread-1/ERROR]: Unable to load plugin plugins\HubMagic-0.2.6.jar
+com.velocitypowered.api.plugin.InvalidPluginException: The plugin file HubMagic-0.2.6.jar appears to be a Bukkit or BungeeCord plugin. Velocity does not support Bukkit or BungeeCord plugins.
+	at com.velocitypowered.proxy.plugin.loader.java.JavaPluginLoader.getSerializedPluginInfo(JavaPluginLoader.java:161) ~[velocity-3.3.0-SNAPSHOT.jar:3.3.0-SNAPSHOT (git-09f687e5-b413)]
+	at com.velocitypowered.proxy.plugin.loader.java.JavaPluginLoader.loadCandidate(JavaPluginLoader.java:62) ~[velocity-3.3.0-SNAPSHOT.jar:3.3.0-SNAPSHOT (git-09f687e5-b413)]
+	at com.velocitypowered.proxy.plugin.VelocityPluginManager.loadPlugins(VelocityPluginManager.java:96) ~[velocity-3.3.0-SNAPSHOT.jar:3.3.0-SNAPSHOT (git-09f687e5-b413)]
+	at com.velocitypowered.proxy.VelocityServer.loadPlugins(VelocityServer.java:362) ~[velocity-3.3.0-SNAPSHOT.jar:3.3.0-SNAPSHOT (git-09f687e5-b413)]
+	at com.velocitypowered.proxy.VelocityServer.start(VelocityServer.java:239) ~[velocity-3.3.0-SNAPSHOT.jar:3.3.0-SNAPSHOT (git-09f687e5-b413)]
+	at com.velocitypowered.proxy.Velocity.main(Velocity.java:71) ~[velocity-3.3.0-SNAPSHOT.jar:3.3.0-SNAPSHOT (git-09f687e5-b413)]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at dev.httpmarco.polocloud.instance.ClusterInstanceFactory.lambda$startPlatform$3(ClusterInstanceFactory.java:40) ~[polocloud-instance.jar:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+[15:59:58] [Thread-1/INFO]: Floodgate wurde in 210 ms gestartet
+[15:59:58] [Thread-1/INFO]: Loaded plugin floodgate 2.2.3-SNAPSHOT (b109-49bd564) by GeyserMC
+[15:59:58] [Thread-1/INFO]: Loaded plugin geyser 2.4.3-b689 (git-master-d64c0b3) by GeyserMC
+[15:59:58] [Thread-1/INFO]: Loaded plugin geyserskinmanager-velocity 1.6 by Camotoy
+[15:59:58] [Thread-1/INFO]: Loaded plugin maintenance 4.3.0 by kennytv
+[15:59:58] [Thread-1/INFO]: Loaded plugin pistonmotd 5.1.1 by AlexProgrammerDE
+[15:59:58] [Thread-1/INFO]: Loaded plugin polocloud 1.0.0 by HttpMarco
+[15:59:58] [Thread-1/INFO]: Loaded plugin tab 4.1.9 by NEZNAMY
+[15:59:58] [Thread-1/INFO]: Loaded plugin tcpshield 2.8.1 by TCPShield
+[15:59:58] [Thread-1/INFO]: Loaded 8 plugins
+[15:59:58] [Velocity Async Event Executor - #0/WARN]: The server channel initializer has been replaced by java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+[15:59:58] [Velocity Async Event Executor - #0/WARN]: The backend channel initializer has been replaced by java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+[15:59:59] [Velocity Async Event Executor - #0/WARN]: Deine Geyser Config ist veraltet! Bitte regeneriere sie wenn möglich.
+[15:59:59] [Velocity Async Event Executor - #0/INFO]: Lade Erweiterungen...
+[15:59:59] [Velocity Async Event Executor - #0/INFO]: 0 Erweiterung(en) geladen
+[15:59:59] [Velocity Async Event Executor - #0/WARN]: ForceShowSkins active through config; Floodgate check is bypassed!
+[15:59:59] [Velocity Async Event Executor - #0/INFO]:   _____  _       _                 __  __   ____  _______  _____  
+[15:59:59] [Velocity Async Event Executor - #0/INFO]:  |  __ \(_)     | |               |  \/  | / __ \|__   __||  __ \ 
+[15:59:59] [Velocity Async Event Executor - #0/INFO]:  | |__) |_  ___ | |_  ___   _ __  | \  / || |  | |  | |   | |  | |
+[15:59:59] [Velocity Async Event Executor - #0/INFO]:  |  ___/| |/ __|| __|/ _ \ | '_ \ | |\/| || |  | |  | |   | |  | |
+[15:59:59] [Velocity Async Event Executor - #0/INFO]:  | |    | |\__ \| |_| (_) || | | || |  | || |__| |  | |   | |__| |
+[15:59:59] [Velocity Async Event Executor - #0/INFO]:  |_|    |_||___/ \__|\___/ |_| |_||_|  |_| \____/   |_|   |_____/ 
+[15:59:59] [Velocity Async Event Executor - #0/INFO]: 
+[15:59:59] [Velocity Async Event Executor - #0/INFO]: [0;36mLoading config[0m
+[15:59:59] [Velocity Async Event Executor - #0/INFO]: [0;36mRegistering placeholders[0m
+[15:59:59] [Velocity Async Event Executor - #0/INFO]: [0;36mLooking for hooks[0m
+[15:59:59] [Velocity Async Event Executor - #0/INFO]: [0;36mRegistering listeners[0m
+[16:00:00] [Velocity Async Event Executor - #0/INFO]: [0;36mRegistering command[0m
+[16:00:00] [Velocity Async Event Executor - #0/INFO]: [0;36mChecking for a newer version[0m
+[16:00:00] [Velocity Async Event Executor - #0/INFO]: [0;31mThere is a MINOR update available![0m
+[16:00:00] [Velocity Async Event Executor - #0/INFO]: [0;31mCurrent version: 5.1.1 New version: 5.2.0[0m
+[16:00:00] [Velocity Async Event Executor - #0/INFO]: [0;31mDownload it at: https://github.com/AlexProgrammerDE/PistonMOTD/releases[0m
+[16:00:00] [Velocity Async Event Executor - #0/INFO]: [0;36mLoading metrics[0m
+[16:00:00] [Velocity Async Event Executor - #0/INFO]: [0;36mDone! :D[0m
+[16:00:00] [Velocity Async Event Executor - #0/INFO]: Enabled in 183ms
+[16:00:00] [Netty NIO Boss #0/INFO]: Listening on /[0:0:0:0:0:0:0:0]:25565
+[16:00:00] [Velocity Async Event Executor - #1/INFO]: ******************************************
+[16:00:00] [Velocity Async Event Executor - #1/INFO]: 
+[16:00:00] [Velocity Async Event Executor - #1/INFO]: Geyser Version 2.4.3-b689 (git-master-d64c0b3) wird geladen
+[16:00:00] [Velocity Async Event Executor - #1/INFO]: 
+[16:00:00] [Velocity Async Event Executor - #1/INFO]: ******************************************
+[16:00:00] [Thread-1/INFO]: Done (3,88s)!
+[16:00:00] [pool-7-thread-1/WARN]: 
+**********************************
+* The prefix you entered in your Floodgate config (BE) could lead to username conflicts!
+* Should a Java player join with the username BENotch, and a Bedrock player join as Notch (who will be given the name BENotch), unwanted results will happen!
+* We strongly recommend using . as the prefix, but other alternatives that will not conflict include: +, - and *
+**********************************
+[16:00:03] [Velocity Async Event Executor - #1/INFO]: Geyser auf UDP-Port 14000 gestartet
+[16:00:03] [Velocity Async Event Executor - #1/INFO]: Fertig (2,961s)! Verwende /geyser help für Hilfe!
+[16:00:03] [ForkJoinPool.commonPool-worker-4/INFO]: §aEs steht ein neues Geyser Update zur Unterstützung von Bedrock Version 1.21.51 zur Verfügung. Laden Sie es hier herunter: §9§nhttps://geysermc.org/download
+[16:00:13] [Thread-5/INFO]: Shutting down the proxy...
+[16:00:13] [Thread-5/INFO]: Closing endpoint /0.0.0.0:25565
+[16:00:13] [Velocity Async Event Executor - #4/INFO]: Geyser wird beendet.
+[16:00:13] [Velocity Async Event Executor - #4/INFO]: Geyser erfolgreich beendet.
+[16:00:13] [TAB Processing Thread/INFO]: Disabled in 0ms

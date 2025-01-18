@@ -1,0 +1,51 @@
+message_version: 1
+admin:
+  new_version_available: New version is available. You are using v#old_version#, new
+    version v#new_version#
+  add_material_amount: '&bAdded #amount# #material# to #player#'
+  remove_material_amount: '&bRemoved #amount# #material# from #player#'
+  reload: '&eReloaded Files'
+  set_max_storage: '&aSet max storage of #player# to #amount#'
+  set_material_amount: '&cSet #amount# #material# for #player#'
+  not_enough_slot: '&cYou need to add more slot in GUI/storage.yml -> storage_item
+    to open this gui. Slot isn''t enough for item you had been config'
+  help:
+  - '&f/Storage reload - Reload Files'
+  - '&f/Storage max <player> <amount> - Set max item player can storage'
+  - '&f/Storage add <material;data> <player> <amount> - Add item to player (data for
+    1.12.2 and below, if you use 1.13+ use <material>;0'
+  - '&f/Storage remove <material;data> <player> <amount> - Remove item to player (data
+    for 1.12.2 and below, if you use 1.13+ use <material>;0'
+  - '&f/Storage set <material;data> <player> <amount> - Set item to player (data for
+    1.12.2 and below, if you use 1.13+ use <material>;0'
+user:
+  full_storage: '&cStorage has been full, please take some out to mine more'
+  add_material_amount: '&a+ #amount# #material# &7[From #player#]'
+  remove_material_amount: '&c- #amount# #material# &7[From #player#]'
+  set_material_amount: '&c[~] #amount# #material# &7[From #player#]'
+  number_so_low: '&cYou need a number higher than 0'
+  not_enough_items: '&cYou haven''t enough item, you only have <amount>'
+  unknown_number: '&c<number> isn''t number'
+  not_enough_slot: '&cYou don''t have enough slots to withdraw items, you can only
+    hold <slots> items'
+  action:
+    deposit:
+      chat_number: '&aHow many item you want to deposit?'
+      deposit_item: '&aYou deposited #amount# #material# | #item_amount#/#max_storage#
+        Items'
+    withdraw:
+      chat_number: '&aHow many item you want to withdraw?'
+      withdraw_item: '&aYou withdrew #amount# #material# | #item_amount#/#max_storage#
+        Items'
+    sell:
+      chat_number: '&aHow many item you want to sell?'
+      can_not_sell: '&cThis item can''t be sell'
+      sell_item: '&aYou sold #amount# #material# and got #money#$ | #item_amount#/#max_storage#
+        Items'
+  status:
+    status_on: '&aOn'
+    status_off: '&cOff'
+    toggle: '&bYour storage has been toggled: #status#'
+  help:
+  - '&f/Storage - Open Gui'
+  - '&f/Storage toggle - Toggle autoPickup'

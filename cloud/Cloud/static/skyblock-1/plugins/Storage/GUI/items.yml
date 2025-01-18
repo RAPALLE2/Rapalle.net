@@ -1,0 +1,157 @@
+# Title of gui
+title: '&0Item #material# | #player#'
+# Size of gui: 1,2,3,4,5,6
+size: 3
+items:
+  # Decorates item
+  decorates:
+    # If you want to put it on 1 slot | slot: 1 | if you want put it in many slot, do like this
+    slot: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 14, 15, 17, 19, 20, 21, 22, 23, 24,
+      25, 26
+    # Display name of item
+    name: '&7 '
+    # Material | 1.12.2 and below can use STAINED_GLASS_PANE:15
+    material: BLACK_STAINED_GLASS_PANE
+    # Lore of item
+    lore:
+    - '&7 '
+    # Amount of item
+    amount: 1
+    # for 1.13.2 and below
+    damage: 0
+    # for 1.14 and above
+    custom-model-data: 1
+    # Is item will be unbreakable?
+    unbreakable: true
+    # Enchantments for items
+    enchants:
+      DURABILITY: 1
+    # Flag for item | If you use ALL: true -> All flag will be applied to item
+    flags:
+      ALL: true
+  #      HIDE_ATTRIBUTES: true
+  #      HIDE_DESTROYS: true
+  #      HIDE_ENCHANTS: true
+  #      HIDE_PLACED_ON: true
+  #      HIDE_UNBREAKABLE: true
+  #      HIDE_POTION_EFFECTS: true
+  # Deposit item setting | Name can be change because it depended on action
+  deposit:
+    # Don't recommend for multi slot for this item
+    slot: 10
+    # Name of item
+    name: '&aDeposit Item'
+    # Material of item
+    material: GREEN_STAINED_GLASS_PANE
+    # Lore of item
+    lore:
+    - '&7 '
+    - '&f#item_amount#/#max_storage# Items'
+    - '&7 '
+    - '&eLeft Click - Deposit item with custom number'
+    - '&eRight Click - Deposit all item in inventory'
+    # Amount of item
+    amount: 1
+    # for 1.13.2 and below
+    damage: 0
+    # for 1.14 and above
+    custom-model-data: 1
+    # Is item will be unbreakable?
+    unbreakable: true
+    # Enchantments for items
+    enchants:
+      DURABILITY: 1
+    # Flag for item | If you use ALL: true -> All flag will be applied to item
+    flags:
+      ALL: true
+    # Action when click
+    action:
+      # Left click
+      left:
+        # Type: chat, all
+        type: chat
+        # action: deposit, withdraw, sell
+        action: deposit
+      # Right click
+      right:
+        # Type: chat, all
+        type: all
+        # action: deposit, withdraw, sell
+        action: deposit
+  withdraw:
+    slot: 16
+    name: '&aWithdraw Item'
+    material: RED_STAINED_GLASS_PANE
+    lore:
+    - '&7 '
+    - '&f#item_amount#/#max_storage# Items'
+    - '&7 '
+    - '&eLeft Click - Withdraw item with custom number'
+    - '&eRight Click - Deposit all item to inventory'
+    amount: 1
+    # for 1.13.2 and below
+    damage: 0
+    # for 1.14 and above
+    custom-model-data: 1
+    unbreakable: true
+    enchants:
+      DURABILITY: 1
+    flags:
+      ALL: true
+    action:
+      left:
+        type: chat
+        action: withdraw
+      right:
+        type: all
+        action: withdraw
+  sell:
+    slot: 13
+    name: '&aSell Item'
+    material: YELLOW_STAINED_GLASS_PANE
+    lore:
+    - '&7 '
+    - '&f#item_amount#/#max_storage# Items'
+    - '&7 '
+    - '&eLeft Click - Sell item with custom number'
+    - '&eRight Click - Sell all item from storage'
+    amount: 1
+    # for 1.13.2 and below
+    damage: 0
+    # for 1.14 and above
+    custom-model-data: 1
+    unbreakable: true
+    enchants:
+      DURABILITY: 1
+    flags:
+      ALL: true
+    action:
+      left:
+        type: chat
+        action: sell
+      right:
+        type: all
+        action: sell
+  back:
+    slot: 18
+    name: '&aBack'
+    material: ARROW
+    lore:
+    - '&eClick to return storage menu'
+    amount: 1
+    # for 1.13.2 and below
+    damage: 0
+    # for 1.14 and above
+    custom-model-data: 1
+    unbreakable: true
+    enchants:
+      DURABILITY: 1
+    flags:
+      ALL: true
+    action:
+      left:
+        type: command
+        action: storage
+      right:
+        type: command
+        action: storage

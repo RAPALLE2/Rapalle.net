@@ -1,0 +1,22 @@
+{
+  "name": "skyblock",
+  "platform": {
+    "platform": "paper",
+    "version": "1.20.4",
+    "type": "SERVER"
+  },
+  "templates": [
+    "every",
+    "every_server",
+    "skyblock"
+  ],
+  "nodes": [
+    "node-Fwkv"
+  ],
+  "maxMemory": 2048,
+  "maxPlayers": 100,
+  "staticService": true,
+  "minOnlineServerInstances": 0,
+  "maxOnlineServerInstances": 0,
+  "properties": {}
+}

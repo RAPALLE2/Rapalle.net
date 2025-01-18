@@ -1,0 +1,68 @@
+crontask: '0 0 4 * * *' # This would make it every day at 4 AM
+
+# CronTask format:
+# * * * * * *
+# | | | | | |
+# | | | | | +---- Day of the Week   (1-7)
+# | | | | +------ Month             (1-12)
+# | | | +-------- Day of the Month  (1-31)
+# | | +---------- Hour              (0-23)
+# | +------------ Minute            (0-59)
+# +-------------- Second            (0-59)
+
+# A few more examples...
+# crontask: '0 0 * * * *' This would make it every hour
+# crontask: '0 0 4 * * 7' This would make it every sunday at 4 AM
+# crontask: '0 0 4 1 * *' This would make it every first of the month at 4 AM
+# crontask: '0 30 3 */2 * *' This would make it at 3:30 AM every 2 days
+
+# If you do /ebackup reload, you can see a description in the console of what the cron task does.
+
+# Filename format for the backup files created
+backup-format: 'eBackup {DATE}'
+
+# Format to use as replacement for {DATE} in backup-format
+# Refer to java.text.SimpleDateFormat for format docs
+backup-date-format: 'yyyy-MM-dd HH-mm-ss'
+
+# The folder where to store the backups locally.
+backup-path: 'plugins/eBackup/backups'
+
+# The maximum backups stored. Will delete older backups when reached. (≤ 0 to disable)
+# Note: this will only work with local backups (fallbacks included).
+max-backups: 20
+
+# This option reduces disk space by only performing backups if players had joined since the last backup or server start.
+only-backup-if-players-were-on: true
+
+# Delete the local backup after each upload.
+delete-after-upload: false
+
+# Zip compression level (0-9)
+# Increase it to reduce file size, but backups will be more CPU intensive and take longer
+compression-level: 4
+
+# FTP/SFTP settings and configuration.
+# Backups saved here will not be auto-deleted.
+ftp:
+    enable: false
+    path: '/home/user/backups/' # don't forget to change!
+    type: sftp # ftp for ftp, sftp for ftp over ssh
+    host: 'localhost'
+    port: 22
+    user: 'username'
+    pass: 'password'
+    use-key-auth: false # use key based authentication for sftp (ignores password)
+    private-key: '~/.ssh/id_rsa'
+    private-key-password: '' # leave blank if the private key has no password
+
+# What you want in the backup.
+# By default, everything will be backupped, you can remove files/directories in the ignore section
+backup:
+    pluginjars: true # The .jar files for the plugins
+    pluginconfs: true # The data folder of each plugin
+    ignore: # Files/directories to ignore and NOT backup
+        - 'plugins/eBackup/backups'
+        - 'plugins/dynmap'
+        - 'logs'
+        - 'cache'

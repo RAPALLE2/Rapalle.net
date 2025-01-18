@@ -1,0 +1,99 @@
+# All MySQL settings can be set and handled within this section
+mysql:
+  # Ensure this is the name used within your proxy's configuration
+  server-name: "lobby"
+  # The "use-ssl" feature enables SSL connection support
+  use-ssl: false
+  # Name of the database
+  database: "SimplePortals"
+  # Name of the table used for transfer data
+  transfer-table: "transfer"
+  # The "host" option can be left blank to determine whether mysql is used or not
+  # If disabled, SQLite will be used locally instead
+  host: ""
+  port: 3306
+  username: "root"
+  password: ""
+
+# If this is enabled, the management task loading and prioritizing the file form of the portals will be utilized.
+management-task: true
+# If this is enabled, when the player is teleport they will keep their current Yaw and Pitch.
+keep-teleport-head-axis: false
+# If this option is enabled, velocity will continue through portal transfers for player and all other entities.
+maintain-vehicle-velocity: true
+# If this option is enabled, entity (NOT a vehicle) velocity will continue through portal.
+# (NOTE: This can kill the entity via fall damage under certain circumstances).
+maintain-entity-velocity: true
+# If this is enabled, all players will be able to use all portals.
+bypass-portal-permissions: false
+# If this is enabled, the player can teleport through portals with vehicles, such as Horses and Boats.
+vehicle-teleportation: true
+# If this is enabled, portal usage for creative mode players will be blocked entirely.
+block-creative-portal-entrance: false
+# If this is enabled, all players will be sent to spawn upon joining the server.
+force-join: false
+# This is the world that the spawn location will be obtained from. If blank, the world defaults the player's current world.
+force-join-world: ""
+
+# Adding a world and a location to this list will cause all nether portals in the world to send the player to the specified location.
+# Format: <world portal must be in>:<world of to location>,<x>,<y>,<z>,<yaw>,<pitch>
+nether-portal-locations:
+  - "example_world:world,0,80,0,0,0"
+  - "example_world_the_nether:world,0,80,0,0,0"
+
+# Adding a world and a location to this list will cause all end portals in the world to send the player to the specified location.
+# Format: <world portal must be in>:<world of to location>,<x>,<y>,<z>,<yaw>,<pitch>
+end-portal-locations:
+  - "example_world:world,0,80,0,0,0"
+  - "example_world_the_end:world,0,80,0,0,0"
+
+# Should end-portal-locations handle deaths as well?
+end-portal-locations-handle-death: true
+
+# The creatures in the list below will be blocked from spawning inside portal regions.
+creature-spawning-blacklist:
+  - "PUFFERFISH"
+  - "TROPICAL_FISH"
+  - "DOLPHIN"
+
+# These define how titles are sent and their durations.
+# (Note: Effects both sub-titles and normal titles.)
+titles:
+  fade-in: 0
+  fade-out: 0
+  display-time: 5
+
+# Should players have a cooldown for portal usage?
+use-portal-cooldown: true
+# If this option is enabled, players joining the server, spawning, or teleporting into a portal's region will be restricted from teleporting until they leave the portal area.
+portal-to-portal-protection: true
+# How long should the player have to wait in between portal usages in seconds?
+portal-cooldown-duration: 5
+# This is the force/multiplier of the portal throw back feature (Set to -1 or lower to disable).
+throw-velocity: 6
+# This is the delay before portal commands are initiated (20 ticks = 1 second).
+command-tick-delay: 5
+
+# This allows dropped/spawned items to transfer through portals.
+item-transfer: true
+# This is how long before the item that was dropped or spawned has its location checked for teleportation.
+item-teleport-delay: 2
+
+# This is the sound that is played when the player teleports.
+# You may need to change this based on your minecraft version.
+teleport-sound: "ENTITY_GHAST_SHOOT"
+# This is the effect that is used for your teleportation visual.
+# You can find a complete particle list here: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Particle.html
+teleport-visual-effect: "CLOUD"
+
+# This is the effect that is used for your selection visual.
+# You can find a complete particle list here: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Particle.html
+selection-visual-effect: "REDSTONE"
+# This is how long the visual will appear on screen.
+selection-visual-duration: 10
+
+# This is the effect that is used for your region visual.
+# You can find a complete particle list here: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Particle.html
+region-visual-effect: "REDSTONE"
+# This is how long the visual will appear on screen.
+region-visual-duration: 20

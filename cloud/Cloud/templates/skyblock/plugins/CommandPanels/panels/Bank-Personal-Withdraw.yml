@@ -1,0 +1,44 @@
+panels:
+  Bank-Personal-Withdraw:
+    perm: default
+    rows: 4
+    title: 'Withdraw Personal Bank'
+    empty: AIR
+    max-input-length: 100000
+    custom-messages:
+    input: '&bCustom Max-Character Message!'
+    item:
+      '10':
+        material: DROPPER
+        stack: 64
+        name: '&rEverything in the account'
+        commands:
+        - msg= you took %vault_eco_balance%
+        - give %cp-player-name% gold_block %vault_eco_balance%
+        - eco take %cp-player-name% %vault_eco_balance%
+      '12':
+        material: DROPPER
+        stack: 32
+        name: '&rHalf the account'
+      '14':
+        material: DROPPER
+        stack: 1
+        name: '&rWithdraw 20%'
+      '16':
+        material: OAK_SIGN
+        stack: 1
+        name: '&rSpecific amount'
+        commands:
+        - msg= enter the value to wthdraw
+        - cpc
+        player-input:
+        - cp Bank-Personal-Withdraw
+        - msg= you took %cp-player-input%
+        - give %cp-player-name% gold_block %cp-player-input%
+        - eco take %cp-player-name% %cp-player-input%
+      '31':
+        material: ARROW
+        stack: 1
+        name: '&bGo Back'
+        commands:
+        - cp Bank-Personal

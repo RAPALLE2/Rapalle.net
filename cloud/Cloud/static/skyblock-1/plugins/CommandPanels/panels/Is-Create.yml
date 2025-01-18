@@ -1,0 +1,117 @@
+panels:
+  Is-Create:
+    perm: default
+    rows: 3
+    title: '&r&dCre&5ate &1Your &9Isl&band'
+    empty: BLACK_STAINED_GLASS_PANE
+    item:
+      '0':
+        material: LIGHT_BLUE_STAINED_GLASS_PANE
+        stack: 1
+        name: ''
+      '1':
+        material: BLUE_STAINED_GLASS_PANE
+        stack: 1
+        name: '&r'
+      '2':
+        material: PURPLE_STAINED_GLASS_PANE
+        stack: 1
+        name: '&r'
+      '3':
+        material: MAGENTA_STAINED_GLASS_PANE
+        stack: 1
+        name: '&r'
+      '4':
+        material: PINK_STAINED_GLASS_PANE
+        stack: 1
+        name: '&r'
+      '5':
+        material: MAGENTA_STAINED_GLASS_PANE
+        stack: 1
+        name: '&r'
+      '6':
+        material: PURPLE_STAINED_GLASS_PANE
+        stack: 1
+        name: '&r'
+      '7':
+        material: BLUE_STAINED_GLASS_PANE
+        stack: 1
+        name: '&r'
+      '8':
+        material: LIGHT_BLUE_STAINED_GLASS_PANE
+        stack: 1
+        name: '&r'
+      '9':
+        material: BLUE_STAINED_GLASS_PANE
+        stack: 1
+        name: '&r'
+      '10':
+        material: PURPLE_STAINED_GLASS_PANE
+        stack: 1
+        name: '&r'
+      '11':
+        material: MAGENTA_STAINED_GLASS_PANE
+        stack: 1
+        name: '&r'
+      '12':
+        material: PINK_STAINED_GLASS_PANE
+        stack: 1
+        name: '&r'
+      '13':
+        material: GRASS_BLOCK
+        stack: 1
+        name: '&r&dCre&5ate &1a &9Isl&band'
+        commands:
+        - is create %cp-player-displayname% normal
+      '14':
+        material: PINK_STAINED_GLASS_PANE
+        stack: 1
+        name: '&r'
+      '15':
+        material: MAGENTA_STAINED_GLASS_PANE
+        stack: 1
+        name: '&r'
+      '16':
+        material: PURPLE_STAINED_GLASS_PANE
+        stack: 1
+        name: '&r'
+      '17':
+        material: BLUE_STAINED_GLASS_PANE
+        stack: 1
+        name: '&r'
+      '18':
+        material: LIGHT_BLUE_STAINED_GLASS_PANE
+        stack: 1
+        name: '&r'
+      '19':
+        material: BLUE_STAINED_GLASS_PANE
+        stack: 1
+        name: '&r'
+      '20':
+        material: PURPLE_STAINED_GLASS_PANE
+        stack: 1
+        name: '&r'
+      '21':
+        material: MAGENTA_STAINED_GLASS_PANE
+        stack: 1
+        name: '&r'
+      '22':
+        material: PINK_STAINED_GLASS_PANE
+        stack: 1
+        name: '&r'
+      '23':
+        material: MAGENTA_STAINED_GLASS_PANE
+        stack: 1
+        name: '&r'
+      '24':
+        material: PURPLE_STAINED_GLASS_PANE
+        stack: 1
+        name: '&r'
+      '25':
+        material: BLUE_STAINED_GLASS_PANE
+        stack: 1
+        name: '&r'
+      '26':
+        material: LIGHT_BLUE_STAINED_GLASS_PANE
+        stack: 1
+        name: '&r'

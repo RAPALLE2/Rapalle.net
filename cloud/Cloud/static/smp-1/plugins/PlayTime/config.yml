@@ -1,0 +1,26 @@
+ConfigPlaytime:
+  messages:
+    PREFIX: §3[PLAYTIME]
+    SPIELZEIT: '§2PlayTime-Statistics:'
+    MINUTEN: '§6Minutes:'
+    STUNDEN: '§6Hours:'
+    TAGE: '§6Days:'
+    FARBCODE_MINUTEN: §4
+    FARBCODE_STUNDEN: §4
+    FARBCODE_TAGE: §4
+RAPALLE:
+  minutes: 29
+  hours: 21
+MINECRAFTER_TOBI:
+  minutes: 32
+  hours: 0
+  days: 1
+netzguru0815:
+  minutes: 19
+  hours: 12
+Jerrri:
+  minutes: 21
+Jeremypossner:
+  minutes: 3
+BERAPALLE:
+  minutes: 14

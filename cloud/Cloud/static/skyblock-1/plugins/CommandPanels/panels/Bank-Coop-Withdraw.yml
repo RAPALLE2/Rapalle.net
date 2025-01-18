@@ -1,0 +1,29 @@
+panels:
+  Bank-Coop-Withdraw:
+    perm: default
+    rows: 4
+    title: 'Withdraw Coop Bank'
+    empty: AIR
+    item:
+      '10':
+        material: DROPPER
+        stack: 64
+        name: '&rEverything in the account'
+      '12':
+        material: DROPPER
+        stack: 32
+        name: '&rHalf the account'
+      '14':
+        material: DROPPER
+        stack: 1
+        name: '&rWithdraw 20%'
+      '16':
+        material: OAK_SIGN
+        stack: 1
+        name: '&rSpecific amount'
+      '31':
+        material: ARROW
+        stack: 1
+        name: '&bGo Back'
+        commands:
+        - cp Bank-Coop

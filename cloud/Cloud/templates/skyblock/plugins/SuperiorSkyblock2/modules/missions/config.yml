@@ -1,0 +1,33 @@
+######################################################
+##                                                  ##
+##                SuperiorSkyblock 2                ##
+##                Developed by Ome_R                ##
+##                                                  ##
+######################################################
+
+# Should missions be enabled on your server?
+enabled: true
+
+# Settings related to mission categories.
+# A tutorial about configuring missions can be found here:
+# https://wiki.bg-software.com/superiorskyblock/missions
+categories:
+  miner:
+    name: 'Miner'
+    slot: 20
+
+  slayer:
+    name: 'Slayer'
+    slot: 21
+
+  farmer:
+    name: 'Farmer'
+    slot: 22
+
+  fisherman:
+    name: 'Fisherman'
+    slot: 23
+
+  explorer:
+    name: 'Explorer'
+    slot: 24

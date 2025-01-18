@@ -1,0 +1,25 @@
+panels:
+  AH:
+    perm: default
+    rows: 4
+    title: 'Auctions House'
+    empty: AIR
+    item:
+      '11':
+        material: GOLD_BLOCK
+        stack: 1
+        name: ''
+      '13':
+        material: GOLDEN_CARROT
+        stack: 1
+        name: ''
+      '15':
+        material: GOLDEN_HORSE_ARMOR
+        stack: 1
+        name: ''
+      '31':
+        material: BARRIER
+        stack: 1
+        name: "&cClose"
+        commands:
+        - cpc

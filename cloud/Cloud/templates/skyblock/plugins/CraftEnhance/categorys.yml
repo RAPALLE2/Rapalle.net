@@ -1,0 +1,8 @@
+Categorys:
+  default:
+    category:
+      category_item:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3700
+        type: CRAFTING_TABLE
+      name: default

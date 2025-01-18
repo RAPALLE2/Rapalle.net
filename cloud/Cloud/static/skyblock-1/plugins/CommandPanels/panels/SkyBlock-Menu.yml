@@ -1,0 +1,104 @@
+panels:
+  SkyBlock-Menu:
+    perm: default
+    rows: 6
+    title: SkyBlock Menu
+    empty: AIR
+    open-with-item:
+      material: NETHER_STAR
+      name: "&r&fSkyBlock-Menu"
+      stationary: 8
+    item:
+      '13':
+        material: cps= self
+        stack: 1
+        name: "&r&fYOUR PROFILE"
+        lore:
+          - '&r&fYour Equipment, stats and more'
+      '19':
+        material: DIAMOND_SWORD
+        stack: 1
+        name: "&rSkills"
+      '20':
+        material: PAINTING
+        stack: 1
+        name: "&rCollections"
+      '21':
+        material: BOOK
+        stack: 1
+        name: "&rRecipe Book"
+      '22':
+        material: EXPERIENCE_BOTTLE
+        stack: 1
+        name: "&r&fYour Level"
+      '23':
+        material: WRITABLE_BOOK
+        stack: 1
+        name: "&rQuests"
+      '24':
+        material: CLOCK
+        stack: 1
+        name: "&rEvents"
+      '25':
+        material: CHEST
+        stack: 1
+        name: "&rStorage"
+        commands:
+          - backpack
+      '29':
+        material: ENDER_CHEST
+        stack: 1
+        name: "&rBags"
+        commands:
+          - cp Bags
+      '30':
+        material: BONE
+        stack: 1
+        name: "&rPets"
+      '31':
+        material: CRAFTING_TABLE
+        stack: 1
+        name: "&rCratingtable"
+        commands:
+          - crafting
+      '32':
+        material: LEATHER_CHESTPLATE
+        stack: 1
+        name: "&rWadrobe"
+      '33':
+        material: GOLD_BLOCK
+        stack: 1
+        name: "&rBank"
+        commands:
+          - cp Bank
+      '47':
+        material: GRASS_BLOCK
+        stack: 1
+        name: "&rWarps"
+        commands:
+          - rightshift= cp Warps
+          - leftshift= cp Warps
+          - right= is home
+          - left= mvtp The_Hub
+      '48':
+        material: NAME_TAG
+        stack: 1
+        name: "&rIsland"
+        commands:
+          - is settings
+      '49':
+        material: BARRIER
+        stack: 1
+        name: "&cClose"
+        commands:
+          - cpc
+      '50':
+        material: REDSTONE_TORCH
+        stack: 1
+        name: "&rSettings"
+      '51':
+        material: COOKIE
+        stack: 1
+        name: "&rBooster Cookie"
+        commands:
+          - cp Booster-Cookie

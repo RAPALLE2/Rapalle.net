@@ -1,0 +1,43 @@
+panels:
+  Bank:
+    perm: default
+    rows: 4
+    title: 'Bank'
+    empty: AIR
+    item:
+      '11':
+        material: ENDER_CHEST
+        stack: 1
+        name: '&rCo-op Bank Account'
+        commands:
+        - cp Bank-Coop
+      '15':
+        material: CHEST
+        stack: 1
+        name: '&rPersonal Bank Account'
+        lore:
+        - "&r&fyou have %vault_eco_balance%"
+        commands:
+        - cp Bank-Personal
+      '30':
+        material: ARROW
+        stack: 1
+        name: '&bGo Back'
+        commands:
+        - cp SkyBlock-Menu
+      '31':
+        material: BARRIER
+        stack: 1
+        name: '&cClose'
+        commands:
+        - cpc
+      '35':
+        material: GOLD_BLOCK
+        stack: 1
+        name: '&rBank Upgrades'
+      '32':
+        material: IRON_DOOR
+        stack: 1
+        name: '&rVault'
+        commands:
+        - cp Bank-Vault

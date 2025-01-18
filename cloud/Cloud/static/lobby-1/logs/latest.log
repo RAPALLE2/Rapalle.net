@@ -1,0 +1,58 @@
+[16:00:03] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[16:00:05] [ServerMain/INFO]: Loaded 1174 recipes
+[16:00:05] [ServerMain/INFO]: Loaded 1271 advancements
+[16:00:05] [Server thread/INFO]: Starting minecraft server version 1.20.4
+[16:00:05] [Server thread/INFO]: Loading properties
+[16:00:05] [Server thread/INFO]: This server is running Paper version git-Paper-497 (MC: 1.20.4) (Implementing API version 1.20.4-R0.1-SNAPSHOT) (Git: d8d54d9 on ver/1.20.4)
+[16:00:07] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[16:00:07] [Server thread/INFO]: Using 4 threads for Netty based IO
+[16:00:07] [Server thread/WARN]: The global config file didn't have a version set, assuming latest
+[16:00:07] [Server thread/INFO]: Chunk system is using 1 I/O threads, 3 worker threads, and gen parallelism of 3 threads
+[16:00:07] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
+    We recommend installing the spark profiler as a replacement: https://spark.lucko.me/
+    For more information please visit: https://github.com/PaperMC/Paper/issues/8948
+[16:00:07] [Server thread/INFO]: Default game type: SURVIVAL
+[16:00:07] [Server thread/INFO]: Generating keypair
+[16:00:07] [Server thread/INFO]: Starting Minecraft server on *:20000
+[16:00:07] [Server thread/INFO]: Using default channel type
+[16:00:07] [Server thread/INFO]: Paper: Using Java compression from Velocity.
+[16:00:07] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
+[16:00:07] [Server thread/ERROR]: Ambiguous plugin name 'ViaVersion' for files 'plugins\ViaVersion-5.0.5.jar' and 'plugins\ViaVersion-5.0.3.jar' in 'plugins'
+[16:00:08] [Server thread/WARN]: Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
+[16:00:10] [Server thread/WARN]: Legacy plugin PlayTime v1.0 does not specify an api-version.
+[16:00:10] [Server thread/INFO]: [ChatImage] Loading 2 libraries... please wait
+[16:00:10] [Server thread/INFO]: [ChatImage] Loaded library L:\Rapalle.net\cloud\Cloud\static\lobby-1\libraries\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar
+[16:00:10] [Server thread/INFO]: [ChatImage] Loaded library L:\Rapalle.net\cloud\Cloud\static\lobby-1\libraries\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar
+[16:00:10] [Server thread/INFO]: Loading server plugin ViaVersion v5.0.5
+[16:00:10] [Server thread/INFO]: ViaVersion 5.0.5 is now loaded. Registering protocol transformers and injecting...
+[16:00:10] [Via-Mappingloader-0/INFO]: Loading block connection mappings ...
+[16:00:10] [Via-Mappingloader-0/INFO]: Using FastUtil Long2ObjectOpenHashMap for block connections
+[16:00:11] [Server thread/INFO]: Loading server plugin LuckPerms v5.4.141
+[16:00:11] [Server thread/INFO]: Loading server plugin Vault v1.7.3-b131
+[16:00:11] [Server thread/INFO]: Loading server plugin PlaceholderAPI v2.11.6
+[16:00:11] [Server thread/INFO]: Loading server plugin FastAsyncWorldEdit v2.9.2
+[16:00:12] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@7f692568]
+[16:00:12] [Server thread/INFO]: Loading server plugin DiscordSRV v1.28.0
+[16:00:12] [Server thread/INFO]: Loading server plugin SimpleScore v3.12.5
+[16:00:12] [Server thread/INFO]: Loading server plugin PoloCloud-Plugin v1.0.0
+[16:00:12] [Server thread/INFO]: Loading server plugin PlugMan v1.1.0
+[16:00:12] [Server thread/INFO]: Loading server plugin PlayTime v1.0
+[16:00:12] [Server thread/INFO]: Loading server plugin Maintenance v4.3.0
+[16:00:12] [Server thread/INFO]: Loading server plugin LPC v3.6.0
+[16:00:12] [Server thread/INFO]: Loading server plugin GSit v1.10.0
+[16:00:12] [Server thread/INFO]: Loading server plugin eBackup v1.3.1
+[16:00:12] [Server thread/INFO]: Loading server plugin DeluxeHub v3.5.5
+[16:00:12] [Server thread/INFO]: Loading server plugin CoreProtect v22.4
+[16:00:12] [Server thread/INFO]: Loading server plugin Chattar v1.1-SNAPSHOT
+[16:00:12] [Server thread/INFO]: Loading server plugin ChatImage v2.6.0
+[16:00:12] [Server thread/INFO]: Loading server plugin ChatHead v1.0.1
+[16:00:12] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[16:00:12] [Server thread/INFO]: Enabling LuckPerms v5.4.141
+[16:00:12] [Server thread/INFO]:         __    
+[16:00:12] [Server thread/INFO]:   |    |__)   LuckPerms v5.4.141
+[16:00:12] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
+[16:00:12] [Server thread/INFO]: 
+[16:00:12] [Server thread/INFO]: Loading configuration...
+[16:00:12] [Server thread/INFO]: Loading storage provider... [MYSQL]
+[16:00:12] [Server thread/INFO]: luckperms-hikari - Starting...
+[16:00:12] [Server thread/INFO]: luckperms-hikari - Start completed.
