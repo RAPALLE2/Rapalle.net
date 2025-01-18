@@ -1,58 +1,268 @@
-[16:00:03] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[16:00:05] [ServerMain/INFO]: Loaded 1174 recipes
-[16:00:05] [ServerMain/INFO]: Loaded 1271 advancements
-[16:00:05] [Server thread/INFO]: Starting minecraft server version 1.20.4
-[16:00:05] [Server thread/INFO]: Loading properties
-[16:00:05] [Server thread/INFO]: This server is running Paper version git-Paper-497 (MC: 1.20.4) (Implementing API version 1.20.4-R0.1-SNAPSHOT) (Git: d8d54d9 on ver/1.20.4)
-[16:00:07] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[16:00:07] [Server thread/INFO]: Using 4 threads for Netty based IO
-[16:00:07] [Server thread/WARN]: The global config file didn't have a version set, assuming latest
-[16:00:07] [Server thread/INFO]: Chunk system is using 1 I/O threads, 3 worker threads, and gen parallelism of 3 threads
-[16:00:07] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
+[16:41:41] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[16:41:43] [ServerMain/INFO]: Loaded 1174 recipes
+[16:41:43] [ServerMain/INFO]: Loaded 1271 advancements
+[16:41:43] [Server thread/INFO]: Starting minecraft server version 1.20.4
+[16:41:43] [Server thread/INFO]: Loading properties
+[16:41:43] [Server thread/INFO]: This server is running Paper version git-Paper-497 (MC: 1.20.4) (Implementing API version 1.20.4-R0.1-SNAPSHOT) (Git: d8d54d9 on ver/1.20.4)
+[16:41:44] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[16:41:44] [Server thread/INFO]: Using 4 threads for Netty based IO
+[16:41:44] [Server thread/WARN]: [Configurations] The global config file didn't have a version set, assuming latest
+[16:41:44] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 3 worker threads, and gen parallelism of 3 threads
+[16:41:44] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
     We recommend installing the spark profiler as a replacement: https://spark.lucko.me/
     For more information please visit: https://github.com/PaperMC/Paper/issues/8948
-[16:00:07] [Server thread/INFO]: Default game type: SURVIVAL
-[16:00:07] [Server thread/INFO]: Generating keypair
-[16:00:07] [Server thread/INFO]: Starting Minecraft server on *:20000
-[16:00:07] [Server thread/INFO]: Using default channel type
-[16:00:07] [Server thread/INFO]: Paper: Using Java compression from Velocity.
-[16:00:07] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
-[16:00:07] [Server thread/ERROR]: Ambiguous plugin name 'ViaVersion' for files 'plugins\ViaVersion-5.0.5.jar' and 'plugins\ViaVersion-5.0.3.jar' in 'plugins'
-[16:00:08] [Server thread/WARN]: Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
-[16:00:10] [Server thread/WARN]: Legacy plugin PlayTime v1.0 does not specify an api-version.
-[16:00:10] [Server thread/INFO]: [ChatImage] Loading 2 libraries... please wait
-[16:00:10] [Server thread/INFO]: [ChatImage] Loaded library L:\Rapalle.net\cloud\Cloud\static\lobby-1\libraries\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar
-[16:00:10] [Server thread/INFO]: [ChatImage] Loaded library L:\Rapalle.net\cloud\Cloud\static\lobby-1\libraries\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar
-[16:00:10] [Server thread/INFO]: Loading server plugin ViaVersion v5.0.5
-[16:00:10] [Server thread/INFO]: ViaVersion 5.0.5 is now loaded. Registering protocol transformers and injecting...
-[16:00:10] [Via-Mappingloader-0/INFO]: Loading block connection mappings ...
-[16:00:10] [Via-Mappingloader-0/INFO]: Using FastUtil Long2ObjectOpenHashMap for block connections
-[16:00:11] [Server thread/INFO]: Loading server plugin LuckPerms v5.4.141
-[16:00:11] [Server thread/INFO]: Loading server plugin Vault v1.7.3-b131
-[16:00:11] [Server thread/INFO]: Loading server plugin PlaceholderAPI v2.11.6
-[16:00:11] [Server thread/INFO]: Loading server plugin FastAsyncWorldEdit v2.9.2
-[16:00:12] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@7f692568]
-[16:00:12] [Server thread/INFO]: Loading server plugin DiscordSRV v1.28.0
-[16:00:12] [Server thread/INFO]: Loading server plugin SimpleScore v3.12.5
-[16:00:12] [Server thread/INFO]: Loading server plugin PoloCloud-Plugin v1.0.0
-[16:00:12] [Server thread/INFO]: Loading server plugin PlugMan v1.1.0
-[16:00:12] [Server thread/INFO]: Loading server plugin PlayTime v1.0
-[16:00:12] [Server thread/INFO]: Loading server plugin Maintenance v4.3.0
-[16:00:12] [Server thread/INFO]: Loading server plugin LPC v3.6.0
-[16:00:12] [Server thread/INFO]: Loading server plugin GSit v1.10.0
-[16:00:12] [Server thread/INFO]: Loading server plugin eBackup v1.3.1
-[16:00:12] [Server thread/INFO]: Loading server plugin DeluxeHub v3.5.5
-[16:00:12] [Server thread/INFO]: Loading server plugin CoreProtect v22.4
-[16:00:12] [Server thread/INFO]: Loading server plugin Chattar v1.1-SNAPSHOT
-[16:00:12] [Server thread/INFO]: Loading server plugin ChatImage v2.6.0
-[16:00:12] [Server thread/INFO]: Loading server plugin ChatHead v1.0.1
-[16:00:12] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[16:00:12] [Server thread/INFO]: Enabling LuckPerms v5.4.141
-[16:00:12] [Server thread/INFO]:         __    
-[16:00:12] [Server thread/INFO]:   |    |__)   LuckPerms v5.4.141
-[16:00:12] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
-[16:00:12] [Server thread/INFO]: 
-[16:00:12] [Server thread/INFO]: Loading configuration...
-[16:00:12] [Server thread/INFO]: Loading storage provider... [MYSQL]
-[16:00:12] [Server thread/INFO]: luckperms-hikari - Starting...
-[16:00:12] [Server thread/INFO]: luckperms-hikari - Start completed.
+[16:41:45] [Server thread/INFO]: Default game type: SURVIVAL
+[16:41:45] [Server thread/INFO]: Generating keypair
+[16:41:45] [Server thread/INFO]: Starting Minecraft server on *:20000
+[16:41:45] [Server thread/INFO]: Using default channel type
+[16:41:45] [Server thread/INFO]: Paper: Using Java compression from Velocity.
+[16:41:45] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
+[16:41:45] [Server thread/ERROR]: [ModernPluginLoadingStrategy] Ambiguous plugin name 'ViaVersion' for files 'plugins\ViaVersion-5.0.5.jar' and 'plugins\ViaVersion-5.0.3.jar' in 'plugins'
+[16:41:45] [Server thread/WARN]: [org.bukkit.craftbukkit.v1_20_R3.legacy.CraftLegacy] Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
+[16:41:47] [Server thread/WARN]: Legacy plugin PlayTime v1.0 does not specify an api-version.
+[16:41:47] [Server thread/INFO]: [SpigotLibraryLoader] [ChatImage] Loading 2 libraries... please wait
+[16:41:47] [Server thread/INFO]: [SpigotLibraryLoader] [ChatImage] Loaded library E:\Desktop\cloud\static\lobby-1\libraries\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar
+[16:41:47] [Server thread/INFO]: [SpigotLibraryLoader] [ChatImage] Loaded library E:\Desktop\cloud\static\lobby-1\libraries\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar
+[16:41:47] [Server thread/INFO]: [ViaVersion] Loading server plugin ViaVersion v5.0.5
+[16:41:47] [Server thread/INFO]: [ViaVersion] ViaVersion 5.0.5 is now loaded. Registering protocol transformers and injecting...
+[16:41:48] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
+[16:41:48] [Via-Mappingloader-0/INFO]: [ViaVersion] Using FastUtil Long2ObjectOpenHashMap for block connections
+[16:41:48] [Server thread/INFO]: [LuckPerms] Loading server plugin LuckPerms v5.4.141
+[16:41:49] [Server thread/INFO]: [Vault] Loading server plugin Vault v1.7.3-b131
+[16:41:49] [Server thread/INFO]: [PlaceholderAPI] Loading server plugin PlaceholderAPI v2.11.6
+[16:41:49] [Server thread/INFO]: [FastAsyncWorldEdit] Loading server plugin FastAsyncWorldEdit v2.9.2
+[16:41:50] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@33f958a3]
+[16:41:50] [Server thread/INFO]: [DiscordSRV] Loading server plugin DiscordSRV v1.28.0
+[16:41:50] [Server thread/INFO]: [SimpleScore] Loading server plugin SimpleScore v3.12.5
+[16:41:50] [Server thread/INFO]: [PoloCloud-Plugin] Loading server plugin PoloCloud-Plugin v1.0.0
+[16:41:50] [Server thread/INFO]: [PlugMan] Loading server plugin PlugMan v1.1.0
+[16:41:50] [Server thread/INFO]: [PlayTime] Loading server plugin PlayTime v1.0
+[16:41:50] [Server thread/INFO]: [Maintenance] Loading server plugin Maintenance v4.3.0
+[16:41:50] [Server thread/INFO]: [LPC] Loading server plugin LPC v3.6.0
+[16:41:50] [Server thread/INFO]: [GSit] Loading server plugin GSit v1.10.0
+[16:41:50] [Server thread/INFO]: [eBackup] Loading server plugin eBackup v1.3.1
+[16:41:50] [Server thread/INFO]: [DeluxeHub] Loading server plugin DeluxeHub v3.5.5
+[16:41:50] [Server thread/INFO]: [CoreProtect] Loading server plugin CoreProtect v22.4
+[16:41:50] [Server thread/INFO]: [Chattar] Loading server plugin Chattar v1.1-SNAPSHOT
+[16:41:50] [Server thread/INFO]: [ChatImage] Loading server plugin ChatImage v2.6.0
+[16:41:50] [Server thread/INFO]: [ChatHead] Loading server plugin ChatHead v1.0.1
+[16:41:50] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[16:41:50] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.4.141
+[16:41:50] [Server thread/INFO]:         __    
+[16:41:50] [Server thread/INFO]:   |    |__)   LuckPerms v5.4.141
+[16:41:50] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
+[16:41:50] [Server thread/INFO]: 
+[16:41:50] [Server thread/INFO]: [LuckPerms] Loading configuration...
+[16:41:51] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
+[16:41:51] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
+[16:41:51] [Server thread/INFO]: [LuckPerms] Performing initial data load...
+[16:41:51] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 1386ms)
+[16:41:51] [Server thread/INFO]: [Vault] Enabling Vault v1.7.3-b131
+[16:41:51] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
+[16:41:51] [Server thread/INFO]: [Vault] Enabled Version 1.7.3-b131
+[16:41:51] [Server thread/INFO]: [LuckPerms] Registered Vault permission & chat hook.
+[16:41:51] [Server thread/INFO]: [FastAsyncWorldEdit] Enabling FastAsyncWorldEdit v2.9.2
+[16:41:51] [Server thread/INFO]: [com.fastasyncworldedit.core.Fawe] LZ4 Compression Binding loaded successfully
+[16:41:52] [Server thread/INFO]: [com.fastasyncworldedit.core.Fawe] ZSTD Compression Binding loaded successfully
+[16:41:52] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[16:41:52] [Server thread/INFO]: WEPIF: Vault detected! Using Vault for permissions
+[16:41:52] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.fawe.v1_20_R3.PaperweightFaweAdapter as the Bukkit adapter
+[16:41:52] [Server thread/INFO]: [Chattar] Enabling Chattar v1.1-SNAPSHOT
+[16:41:52] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[16:41:52] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[16:41:52] [Server thread/WARN]: Whilst this makes it possible to use Velocity, unless access to your server is properly restricted, it also opens up the ability for hackers to connect with any username they choose.
+[16:41:52] [Server thread/WARN]: Please see https://docs.papermc.io/velocity/security for further information.
+[16:41:52] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[16:41:52] [Server thread/INFO]: Preparing level "world"
+[16:41:53] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[16:41:53] [ForkJoinPool.commonPool-worker-1/WARN]: [com.fastasyncworldedit.core.util.UpdateNotification] You are using a snapshot or a custom version of FAWE. This is not an official build distributed via https://www.spigotmc.org/resources/13932/
+[16:41:53] [Server thread/INFO]: Time elapsed: 294 ms
+[16:41:53] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v5.0.5
+[16:41:53] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.20.3-1.20.4 (765)
+[16:41:53] [Server thread/INFO]: [PlaceholderAPI] Enabling PlaceholderAPI v2.11.6
+[16:41:53] [Server thread/INFO]: [PlaceholderAPI] Fetching available expansion information...
+[16:41:53] [Server thread/INFO]: [DiscordSRV] Enabling DiscordSRV v1.28.0
+[16:41:53] [Server thread/INFO]: [SimpleScore] Enabling SimpleScore v3.12.5
+[16:41:54] [Server thread/INFO]: [SimpleScore] It looks like your server doesn't have ProtocolLib, install ProtocolLib for even better performance and compatibility with other plugins.
+[16:41:54] [Server thread/INFO]: [SimpleScore] https://www.spigotmc.org/resources/protocollib.1997/
+[16:41:54] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: SimpleScore [3.12.5]
+[16:41:54] [Server thread/INFO]: [PoloCloud-Plugin] Enabling PoloCloud-Plugin v1.0.0
+[16:41:54] [Server thread/INFO]: [PlugMan] Enabling PlugMan v1.1.0
+[16:41:54] [Server thread/INFO]: [PlugMan] No Bot token set! To use Discord Please create the File Server/plugins/PlugMan/token.txt and paste your bot token in it.
+[16:41:54] [Server thread/INFO]: [PlayTime] Enabling PlayTime v1.0*
+[16:41:54] [Server thread/INFO]: ACTIVATED
+[16:41:54] [Server thread/INFO]: [PlayTime] [STDOUT]     0
+[16:41:54] [Server thread/WARN]: Nag author(s): '[lustigeeefails]' of 'PlayTime v1.0' about their usage of System.out/err.print. Please use your plugin's logger instead (JavaPlugin#getLogger).
+[16:41:54] [Server thread/INFO]: [PlayTime] [STDOUT]   0   0
+[16:41:54] [Server thread/INFO]: [PlayTime] [STDOUT] 0       0
+[16:41:54] [Server thread/INFO]: [PlayTime] [STDOUT]     0
+[16:41:54] [Server thread/INFO]: [PlayTime] [STDOUT]     0
+[16:41:54] [Server thread/INFO]: [PlayTime] [STDOUT]     0
+[16:41:54] [Server thread/INFO]: [PlayTime] [STDOUT]     0
+[16:41:54] [Server thread/INFO]: [PlayTime] [STDOUT]     0
+[16:41:54] [Server thread/INFO]: [PlayTime] [STDOUT]     0
+[16:41:54] [Server thread/INFO]: [PlayTime] [STDOUT] §2Config loaded
+[16:41:54] [Server thread/INFO]: [Maintenance] Enabling Maintenance v4.3.0
+[16:41:54] [Server thread/INFO]: [LPC] Enabling LPC v3.6.0
+[16:41:54] [Server thread/INFO]: [GSit] Enabling GSit v1.10.0
+[16:41:54] [Server thread/INFO]: [GSit] The plugin was successfully enabled.
+[16:41:54] [Server thread/INFO]: [GSit] Link with PlaceholderAPI successful!
+[16:41:54] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: gsit [1.10.0]
+[16:41:54] [Server thread/INFO]: [eBackup] Enabling eBackup v1.3.1
+[16:41:54] [Server thread/INFO]: [eBackup] Initializing eBackup...
+[16:41:54] [Server thread/INFO]: [eBackup] Configured the cron task to be: at 04:00 at 4 day
+[16:41:54] [Server thread/INFO]: [eBackup] Plugin initialized!
+[16:41:54] [Server thread/INFO]: [DeluxeHub] Enabling DeluxeHub v3.5.5
+[16:41:54] [Server thread/INFO]: [DeluxeHub]  _   _            _          _    _ 
+[16:41:54] [Server thread/INFO]: [DeluxeHub] | \ |_ |  | | \/ |_ |_| | | |_)   _)
+[16:41:54] [Server thread/INFO]: [DeluxeHub] |_/ |_ |_ |_| /\ |_ | | |_| |_)   _)
+[16:41:54] [Server thread/INFO]: [DeluxeHub] 
+[16:41:54] [Server thread/INFO]: [DeluxeHub] Version: 3.5.5
+[16:41:54] [Server thread/INFO]: [DeluxeHub] Author: ItsLewizzz
+[16:41:54] [Server thread/INFO]: [DeluxeHub] 
+[16:41:54] [Server thread/INFO]: [DeluxeHub]  Hooked into PlaceholderAPI
+[16:41:54] [Server thread/INFO]: [DeluxeHub] Loaded custom menu 'serverselector'.
+[16:41:55] [Server thread/INFO]: [NBTAPI] [NBTAPI] Found Spigot: v1_20_R3! Trying to find NMS support
+[16:41:55] [Server thread/WARN]: [NBTAPI] [NBTAPI] This Server-Version(v1_20_R3) is not supported by this NBT-API Version(2.12.0) located in DeluxeHub. The NBT-API will try to work as good as it can! Some functions may not work!
+[16:41:55] [Server thread/INFO]: [NBTAPI] [NBTAPI] Using the plugin 'DeluxeHub' to create a bStats instance!
+[16:41:55] [Server thread/INFO]: [DeluxeHub] Loaded 14 plugin modules.
+[16:41:55] [Server thread/INFO]: [DeluxeHub] 
+[16:41:55] [Server thread/INFO]: [DeluxeHub] Successfully loaded in 532ms
+[16:41:55] [Server thread/INFO]: [CoreProtect] Enabling CoreProtect v22.4
+[16:41:55] [DiscordSRV - Initialization/ERROR]: [DiscordSRV] ===================================================
+[16:41:55] [DiscordSRV - Initialization/ERROR]: [DiscordSRV]  
+[16:41:55] [DiscordSRV - Initialization/ERROR]: [DiscordSRV]  DiscordSRV could not connect to Discord because:
+[16:41:55] [DiscordSRV - Initialization/ERROR]: [DiscordSRV]  The bot token is invalid
+[16:41:55] [DiscordSRV - Initialization/ERROR]: [DiscordSRV]  
+[16:41:55] [DiscordSRV - Initialization/ERROR]: [DiscordSRV] ===================================================
+[16:41:55] [Server thread/INFO]: [CoreProtect] Invalid WorldEdit version found.
+[16:41:55] [Server thread/INFO]: [CoreProtect] CoreProtect has been successfully enabled! 
+[16:41:55] [Server thread/INFO]: [CoreProtect] Using SQLite for data storage.
+[16:41:55] [Server thread/INFO]: --------------------
+[16:41:55] [Server thread/INFO]: [CoreProtect] Enjoy CoreProtect? Join our Discord!
+[16:41:55] [Server thread/INFO]: [CoreProtect] Discord: www.coreprotect.net/discord/
+[16:41:55] [Server thread/INFO]: --------------------
+[16:41:55] [Server thread/INFO]: [ChatImage] Enabling ChatImage v2.6.0
+[16:41:55] [Server thread/INFO]: [DiscordSRV] API listener me.chickensaysbak.chatimage.core.softdepend.DiscordSRVHandler Anmeldung (1 Methoden)
+[16:41:55] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: chatimage [1.0.0]
+[16:41:55] [Server thread/INFO]: [ChatHead] Enabling ChatHead v1.0.1
+[16:41:55] [Server thread/INFO]: [PlaceholderAPI] Placeholder expansion registration initializing...
+[16:41:55] [Server thread/INFO]: Running delayed init tasks
+[16:41:55] [Craft Scheduler Thread - 1 - ViaVersion/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor.
+[16:41:55] [Server thread/INFO]: [DiscordSRV] Disabling DiscordSRV v1.28.0
+[16:41:55] [Server thread/INFO]: Done (11.989s)! For help, type "help"
+[16:41:55] [Server thread/INFO]: Timings Reset
+[16:41:55] [Craft Scheduler Thread - 3 - Vault/INFO]: [Vault] Checking for Updates ... 
+[16:41:55] [Craft Scheduler Thread - 3 - Vault/INFO]: [Vault] No new version available
+[16:41:56] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: luckperms [5.4-R2]
+[16:41:56] [Server thread/INFO]: 1 placeholder hook(s) registered!
+[16:41:56] [Server thread/WARN]: [ViaVersion] There is a newer plugin version available: 5.2.1, you're on: 5.0.5
+[16:41:58] [User Authenticator #0/INFO]: UUID of player RAPALLE is d0a66567-dc4d-410a-9f31-1debb1ff51ad
+[16:41:59] [Server thread/ERROR]: Could not pass event PlayerJoinEvent to DeluxeHub v3.5.5
+java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because "this.joinMessage" is null
+	at fun.lewisdev.deluxehub.module.modules.player.PlayerListener.onPlayerJoin(PlayerListener.java:92) ~[DeluxeHub-3.5.5.jar:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor95.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:81) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:git-Paper-497]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperEventManager.callEvent(PaperEventManager.java:54) ~[paper-1.20.4.jar:git-Paper-497]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.callEvent(PaperPluginManagerImpl.java:126) ~[paper-1.20.4.jar:git-Paper-497]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:615) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at net.minecraft.server.players.PlayerList.placeNewPlayer(PlayerList.java:345) ~[paper-1.20.4.jar:git-Paper-497]
+	at net.minecraft.server.network.ServerConfigurationPacketListenerImpl.handleConfigurationFinished(ServerConfigurationPacketListenerImpl.java:134) ~[paper-1.20.4.jar:git-Paper-497]
+	at net.minecraft.network.protocol.configuration.ServerboundFinishConfigurationPacket.handle(ServerboundFinishConfigurationPacket.java:18) ~[paper-1.20.4.jar:git-Paper-497]
+	at net.minecraft.network.protocol.configuration.ServerboundFinishConfigurationPacket.a(ServerboundFinishConfigurationPacket.java:9) ~[paper-1.20.4.jar:git-Paper-497]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$0(PacketUtils.java:54) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.20.4.jar:git-Paper-497]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:149) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1465) ~[paper-1.20.4.jar:git-Paper-497]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:194) ~[paper-1.20.4.jar:git-Paper-497]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:123) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1442) ~[paper-1.20.4.jar:git-Paper-497]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1365) ~[paper-1.20.4.jar:git-Paper-497]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:133) ~[?:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1343) ~[paper-1.20.4.jar:git-Paper-497]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1232) ~[paper-1.20.4.jar:git-Paper-497]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:319) ~[paper-1.20.4.jar:git-Paper-497]
+	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[16:41:59] [Server thread/INFO]: [+] RAPALLE
+[16:41:59] [Server thread/INFO]: RAPALLE[/127.0.0.1:55863] logged in with entity id 2 at ([world]17.46001561618383, 156.0, 489.41782782454163)
+[16:42:19] [Server thread/INFO]: RAPALLE lost connection: Disconnected
+[16:42:19] [Server thread/ERROR]: Could not pass event PlayerQuitEvent to DeluxeHub v3.5.5
+java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because "this.quitMessage" is null
+	at fun.lewisdev.deluxehub.module.modules.player.PlayerListener.onPlayerQuit(PlayerListener.java:133) ~[DeluxeHub-3.5.5.jar:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor93.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:81) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:git-Paper-497]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperEventManager.callEvent(PaperEventManager.java:54) ~[paper-1.20.4.jar:git-Paper-497]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.callEvent(PaperPluginManagerImpl.java:126) ~[paper-1.20.4.jar:git-Paper-497]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:615) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at net.minecraft.server.players.PlayerList.remove(PlayerList.java:613) ~[paper-1.20.4.jar:git-Paper-497]
+	at net.minecraft.server.players.PlayerList.remove(PlayerList.java:598) ~[paper-1.20.4.jar:git-Paper-497]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.removePlayerFromWorld(ServerGamePacketListenerImpl.java:2093) ~[?:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.onDisconnect(ServerGamePacketListenerImpl.java:2073) ~[?:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.onDisconnect(ServerGamePacketListenerImpl.java:2060) ~[?:?]
+	at net.minecraft.network.Connection.handleDisconnection(Connection.java:838) ~[?:?]
+	at net.minecraft.server.network.ServerConnectionListener.tick(ServerConnectionListener.java:254) ~[?:?]
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1746) ~[paper-1.20.4.jar:git-Paper-497]
+	at net.minecraft.server.dedicated.DedicatedServer.tickChildren(DedicatedServer.java:447) ~[paper-1.20.4.jar:git-Paper-497]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1525) ~[paper-1.20.4.jar:git-Paper-497]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1226) ~[paper-1.20.4.jar:git-Paper-497]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:319) ~[paper-1.20.4.jar:git-Paper-497]
+	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[16:42:19] [Server thread/INFO]: [-] RAPALLE
+[16:42:20] [Server thread/INFO]: Stopping the server
+[16:42:20] [Server thread/INFO]: Stopping server
+[16:42:20] [Server thread/INFO]: [ChatHead] Disabling ChatHead v1.0.1
+[16:42:20] [Server thread/INFO]: [ChatImage] Disabling ChatImage v2.6.0
+[16:42:20] [Server thread/INFO]: [DiscordSRV] API listener me.chickensaysbak.chatimage.core.softdepend.DiscordSRVHandler Abmeldung
+[16:42:20] [Server thread/INFO]: [Chattar] Disabling Chattar v1.1-SNAPSHOT
+[16:42:20] [Server thread/INFO]: [CoreProtect] Disabling CoreProtect v22.4
+[16:42:20] [Server thread/INFO]: [CoreProtect] Finishing up data logging. Please wait...
+[16:42:21] [Server thread/INFO]: [CoreProtect] Success! Disabled CoreProtect v22.4
+[16:42:21] [Server thread/INFO]: [DeluxeHub] Disabling DeluxeHub v3.5.5
+[16:42:21] [Server thread/INFO]: [eBackup] Disabling eBackup v1.3.1
+[16:42:21] [Server thread/INFO]: [eBackup] Disabled eBackup!
+[16:42:21] [Server thread/INFO]: [GSit] Disabling GSit v1.10.0
+[16:42:21] [Server thread/INFO]: [GSit] The plugin was successfully disabled.
+[16:42:21] [Server thread/INFO]: [LPC] Disabling LPC v3.6.0
+[16:42:21] [Server thread/INFO]: [Maintenance] Disabling Maintenance v4.3.0
+[16:42:21] [Server thread/INFO]: [PlayTime] Disabling PlayTime v1.0
+[16:42:21] [Server thread/INFO]: DISABLED
+[16:42:21] [Server thread/INFO]: [PlayTime] [STDOUT]     0
+[16:42:21] [Server thread/INFO]: [PlayTime] [STDOUT]   0   0
+[16:42:21] [Server thread/INFO]: [PlayTime] [STDOUT] 0       0
+[16:42:21] [Server thread/INFO]: [PlayTime] [STDOUT]     0
+[16:42:21] [Server thread/INFO]: [PlayTime] [STDOUT]     0
+[16:42:21] [Server thread/INFO]: [PlayTime] [STDOUT]     0
+[16:42:21] [Server thread/INFO]: [PlayTime] [STDOUT]     0
+[16:42:21] [Server thread/INFO]: [PlayTime] [STDOUT]     0
+[16:42:21] [Server thread/INFO]: [PlayTime] [STDOUT]     0
+[16:42:21] [Server thread/INFO]: [PlugMan] Disabling PlugMan v1.1.0
+[16:42:21] [Server thread/INFO]: [PlugMan] CANT STOP BOT! BOT NOT RUNNING!
+[16:42:21] [Server thread/INFO]: [PoloCloud-Plugin] Disabling PoloCloud-Plugin v1.0.0
+[16:42:21] [Server thread/INFO]: [SimpleScore] Disabling SimpleScore v3.12.5
+[16:42:21] [Server thread/INFO]: [FastAsyncWorldEdit] Disabling FastAsyncWorldEdit v2.9.2
+[16:42:21] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
+[16:42:21] [Server thread/INFO]: [PlaceholderAPI] Disabling PlaceholderAPI v2.11.6
+[16:42:21] [Server thread/INFO]: [Vault] Disabling Vault v1.7.3-b131
+[16:42:21] [Server thread/INFO]: [LuckPerms] Disabling LuckPerms v5.4.141
+[16:42:21] [Server thread/INFO]: [LuckPerms] Starting shutdown process...
+[16:42:21] [Server thread/INFO]: [LuckPerms] Closing storage...
+[16:42:21] [Server thread/INFO]: [LuckPerms] Goodbye!
+[16:42:21] [Server thread/INFO]: [ViaVersion] Disabling ViaVersion v5.0.5
+[16:42:21] [Server thread/INFO]: [ViaVersion] ViaVersion has been disabled; uninjected the platform and shut down the scheduler.
+[16:42:21] [Server thread/INFO]: Saving players
+[16:42:21] [Server thread/INFO]: Saving worlds
+[16:42:21] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[16:42:21] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[16:42:21] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[16:42:21] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[16:42:22] [Server thread/INFO]: [ChunkHolderManager] Saved 679 block chunks, 679 entity chunks, 0 poi chunks in world 'world' in 0,26s
+[16:42:22] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[16:42:22] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[16:42:22] [Server thread/INFO]: Flushing Chunk IO
+[16:42:22] [Server thread/INFO]: Closing Thread Pool
+[16:42:22] [Server thread/INFO]: Closing Server

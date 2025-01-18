@@ -1,2 +1,2 @@
 @echo off
-java -jar ./polocloud-1.0.0.6-SNAPSHOT.jar
+java -jar ./polocloud-1.0.0-alpha-4.jar
