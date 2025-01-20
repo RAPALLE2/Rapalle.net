@@ -1,0 +1,53 @@
+Ports:
+20    | FTP (File Transfer Protocol, Datenübertragung)
+21    | FTP (File Transfer Protocol, Steuerung)
+22    | SSH (Secure Shell) - Fernzugriff auf Server
+23    | Telnet - Fernzugriff ohne Verschlüsselung
+25    | SMTP (Simple Mail Transfer Protocol) - E-Mail-Versand
+53    | DNS (Domain Name System) - Namensauflösung
+67    | DHCP (Dynamic Host Configuration Protocol) - Client-Anfragen
+68    | DHCP (Dynamic Host Configuration Protocol) - Server-Antworten
+69    | TFTP (Trivial File Transfer Protocol)
+80    | HTTP (Hypertext Transfer Protocol) - Standard-Webseiten
+110   | POP3 (Post Office Protocol v3) - E-Mail-Abruf
+123   | NTP (Network Time Protocol) - Zeitsynchronisation
+135   | RPC (Remote Procedure Call) - Microsoft-Dienste
+137   | NetBIOS - Namensauflösung
+138   | NetBIOS - Datagrammdienst
+139   | NetBIOS - Sitzungsdienst
+143   | IMAP (Internet Message Access Protocol) - E-Mail-Abruf
+161   | SNMP (Simple Network Management Protocol) - Netzwerkverwaltung
+162   | SNMP-Trap - Alarme von Geräten
+389   | LDAP (Lightweight Directory Access Protocol)
+443   | HTTPS (HTTP Secure) - Verschlüsseltes Web-Browsing
+465   | SMTPS (Secure SMTP) - Verschlüsselter E-Mail-Versand
+514   | Syslog - Log-Daten von Netzwerkgeräten
+587   | SMTP (Message Submission) - E-Mail-Versand
+631   | IPP (Internet Printing Protocol) - Druckerkommunikation
+993   | IMAPS (Secure IMAP) - Verschlüsselter E-Mail-Abruf
+995   | POP3S (Secure POP3) - Verschlüsselter E-Mail-Abruf
+1433  | Microsoft SQL Server - Datenbankzugriff
+1521  | Oracle Database - Datenbankzugriff
+1723  | PPTP (Point-to-Point Tunneling Protocol) - VPN
+1812  | RADIUS (Remote Authentication Dial-In User Service) - Authentifizierung
+1883  | MQTT (Message Queuing Telemetry Transport) - IoT-Kommunikation
+1900  | UPnP (Universal Plug and Play) - Geräteerkennung
+3306  | MySQL - Datenbankzugriff
+3389  | RDP (Remote Desktop Protocol) - Fernsteuerung von Windows
+5432  | PostgreSQL - Datenbankzugriff
+5631  | PC Anywhere - Fernsteuerung
+5900  | VNC (Virtual Network Computing) - Fernzugriff auf Desktops
+6379  | Redis - Datenbankzugriff
+8080  | HTTP (alternativer Port oder für lokale Webserver)
+8443  | HTTPS (alternativer Port, oft für Test- oder Entwicklungsserver)
+19132 | Minecraft Bedrock Edition - Standard-Port für Bedrock-Server
+25565 | Minecraft Java Edition - Server für das Spiel Minecraft
+
+System Ports (0-1023): Diese Ports sind fest für System- oder Standardprotokolle reserviert (z. B. HTTP auf Port 80).
+Registered Ports (1024-49151): Diese Ports sind für bestimmte Anwendungen registriert (z. B. Minecraft Java auf 25565).
+Dynamic/Private Ports (49152-65535): Diese Ports werden oft zufällig von Betriebssystemen für temporäre Verbindungen verwendet.
+
+55101, 55102, 55103,..., 55199 server software
+55201, 55202, 55203,..., 55299 cloud server
+55301, 55302, 55303,..., 55399 server hosting
+55401, 55402, 55403,..., 55499 private server
