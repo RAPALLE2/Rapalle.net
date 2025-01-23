@@ -75,7 +75,7 @@ def CreateStartScript():
 
 
 def Output(Type, Message):
-    Now = datetime.now()
+    Now = datetime.datetime.now()
     Time = Now.strftime("%H:%M:%S")
 
     if Type.lower() == "info":

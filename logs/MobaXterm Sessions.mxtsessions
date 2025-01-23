@@ -1,0 +1,47 @@
+[Bookmarks]
+SubRep=
+ImgNum=42
+
+[Bookmarks_1]
+SubRep=Ide
+ImgNum=41
+Aqua=#172#9%__DBLQUO__C:\Users\Tobi\AppData\Local\Programs\Aqua\bin\aqua64.exe__DBLQUO__%0%#MobaFont%10%0%0%-1%15%236,236,236%30,30,30%180,180,192%0%-1%0%%xterm%-1%0%_Std_Colors_0_%80%24%0%1%-1%<none>%%0%0%-1%0%#0# #-1
+GitHub=#175#9%__DBLQUO__C:\Users\Tobi\AppData\Local\GitHubDesktop\GitHubDesktop.exe__DBLQUO__%0%#MobaFont%10%0%0%-1%15%236,236,236%30,30,30%180,180,192%0%-1%0%%xterm%-1%0%_Std_Colors_0_%80%24%0%1%-1%<none>%%0%0%-1%0%#0# #-1
+IntelliJ=#169#9%__DBLQUO__C:\Users\Tobi\AppData\Local\Programs\IntelliJ IDEA Community Edition\bin\idea64.exe__DBLQUO__%0%#MobaFont%10%0%0%-1%15%236,236,236%30,30,30%180,180,192%0%-1%0%%xterm%-1%0%_Std_Colors_0_%80%24%0%1%-1%<none>%%0%0%-1%0%#0# #-1
+PyCharm=#171#9%__DBLQUO__C:\Program Files (x86)\JetBrains\PyCharm Community Edition 2024.3.1.1\bin\pycharm64.exe__DBLQUO__%0%#MobaFont%10%0%0%-1%15%236,236,236%30,30,30%180,180,192%0%-1%0%%xterm%-1%0%_Std_Colors_0_%80%24%0%1%-1%<none>%%0%0%-1%0%#0# #-1
+Toolbox=#170#9%C:\Users\Tobi\AppData\Local\JetBrains\Toolbox\bin\jetbrains-toolbox.exe%0%#MobaFont%10%0%0%-1%15%236,236,236%30,30,30%180,180,192%0%-1%0%%xterm%-1%0%_Std_Colors_0_%80%24%0%1%-1%<none>%%0%0%-1%0%#0# #-1
+VSCode=#174#9%__DBLQUO__C:\Users\Tobi\AppData\Local\Programs\Microsoft VS Code\Code.exe__DBLQUO__%0%#MobaFont%10%0%0%-1%15%236,236,236%30,30,30%180,180,192%0%-1%0%%xterm%-1%0%_Std_Colors_0_%80%24%0%1%-1%<none>%%0%0%-1%0%#0# #-1
+WebStorm=#173#9%__DBLQUO__C:\Users\Tobi\AppData\Local\Programs\WebStorm\bin\webstorm64.exe__DBLQUO__%0%#MobaFont%10%0%0%-1%15%236,236,236%30,30,30%180,180,192%0%-1%0%%xterm%-1%0%_Std_Colors_0_%80%24%0%1%-1%<none>%%0%0%-1%0%#0# #-1
+
+[Bookmarks_2]
+SubRep=Programms
+ImgNum=41
+Cmd=#162#10%1%C:\Users\Tobi\Desktop#MobaFont%10%0%0%-1%15%236,236,236%30,30,30%180,180,192%0%-1%0%%xterm%-1%0%_Std_Colors_0_%80%24%0%1%-1%<none>%%0%0%-1%0%#0# #-1
+GithubRepo=#167#11%https://github.com/RAPALLE2/Rapalle.net%-1%-1%-1%-1%-1%-1%-1%0%0%3%-1%-1%0%-1%0%-1%0%%#MobaFont%10%0%0%-1%15%236,236,236%30,30,30%180,180,192%0%-1%0%%xterm%-1%0%_Std_Colors_0_%80%24%0%1%-1%<none>%%0%0%-1%0%#0# #-1
+Notepad++=#160#9%C:\Program Files\Notepad++\notepad++.exe%-1%#MobaFont%10%0%0%-1%15%236,236,236%30,30,30%180,180,192%0%-1%0%%xterm%-1%0%_Std_Colors_0_%80%24%0%1%-1%<none>%%0%0%-1%0%#0# #-1
+Notion=#168#9%C:\Users\Tobi\AppData\Local\Programs\Notion\Notion.exe%0%#MobaFont%10%0%0%-1%15%236,236,236%30,30,30%180,180,192%0%-1%0%%xterm%-1%0%_Std_Colors_0_%80%24%0%1%-1%<none>%%0%0%-1%0%#0# #-1
+
+[Bookmarks_3]
+SubRep=Raspi
+ImgNum=41
+RaspiRoot=#150#9%R:\%0%#MobaFont%10%0%0%-1%15%236,236,236%30,30,30%180,180,192%0%-1%0%%xterm%-1%0%_Std_Colors_0_%80%24%0%1%-1%<none>%%0%0%-1%0%#0# #-1
+raspi-sftp=#165#7%192.168.178.48%22%rapalle%-1%0%%0%0%%0%%1080%%%%0#MobaFont%10%0%0%-1%15%236,236,236%30,30,30%180,180,192%0%-1%0%%xterm%-1%0%_Std_Colors_0_%80%24%0%1%-1%<none>%%0%0%-1%0%#0# #-1
+raspi-ssh=#97#0%192.168.178.48%22%rapalle%%-1%-1%sudo su%%%%-1%0%0%%%0%0%0%0%%1080%%0%0%0%%0%%%%0%-1%-1%0#MobaFont%10%0%0%-1%15%236,236,236%30,30,30%180,180,192%0%-1%0%%xterm%-1%0%_Std_Colors_0_%80%24%0%1%-1%Autocd: -shopt -s autocd%%0%0%-1%0%#0# #-1
+raspi-vnc=#92#5%192.168.178.48%5900%-1%0%%%%%-1%-1%0%rapalle%0%%1080%%%0#MobaFont%10%0%0%-1%15%236,236,236%30,30,30%180,180,192%0%-1%0%%xterm%-1%0%_Std_Colors_0_%80%24%0%1%-1%<none>%%0%0%-1%0%#0# #-1
+VncViewer=#163#9%C:\Program Files\RealVNC\VNC Viewer\vncviewer.exe%-1%#MobaFont%10%0%0%-1%15%236,236,236%30,30,30%180,180,192%0%-1%0%%xterm%-1%0%_Std_Colors_0_%80%24%0%1%-1%<none>%%0%0%-1%0%#0# #-1
+
+[Bookmarks_4]
+SubRep=Server
+ImgNum=41
+EnteAuth=#161#9%C:\Users\Tobi\AppData\Local\Programs\Ente Auth\auth.exe%0%#MobaFont%10%0%0%-1%15%236,236,236%30,30,30%180,180,192%0%-1%0%%xterm%-1%0%_Std_Colors_0_%80%24%0%1%-1%<none>%%0%0%-1%0%#0# #-1
+RemoteDesktop=#166#9%C:\Windows\System32\mstsc.exe%0%#MobaFont%10%0%0%-1%15%236,236,236%30,30,30%180,180,192%0%-1%0%%xterm%-1%0%_Std_Colors_0_%80%24%0%1%-1%<none>%%0%0%-1%0%#0# #-1
+ServerRoot=#151#9%X:\%0%#MobaFont%10%0%0%-1%15%236,236,236%30,30,30%180,180,192%0%-1%0%%xterm%-1%0%_Std_Colors_0_%80%24%0%1%-1%<none>%%0%0%-1%0%#0# #-1
+Tactical RMM-Intern=#164#11%https://rmm.kevnetwork-intern.com%-1%-1%-1%-1%-1%-1%-1%0%0%3%-1%-1%0%-1%0%-1%0%%#MobaFont%10%0%0%-1%15%236,236,236%30,30,30%180,180,192%0%-1%0%%xterm%-1%0%_Std_Colors_0_%80%24%0%1%-1%<none>%%0%0%-1%0%#0# #-1
+Tactical RMM-Opera=#164#9%https://rmm.kevnetwork-intern.com%0%#MobaFont%10%0%0%-1%15%236,236,236%30,30,30%180,180,192%0%-1%0%%xterm%-1%0%_Std_Colors_0_%80%24%0%1%-1%<none>%%0%0%-1%0%#0# #-1
+
+[Bookmarks_5]
+SubRep=Websites
+ImgNum=41
+Cloudflare= #84#9%https://dash.cloudflare.com/e992ae02235a1763c1028ac553343276/rapalle.net/dns/records%0%#MobaFont%10%0%0%-1%15%236,236,236%30,30,30%180,180,192%0%-1%0%%xterm%-1%0%_Std_Colors_0_%80%24%0%1%-1%<none>%%0%0%-1%0%#0# #-1
+Playit= #84#9%https://playit.gg/account/tunnels%0%#MobaFont%10%0%0%-1%15%236,236,236%30,30,30%180,180,192%0%-1%0%%xterm%-1%0%_Std_Colors_0_%80%24%0%1%-1%<none>%%0%0%-1%0%#0# #-1
+
