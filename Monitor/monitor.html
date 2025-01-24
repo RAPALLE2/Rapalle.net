@@ -427,7 +427,7 @@
                     document.getElementById('raspiCpuValue').innerText = `CPU: ${data.raspi?.cpu_usage}%`;
                     document.getElementById('raspiRamValue').innerText = `RAM: ${data.raspi?.ram_usage}% / 8GB`;
                     document.getElementById('raspiDiskValue').innerText = `Disk: ${data.raspi?.disk_usage}%`;
-                    document.getElementById('raspiEthernetValue').innerText = `Ethernet: Sent: ${data.raspi?.network.bytes_sent}, Received: ${jsonData.network.bytes_recv}`;
+                    document.getElementById('raspiEthernetValue').innerText = `Ethernet: Sent: ${data.raspi?.network.bytes_sent}, Received: ${jsonData.network.bytes_recv}`
 
                     document.getElementById('serverCpuValue').innerText = `CPU: ${data.server?.cpu_usage}%`;
                     document.getElementById('serverRamValue').innerText = `RAM: ${data.server?.ram_usage}% / 32GB`;
