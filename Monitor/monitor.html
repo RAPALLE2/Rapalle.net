@@ -23,7 +23,10 @@
             color: #666;
         }
         h2 {
-            color: #666;
+            color: #777;
+        }
+        p {
+            color: #888;
         }
 
         canvas {
@@ -35,11 +38,6 @@
             margin-bottom: 20px;
         }
 
-        .metrics {
-            display: flex;
-            flex-wrap: wrap; /* Erlaubt den Umbruch der Elemente */
-            justify-content: space-between;
-        }
 
         .metric {
             max-height: 1500px;
@@ -58,6 +56,21 @@
             gap: 10px; /* Abstand zwischen den Elementen */
         }
 
+        #metrics {
+            display: flex;
+            flex-wrap: wrap; /* Erlaubt den Umbruch der Elemente */
+            gap: 10px; /* Abstand zwischen den Elementen */
+        }
+
+        .list {
+            max-height: 400px;
+            min-width: 30%;
+            position: relative;
+            border: 5px;
+            border-color: #7288ff;
+        }
+
+
         /* Responsive Design */
         @media (max-width: 600px) {
             .metric {
@@ -68,6 +81,20 @@
 </head>
 
 <body>
+<div id="metrics">
+        <div class="list">
+          <h2>Raspi</h2>
+          <p>CPU: N/A</p>
+          <p>RAM: N/A</p>
+          <p>Disk: N/A</p>
+        </div>
+        <div class="list">
+          <h2>Server</h2>
+          <p>CPU: N/A</p>
+          <p>RAM: N/A</p>
+          <p>Disk: N/A</p>
+        </div>
+</div>
     <h2>Raspi</h2>
     <div class="graphs">
         <!-- Raspi Metrics -->
@@ -397,15 +424,15 @@
                     serverDiskChart.update();
 
                     // Insert values into the graphs
-                    document.getElementById('raspiCpuValue').innerText = `CPU: ${jsonData.cpu_usage}%`;
-                    document.getElementById('raspiRamValue').innerText = `RAM: ${jsonData.ram_usage}% / 8GB`;
-                    document.getElementById('raspiDiskValue').innerText = `Disk: ${jsonData.disk_usage}%`;
-                    document.getElementById('raspiEthernetValue').innerText = `Ethernet: Sent: ${jsonData.network.bytes_sent}, Received: ${jsonData.network.bytes_recv}`;
+                    document.getElementById('raspiCpuValue').innerText = `CPU: ${data.raspi?.cpu_usage}%`;
+                    document.getElementById('raspiRamValue').innerText = `RAM: ${data.raspi?.ram_usage}% / 8GB`;
+                    document.getElementById('raspiDiskValue').innerText = `Disk: ${data.raspi?.disk_usage}%`;
+                    document.getElementById('raspiEthernetValue').innerText = `Ethernet: Sent: ${data.raspi?.network.bytes_sent}, Received: ${jsonData.network.bytes_recv}`;
 
-                    document.getElementById('serverCpuValue').innerText = `CPU: ${jsonData.cpu_usage}%`;
-                    document.getElementById('serverRamValue').innerText = `RAM: ${jsonData.ram_usage}% / 32GB`;
-                    document.getElementById('serverDiskValue').innerText = `Disk: ${jsonData.disk_usage}%`;
-                    document.getElementById('serverEthernetValue').innerText = `Ethernet: Sent: ${jsonData.network.bytes_sent}, Received: ${jsonData.network.bytes_recv}`;
+                    document.getElementById('serverCpuValue').innerText = `CPU: ${data.server?.cpu_usage}%`;
+                    document.getElementById('serverRamValue').innerText = `RAM: ${data.server?.ram_usage}% / 32GB`;
+                    document.getElementById('serverDiskValue').innerText = `Disk: ${data.server?.disk_usage}%`;
+                    document.getElementById('serverEthernetValue').innerText = `Ethernet: Sent: ${data.server?.network.bytes_sent}, Received: ${jsonData.network.bytes_recv}`;
 
                 } catch (error) {
                     console.error(`Error fetching data from ${device}:`, error);
@@ -415,13 +442,13 @@
 
             // Display other metrics (CPU, RAM, Disk) in the text view
             document.getElementById('metrics').innerHTML = `
-        <div class="metric">
+        <div class="list">
           <h2>Raspi</h2>
           <p>CPU: ${data.raspi?.cpu_usage || 'N/A'}%</p>
           <p>RAM: ${data.raspi?.ram_usage || 'N/A'}%</p>
           <p>Disk: ${data.raspi?.disk_usage || 'N/A'}%</p>
         </div>
-        <div class="metric">
+        <div class="list">
           <h2>Server</h2>
           <p>CPU: ${data.server?.cpu_usage || 'N/A'}%</p>
           <p>RAM: ${data.server?.ram_usage || 'N/A'}%</p>
