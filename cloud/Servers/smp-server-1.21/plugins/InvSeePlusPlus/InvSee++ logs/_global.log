@@ -3184,3 +3184,33 @@ Spectator Name: RAPALLE
 Taken         : [ANCIENT_DEBRIS x 25]
 Given         : []
 Target        : Lykron
+[2025-01-18 12:56:47] [INFORMATION]:
+Spectator UUID: d0a66567-dc4d-410a-9f31-1debb1ff51ad
+Spectator Name: RAPALLE
+Taken         : [RED_SHULKER_BOX & TILE_ENTITY_META:{meta-type=TILE_ENTITY, display-name="Redstone", internal=H4sIAAAAAAAA/53US1PCMBAA4AjlVRV5F2X8A45cPHLyn3TSNECGtKlpKoO/3pRxprvCevCSaRm+2c0+GjIWsijRRhzWMnfKndbCZIXJ/Us5YNNM5VJYvnUbYXLH/ZsNGWOrNgtKbZx/9D5QTmZ91lIpmzTAykJyJ22bdYSp8vq/r4w18AbBeQNLrTIZn3MCNoS2RVlhkkTL0vkLAPsObRvZRWMLc5RWprHlSgMcQBxQgfc+4uki6SG0HbpS6e+MNxB2qaCpTKpdXDqFgvrChk0TQ7a6Cvzpu9NnESh8/fspLlSdDetuuVD5rm5xk0oPpbK8vEPsjBV7kE0f8j7i0RWueVZQdRhQBTw/cetgESAMERw10HG7k5D1ILulJuVYz3WcVOIgyZh3VMy9KQq0FSjmPWKzi63gGs5mG9IhomOwFPWJQqJMH/5b1hGCQ9BNvEEvEI0RQh8YP7IlzvMZygnVjoRniTEXyzeHeEpN3g8uNM8PJdAtqGfU2J9PvyWx4/67Q/E5VWGTlNJ+oit3IVxQ06CsyWMf18DmvEEaUbSuM7fc7ymgA0iXVLqCVzr1kal7PlIz//eqPFHso/LT9wXYpP4afQPbXkxKtAYAAA==, blockMaterial=RED_SHULKER_BOX} x 1]
+Given         : []
+Target        : RAPALLE
+[2025-01-18 13:00:49] [INFORMATION]:
+Spectator UUID: d0a66567-dc4d-410a-9f31-1debb1ff51ad
+Spectator Name: RAPALLE
+Taken         : []
+Given         : [RED_SHULKER_BOX & TILE_ENTITY_META:{meta-type=TILE_ENTITY, display-name="Redstone", internal=H4sIAAAAAAAA/52UzXKCMBSFU0FF2lr/sXX6Ap266dJV34QJIWpGIDSEOvbpG9xwb/W66IYBx2/OybnnJmQsZFGSaXFYy8Iqe1oLnZe6cB/VgE1zVUhh+NZuhC4sd18mZIytPOZXmbbu1fG+sjIPWEelbNICRpaSW2k81hW6Lpr/vjPWgncInLdglalcxmdPgJ1DtkOxQidJJivrDgDYT8h6iF20bKmP0sg0NlxlAPYh7FPCe6d4ujA9hWyXTir963gDwR4lmsqk3sWVVUjUBRu2QwzZ6irgnm46AYtA8M3vp7hUjRvW23Khil0z4tZKH1lZXp4httqIPXATQDxAeHQFz3heUjkMqADPb9xYGAIEQwSOWtBys5MQ60PsnmrKsel1nNTiIEnNB0pzr8sSbQXSfETY7GIreAa76UF0iNAxWIrmiSSR06f/xjpC4BBME2/QG4TGCEIXjKtshX2+QnJCjSPheaL17RtjSjUPlZ5a+xlV+/PTbUlsubt3AN6B+JxKWCeVNN/oyAMILqg2KKOL2OlqOJwPiEYU2uTMDXd7SqkuKbuC11lqUEzonM9U52+vyguFfdWufT8AmzS30S/nMl5wtAYAAA==, blockMaterial=RED_SHULKER_BOX} x 1]
+Target        : RAPALLE
+[2025-01-18 13:06:12] [INFORMATION]:
+Spectator UUID: d0a66567-dc4d-410a-9f31-1debb1ff51ad
+Spectator Name: RAPALLE
+Taken         : [WIND_CHARGE x 64]
+Given         : []
+Target        : RAPALLE
+[2025-01-18 13:18:19] [INFORMATION]:
+Spectator UUID: d0a66567-dc4d-410a-9f31-1debb1ff51ad
+Spectator Name: RAPALLE
+Taken         : [PINK_SHULKER_BOX & TILE_ENTITY_META:{meta-type=TILE_ENTITY, display-name="Movement", internal=H4sIAAAAAAAA/6XUQW7CMBAF0CkJFFJKKJRSUK/ABVhxk8g4A1gktjUYRe3pa1Z2Flkw2c2X/lv+yQAyWB8rI6871E653500tTXah9sElrXSKEmc3F4a7YRPlAHANoH0VhnnT+9T5bAew0CVMTjftTVNiZTAUJq7fpQPAEG+sOWALRO2TNlyyJYjtnxlyzFbTloyD9IK260ylnpjqSlLvbPUjKVylpqz1AdLLVpqE9RJETaGrgX5Z4Kuyy97+lXLfwZ/JMQ/9LqM6CimXy26CrRRuizkRdAZI/sT23WXRe0nUVgUVEV2HtvvHnbTw26ftgD/WsFVLBEGAAA=, blockMaterial=PINK_SHULKER_BOX} x 1]
+Given         : []
+Target        : RAPALLE
+[2025-01-18 13:22:28] [INFORMATION]:
+Spectator UUID: d0a66567-dc4d-410a-9f31-1debb1ff51ad
+Spectator Name: RAPALLE
+Taken         : [PURPLE_SHULKER_BOX & TILE_ENTITY_META:{meta-type=TILE_ENTITY, display-name="Enchantig", internal=H4sIAAAAAAAA/83SXWrDMAwHcLVOv7xRGC3dXnaEXKAw2E2K46itiSOV2Bl0p59HBrb3tPShzE8W0g/9MZYAEp4ry7opkbzx11Jze2EKhVvBpjWEulNHv9dMXoWqkwDwKKBwln24Bl8Yj+0SpqaGXQRWXYw7WPXZWyNgprmn7/l3gIgnI3GZ4ulIPEmxyPA64oq5SdAuRcUfUbZplqFNjtwZ7TGRb6mcj5HZzsXNcnmzXGXyJUokfVbksT78fiYJMv42Ca/ROM9dAD+0Hfpzix9onYCnOBhataHTEAbSPPKf5Xm4X55tHOyp6lA1QyQBw/kCJgTRUvYDAAA=, blockMaterial=PURPLE_SHULKER_BOX} x 1]
+Given         : []
+Target        : RAPALLE

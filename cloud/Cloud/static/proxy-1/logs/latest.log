@@ -1,8 +1,8 @@
-[16:41:28] [Thread-1/INFO] [com.velocitypowered.proxy.VelocityServer]: Booting up Velocity 3.3.0-SNAPSHOT (git-09f687e5-b413)...
-[16:41:29] [Thread-1/INFO] [com.velocitypowered.proxy.VelocityServer]: Loading localizations...
-[16:41:29] [Thread-1/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Connections will use NIO channels, Java compression, Java ciphers
-[16:41:29] [Thread-1/INFO] [com.velocitypowered.proxy.VelocityServer]: Loading plugins...
-[16:41:30] [Thread-1/ERROR] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Unable to load plugin plugins\Geyser-ViaProxy.jar
+[19:43:15] [Thread-1/INFO] [com.velocitypowered.proxy.VelocityServer]: Booting up Velocity 3.3.0-SNAPSHOT (git-09f687e5-b413)...
+[19:43:15] [Thread-1/INFO] [com.velocitypowered.proxy.VelocityServer]: Loading localizations...
+[19:43:16] [Thread-1/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Connections will use NIO channels, Java compression, Java ciphers
+[19:43:16] [Thread-1/INFO] [com.velocitypowered.proxy.VelocityServer]: Loading plugins...
+[19:43:17] [Thread-1/ERROR] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Unable to load plugin plugins\Geyser-ViaProxy.jar
 com.velocitypowered.api.plugin.InvalidPluginException: Did not find a valid velocity-plugin.json.
 	at com.velocitypowered.proxy.plugin.loader.java.JavaPluginLoader.loadCandidate(JavaPluginLoader.java:65) ~[velocity-3.3.0-SNAPSHOT.jar:3.3.0-SNAPSHOT (git-09f687e5-b413)]
 	at com.velocitypowered.proxy.plugin.VelocityPluginManager.loadPlugins(VelocityPluginManager.java:96) ~[velocity-3.3.0-SNAPSHOT.jar:3.3.0-SNAPSHOT (git-09f687e5-b413)]
@@ -13,7 +13,7 @@ com.velocitypowered.api.plugin.InvalidPluginException: Did not find a valid velo
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at dev.httpmarco.polocloud.instance.ClusterInstanceFactory.lambda$startPlatform$3(ClusterInstanceFactory.java:40) ~[polocloud-instance.jar:?]
 	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
-[16:41:30] [Thread-1/ERROR] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Unable to load plugin plugins\HubMagic-0.2.6.jar
+[19:43:17] [Thread-1/ERROR] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Unable to load plugin plugins\HubMagic-0.2.6.jar
 com.velocitypowered.api.plugin.InvalidPluginException: The plugin file HubMagic-0.2.6.jar appears to be a Bukkit or BungeeCord plugin. Velocity does not support Bukkit or BungeeCord plugins.
 	at com.velocitypowered.proxy.plugin.loader.java.JavaPluginLoader.getSerializedPluginInfo(JavaPluginLoader.java:161) ~[velocity-3.3.0-SNAPSHOT.jar:3.3.0-SNAPSHOT (git-09f687e5-b413)]
 	at com.velocitypowered.proxy.plugin.loader.java.JavaPluginLoader.loadCandidate(JavaPluginLoader.java:62) ~[velocity-3.3.0-SNAPSHOT.jar:3.3.0-SNAPSHOT (git-09f687e5-b413)]
@@ -25,66 +25,106 @@ com.velocitypowered.api.plugin.InvalidPluginException: The plugin file HubMagic-
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at dev.httpmarco.polocloud.instance.ClusterInstanceFactory.lambda$startPlatform$3(ClusterInstanceFactory.java:40) ~[polocloud-instance.jar:?]
 	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
-[16:41:30] [Thread-1/INFO] [floodgate]: Floodgate wurde in 175 ms gestartet
-[16:41:30] [Thread-1/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin floodgate 2.2.3-SNAPSHOT (b109-49bd564) by GeyserMC
-[16:41:30] [Thread-1/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin geyser 2.4.3-b689 (git-master-d64c0b3) by GeyserMC
-[16:41:30] [Thread-1/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin geyserskinmanager-velocity 1.6 by Camotoy
-[16:41:30] [Thread-1/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin maintenance 4.3.0 by kennytv
-[16:41:30] [Thread-1/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin pistonmotd 5.1.1 by AlexProgrammerDE
-[16:41:31] [Thread-1/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin polocloud 1.0.0 by HttpMarco
-[16:41:31] [Thread-1/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin tab 4.1.9 by NEZNAMY
-[16:41:31] [Thread-1/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin tcpshield 2.8.1 by TCPShield
-[16:41:31] [Thread-1/INFO] [com.velocitypowered.proxy.VelocityServer]: Loaded 8 plugins
-[16:41:31] [Velocity Async Event Executor - #0/WARN] [com.velocitypowered.proxy.network.ConnectionManager]: The server channel initializer has been replaced by java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-[16:41:31] [Velocity Async Event Executor - #0/WARN] [com.velocitypowered.proxy.network.ConnectionManager]: The backend channel initializer has been replaced by java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-[16:41:32] [Velocity Async Event Executor - #0/WARN] [geyser]: Deine Geyser Config ist veraltet! Bitte regeneriere sie wenn möglich.
-[16:41:32] [Velocity Async Event Executor - #0/INFO] [geyser]: Lade Erweiterungen...
-[16:41:32] [Velocity Async Event Executor - #0/INFO] [geyser]: 0 Erweiterung(en) geladen
-[16:41:32] [Velocity Async Event Executor - #0/WARN] [geyserskinmanager-velocity]: ForceShowSkins active through config; Floodgate check is bypassed!
-[16:41:32] [Velocity Async Event Executor - #0/INFO] [pistonmotd]:   _____  _       _                 __  __   ____  _______  _____  
-[16:41:32] [Velocity Async Event Executor - #0/INFO] [pistonmotd]:  |  __ \(_)     | |               |  \/  | / __ \|__   __||  __ \ 
-[16:41:32] [Velocity Async Event Executor - #0/INFO] [pistonmotd]:  | |__) |_  ___ | |_  ___   _ __  | \  / || |  | |  | |   | |  | |
-[16:41:32] [Velocity Async Event Executor - #0/INFO] [pistonmotd]:  |  ___/| |/ __|| __|/ _ \ | '_ \ | |\/| || |  | |  | |   | |  | |
-[16:41:32] [Velocity Async Event Executor - #0/INFO] [pistonmotd]:  | |    | |\__ \| |_| (_) || | | || |  | || |__| |  | |   | |__| |
-[16:41:32] [Velocity Async Event Executor - #0/INFO] [pistonmotd]:  |_|    |_||___/ \__|\___/ |_| |_||_|  |_| \____/   |_|   |_____/ 
-[16:41:32] [Velocity Async Event Executor - #0/INFO] [pistonmotd]: 
-[16:41:32] [Velocity Async Event Executor - #0/INFO] [pistonmotd]: Loading config
-[16:41:32] [Velocity Async Event Executor - #0/INFO] [pistonmotd]: Registering placeholders
-[16:41:32] [Velocity Async Event Executor - #0/INFO] [pistonmotd]: Looking for hooks
-[16:41:32] [Velocity Async Event Executor - #0/INFO] [pistonmotd]: Registering listeners
-[16:41:32] [Velocity Async Event Executor - #0/INFO] [pistonmotd]: Registering command
-[16:41:32] [Velocity Async Event Executor - #0/INFO] [pistonmotd]: Checking for a newer version
-[16:41:32] [Velocity Async Event Executor - #0/INFO] [pistonmotd]: There is a MINOR update available!
-[16:41:32] [Velocity Async Event Executor - #0/INFO] [pistonmotd]: Current version: 5.1.1 New version: 5.2.0
-[16:41:32] [Velocity Async Event Executor - #0/INFO] [pistonmotd]: Download it at: https://github.com/AlexProgrammerDE/PistonMOTD/releases
-[16:41:32] [Velocity Async Event Executor - #0/INFO] [pistonmotd]: Loading metrics
-[16:41:32] [Velocity Async Event Executor - #0/INFO] [pistonmotd]: Done! :D
-[16:41:32] [Velocity Async Event Executor - #0/INFO] [TAB]: Enabled in 136ms
-[16:41:32] [Netty NIO Boss #0/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Listening on /[0:0:0:0:0:0:0:0]:25565
-[16:41:32] [Velocity Async Event Executor - #1/INFO] [geyser]: ******************************************
-[16:41:32] [Velocity Async Event Executor - #1/INFO] [geyser]: 
-[16:41:32] [Velocity Async Event Executor - #1/INFO] [geyser]: Geyser Version 2.4.3-b689 (git-master-d64c0b3) wird geladen
-[16:41:32] [Velocity Async Event Executor - #1/INFO] [geyser]: 
-[16:41:32] [Velocity Async Event Executor - #1/INFO] [geyser]: ******************************************
-[16:41:33] [Thread-1/INFO] [com.velocitypowered.proxy.Velocity]: Done (4,31s)!
-[16:41:33] [pool-7-thread-1/WARN] [floodgate]: 
+[19:43:17] [Thread-1/INFO] [floodgate]: Floodgate wurde in 306 ms gestartet
+[19:43:17] [Thread-1/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin floodgate 2.2.3-SNAPSHOT (b109-49bd564) by GeyserMC
+[19:43:17] [Thread-1/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin geyser 2.4.3-b689 (git-master-d64c0b3) by GeyserMC
+[19:43:17] [Thread-1/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin geyserskinmanager-velocity 1.6 by Camotoy
+[19:43:18] [Thread-1/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin maintenance 4.3.0 by kennytv
+[19:43:18] [Thread-1/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin pistonmotd 5.1.1 by AlexProgrammerDE
+[19:43:18] [Thread-1/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin polocloud 1.0.0 by HttpMarco
+[19:43:18] [Thread-1/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin tab 4.1.9 by NEZNAMY
+[19:43:18] [Thread-1/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin tcpshield 2.8.1 by TCPShield
+[19:43:18] [Thread-1/INFO] [com.velocitypowered.proxy.VelocityServer]: Loaded 8 plugins
+[19:43:18] [Velocity Async Event Executor - #0/WARN] [com.velocitypowered.proxy.network.ConnectionManager]: The server channel initializer has been replaced by java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+[19:43:18] [Velocity Async Event Executor - #0/WARN] [com.velocitypowered.proxy.network.ConnectionManager]: The backend channel initializer has been replaced by java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+[19:43:20] [Velocity Async Event Executor - #0/WARN] [geyser]: Deine Geyser Config ist veraltet! Bitte regeneriere sie wenn möglich.
+[19:43:20] [Velocity Async Event Executor - #0/INFO] [geyser]: Lade Erweiterungen...
+[19:43:20] [Velocity Async Event Executor - #0/INFO] [geyser]: 0 Erweiterung(en) geladen
+[19:43:20] [pool-7-thread-1/WARN] [floodgate]: 
 **********************************
 * The prefix you entered in your Floodgate config (BE) could lead to username conflicts!
 * Should a Java player join with the username BENotch, and a Bedrock player join as Notch (who will be given the name BENotch), unwanted results will happen!
 * We strongly recommend using . as the prefix, but other alternatives that will not conflict include: +, - and *
 **********************************
-[16:41:34] [Netty NIO Worker #0/INFO] [com.velocitypowered.proxy.connection.client.AuthSessionHandler]: [connected player] RAPALLE (/127.0.0.1:55801) has connected
-[16:41:34] [Netty NIO Worker #0/INFO] [com.velocitypowered.proxy.connection.client.ConnectedPlayer]: [connected player] RAPALLE (/127.0.0.1:55801) has disconnected: There are no available servers to connect you to. Try again later or contact an admin.
-[16:41:35] [nioEventLoopGroup-3-1/INFO] [geyser]: Geyser auf UDP-Port 14000 gestartet
-[16:41:36] [Velocity Async Event Executor - #1/INFO] [geyser]: Fertig (3,013s)! Verwende /geyser help für Hilfe!
-[16:41:36] [ForkJoinPool.commonPool-worker-3/INFO] [geyser]: §aEs steht ein neues Geyser Update zur Unterstützung von Bedrock Version 1.21.51 zur Verfügung. Laden Sie es hier herunter: §9§nhttps://geysermc.org/download
-[16:41:40] [Netty NIO Worker #8/INFO] [com.velocitypowered.proxy.connection.client.AuthSessionHandler]: [connected player] RAPALLE (/127.0.0.1:55814) has connected
-[16:41:40] [Netty NIO Worker #8/INFO] [com.velocitypowered.proxy.connection.client.ConnectedPlayer]: [connected player] RAPALLE (/127.0.0.1:55814) has disconnected: There are no available servers to connect you to. Try again later or contact an admin.
-[16:41:46] [Netty NIO Worker #16/INFO] [com.velocitypowered.proxy.connection.client.AuthSessionHandler]: [connected player] RAPALLE (/127.0.0.1:55827) has connected
-[16:41:46] [Netty NIO Worker #16/INFO] [com.velocitypowered.proxy.connection.client.ConnectedPlayer]: [connected player] RAPALLE (/127.0.0.1:55827) has disconnected: There are no available servers to connect you to. Try again later or contact an admin.
-[16:41:51] [Netty NIO Worker #0/INFO] [com.velocitypowered.proxy.connection.client.AuthSessionHandler]: [connected player] RAPALLE (/127.0.0.1:55836) has connected
-[16:41:51] [Netty NIO Worker #0/INFO] [com.velocitypowered.proxy.connection.client.ConnectedPlayer]: [connected player] RAPALLE (/127.0.0.1:55836) has disconnected: There are no available servers to connect you to. Try again later or contact an admin.
-[16:41:58] [Netty NIO Worker #8/INFO] [com.velocitypowered.proxy.connection.client.AuthSessionHandler]: [connected player] RAPALLE (/127.0.0.1:55856) has connected
-[16:41:58] [Netty NIO Worker #8/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] RAPALLE -> lobby-1 has connected
-[16:42:19] [Netty NIO Worker #8/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [connected player] RAPALLE (/127.0.0.1:55856) has disconnected
-[16:42:19] [Netty NIO Worker #8/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] RAPALLE -> lobby-1 has disconnected
+[19:43:20] [Velocity Async Event Executor - #0/WARN] [geyserskinmanager-velocity]: ForceShowSkins active through config; Floodgate check is bypassed!
+[19:43:20] [Velocity Async Event Executor - #0/INFO] [pistonmotd]:   _____  _       _                 __  __   ____  _______  _____  
+[19:43:20] [Velocity Async Event Executor - #0/INFO] [pistonmotd]:  |  __ \(_)     | |               |  \/  | / __ \|__   __||  __ \ 
+[19:43:20] [Velocity Async Event Executor - #0/INFO] [pistonmotd]:  | |__) |_  ___ | |_  ___   _ __  | \  / || |  | |  | |   | |  | |
+[19:43:20] [Velocity Async Event Executor - #0/INFO] [pistonmotd]:  |  ___/| |/ __|| __|/ _ \ | '_ \ | |\/| || |  | |  | |   | |  | |
+[19:43:20] [Velocity Async Event Executor - #0/INFO] [pistonmotd]:  | |    | |\__ \| |_| (_) || | | || |  | || |__| |  | |   | |__| |
+[19:43:20] [Velocity Async Event Executor - #0/INFO] [pistonmotd]:  |_|    |_||___/ \__|\___/ |_| |_||_|  |_| \____/   |_|   |_____/ 
+[19:43:20] [Velocity Async Event Executor - #0/INFO] [pistonmotd]: 
+[19:43:20] [Velocity Async Event Executor - #0/INFO] [pistonmotd]: Loading config
+[19:43:21] [Velocity Async Event Executor - #0/INFO] [pistonmotd]: Registering placeholders
+[19:43:21] [Velocity Async Event Executor - #0/INFO] [pistonmotd]: Looking for hooks
+[19:43:21] [Velocity Async Event Executor - #0/INFO] [pistonmotd]: Registering listeners
+[19:43:21] [Velocity Async Event Executor - #0/INFO] [pistonmotd]: Registering command
+[19:43:21] [Velocity Async Event Executor - #0/INFO] [pistonmotd]: Checking for a newer version
+[19:43:21] [Velocity Async Event Executor - #0/INFO] [pistonmotd]: There is a MINOR update available!
+[19:43:21] [Velocity Async Event Executor - #0/INFO] [pistonmotd]: Current version: 5.1.1 New version: 5.2.0
+[19:43:21] [Velocity Async Event Executor - #0/INFO] [pistonmotd]: Download it at: https://github.com/AlexProgrammerDE/PistonMOTD/releases
+[19:43:21] [Velocity Async Event Executor - #0/INFO] [pistonmotd]: Loading metrics
+[19:43:21] [Velocity Async Event Executor - #0/INFO] [pistonmotd]: Done! :D
+[19:43:21] [Velocity Async Event Executor - #0/INFO] [TAB]: Enabled in 299ms
+[19:43:21] [Thread-1/INFO] [com.velocitypowered.proxy.Velocity]: Done (6,77s)!
+[19:43:21] [Netty NIO Boss #0/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Listening on /[0:0:0:0:0:0:0:0]:25565
+[19:43:21] [Velocity Async Event Executor - #1/INFO] [geyser]: ******************************************
+[19:43:21] [Velocity Async Event Executor - #1/INFO] [geyser]: 
+[19:43:21] [Velocity Async Event Executor - #1/INFO] [geyser]: Geyser Version 2.4.3-b689 (git-master-d64c0b3) wird geladen
+[19:43:21] [Velocity Async Event Executor - #1/INFO] [geyser]: 
+[19:43:21] [Velocity Async Event Executor - #1/INFO] [geyser]: ******************************************
+[19:43:28] [nioEventLoopGroup-3-1/INFO] [geyser]: Geyser auf UDP-Port 14000 gestartet
+[19:43:28] [Velocity Async Event Executor - #1/INFO] [geyser]: Fertig (6,314s)! Verwende /geyser help für Hilfe!
+[19:43:28] [ForkJoinPool.commonPool-worker-3/INFO] [geyser]: §aEs steht ein neues Geyser Update zur Unterstützung von Bedrock Version 1.21.51 zur Verfügung. Laden Sie es hier herunter: §9§nhttps://geysermc.org/download
+[19:43:54] [Netty NIO Worker #5/INFO] [com.velocitypowered.proxy.connection.client.AuthSessionHandler]: [connected player] RAPALLE (/127.4.18.131:50382) has connected
+[19:43:55] [Velocity Async Event Executor - #0/ERROR] [com.velocitypowered.proxy.event.VelocityEventManager]: Couldn't pass PostLoginEvent to polocloud 1.0.0
+java.lang.NullPointerException: Cannot invoke "dev.httpmarco.polocloud.api.services.ClusterService.maxPlayers()" because the return value of "dev.httpmarco.polocloud.plugin.PlatformValueChecker.self()" is null
+	at dev.httpmarco.polocloud.plugin.PlatformValueChecker.reachMaxPlayers(PlatformValueChecker.java:13) ~[?:?]
+	at dev.httpmarco.polocloud.plugin.velocity.VelocityPlatformListeners.onPostLogin(VelocityPlatformListeners.java:48) ~[?:?]
+	at dev.httpmarco.polocloud.plugin.velocity.Lmbda$24.execute(Unknown Source) ~[?:?]
+	at com.velocitypowered.proxy.event.UntargetedEventHandler$VoidHandler.lambda$buildHandler$0(UntargetedEventHandler.java:56) ~[velocity-3.3.0-SNAPSHOT.jar:3.3.0-SNAPSHOT (git-09f687e5-b413)]
+	at com.velocitypowered.proxy.event.VelocityEventManager.fire(VelocityEventManager.java:598) ~[velocity-3.3.0-SNAPSHOT.jar:3.3.0-SNAPSHOT (git-09f687e5-b413)]
+	at com.velocitypowered.proxy.event.VelocityEventManager.lambda$fire$5(VelocityEventManager.java:479) ~[velocity-3.3.0-SNAPSHOT.jar:3.3.0-SNAPSHOT (git-09f687e5-b413)]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+[19:43:55] [Netty NIO Worker #5/INFO] [com.velocitypowered.proxy.connection.client.ConnectedPlayer]: [connected player] RAPALLE (/127.4.18.131:50382) has disconnected: Es gibt keine verfügbaren Server mit denen du dich verbinden kannst. Versuche es später erneut oder kontaktiere einen Admin.
+[19:44:04] [Netty NIO Worker #0/INFO] [com.velocitypowered.proxy.connection.client.AuthSessionHandler]: [connected player] RAPALLE (/127.4.18.131:50387) has connected
+[19:44:04] [Velocity Async Event Executor - #1/ERROR] [com.velocitypowered.proxy.event.VelocityEventManager]: Couldn't pass PostLoginEvent to polocloud 1.0.0
+java.lang.NullPointerException: Cannot invoke "dev.httpmarco.polocloud.api.services.ClusterService.maxPlayers()" because the return value of "dev.httpmarco.polocloud.plugin.PlatformValueChecker.self()" is null
+	at dev.httpmarco.polocloud.plugin.PlatformValueChecker.reachMaxPlayers(PlatformValueChecker.java:13) ~[?:?]
+	at dev.httpmarco.polocloud.plugin.velocity.VelocityPlatformListeners.onPostLogin(VelocityPlatformListeners.java:48) ~[?:?]
+	at dev.httpmarco.polocloud.plugin.velocity.Lmbda$24.execute(Unknown Source) ~[?:?]
+	at com.velocitypowered.proxy.event.UntargetedEventHandler$VoidHandler.lambda$buildHandler$0(UntargetedEventHandler.java:56) ~[velocity-3.3.0-SNAPSHOT.jar:3.3.0-SNAPSHOT (git-09f687e5-b413)]
+	at com.velocitypowered.proxy.event.VelocityEventManager.fire(VelocityEventManager.java:598) ~[velocity-3.3.0-SNAPSHOT.jar:3.3.0-SNAPSHOT (git-09f687e5-b413)]
+	at com.velocitypowered.proxy.event.VelocityEventManager.lambda$fire$5(VelocityEventManager.java:479) ~[velocity-3.3.0-SNAPSHOT.jar:3.3.0-SNAPSHOT (git-09f687e5-b413)]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+[19:44:04] [Netty NIO Worker #0/INFO] [com.velocitypowered.proxy.connection.client.ConnectedPlayer]: [connected player] RAPALLE (/127.4.18.131:50387) has disconnected: Es gibt keine verfügbaren Server mit denen du dich verbinden kannst. Versuche es später erneut oder kontaktiere einen Admin.
+[19:45:05] [Netty NIO Worker #2/INFO] [com.velocitypowered.proxy.connection.client.AuthSessionHandler]: [connected player] RAPALLE (/127.4.18.131:50401) has connected
+[19:45:05] [Velocity Async Event Executor - #2/ERROR] [com.velocitypowered.proxy.event.VelocityEventManager]: Couldn't pass PostLoginEvent to polocloud 1.0.0
+java.lang.NullPointerException: Cannot invoke "dev.httpmarco.polocloud.api.services.ClusterService.maxPlayers()" because the return value of "dev.httpmarco.polocloud.plugin.PlatformValueChecker.self()" is null
+	at dev.httpmarco.polocloud.plugin.PlatformValueChecker.reachMaxPlayers(PlatformValueChecker.java:13) ~[?:?]
+	at dev.httpmarco.polocloud.plugin.velocity.VelocityPlatformListeners.onPostLogin(VelocityPlatformListeners.java:48) ~[?:?]
+	at dev.httpmarco.polocloud.plugin.velocity.Lmbda$24.execute(Unknown Source) ~[?:?]
+	at com.velocitypowered.proxy.event.UntargetedEventHandler$VoidHandler.lambda$buildHandler$0(UntargetedEventHandler.java:56) ~[velocity-3.3.0-SNAPSHOT.jar:3.3.0-SNAPSHOT (git-09f687e5-b413)]
+	at com.velocitypowered.proxy.event.VelocityEventManager.fire(VelocityEventManager.java:598) ~[velocity-3.3.0-SNAPSHOT.jar:3.3.0-SNAPSHOT (git-09f687e5-b413)]
+	at com.velocitypowered.proxy.event.VelocityEventManager.lambda$fire$5(VelocityEventManager.java:479) ~[velocity-3.3.0-SNAPSHOT.jar:3.3.0-SNAPSHOT (git-09f687e5-b413)]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+[19:45:05] [Netty NIO Worker #2/INFO] [com.velocitypowered.proxy.connection.client.ConnectedPlayer]: [connected player] RAPALLE (/127.4.18.131:50401) has disconnected: There are no available servers to connect you to. Try again later or contact an admin.
+[19:45:21] [Netty NIO Worker #4/INFO] [com.velocitypowered.proxy.connection.client.AuthSessionHandler]: [connected player] RAPALLE (/127.4.18.131:50406) has connected
+[19:45:22] [Velocity Async Event Executor - #1/ERROR] [com.velocitypowered.proxy.event.VelocityEventManager]: Couldn't pass PostLoginEvent to polocloud 1.0.0
+java.lang.NullPointerException: Cannot invoke "dev.httpmarco.polocloud.api.services.ClusterService.maxPlayers()" because the return value of "dev.httpmarco.polocloud.plugin.PlatformValueChecker.self()" is null
+	at dev.httpmarco.polocloud.plugin.PlatformValueChecker.reachMaxPlayers(PlatformValueChecker.java:13) ~[?:?]
+	at dev.httpmarco.polocloud.plugin.velocity.VelocityPlatformListeners.onPostLogin(VelocityPlatformListeners.java:48) ~[?:?]
+	at dev.httpmarco.polocloud.plugin.velocity.Lmbda$24.execute(Unknown Source) ~[?:?]
+	at com.velocitypowered.proxy.event.UntargetedEventHandler$VoidHandler.lambda$buildHandler$0(UntargetedEventHandler.java:56) ~[velocity-3.3.0-SNAPSHOT.jar:3.3.0-SNAPSHOT (git-09f687e5-b413)]
+	at com.velocitypowered.proxy.event.VelocityEventManager.fire(VelocityEventManager.java:598) ~[velocity-3.3.0-SNAPSHOT.jar:3.3.0-SNAPSHOT (git-09f687e5-b413)]
+	at com.velocitypowered.proxy.event.VelocityEventManager.lambda$fire$5(VelocityEventManager.java:479) ~[velocity-3.3.0-SNAPSHOT.jar:3.3.0-SNAPSHOT (git-09f687e5-b413)]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+[19:45:22] [Netty NIO Worker #4/INFO] [com.velocitypowered.proxy.connection.client.ConnectedPlayer]: [connected player] RAPALLE (/127.4.18.131:50406) has disconnected: Es gibt keine verfügbaren Server mit denen du dich verbinden kannst. Versuche es später erneut oder kontaktiere einen Admin.

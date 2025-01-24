@@ -1,0 +1,7 @@
+fetch:
+cd "C:\Users\Rapalle\Desktop\RAPALLE.NET\Rapalle.net" && git fetch && git merge origin/main
+
+commit:
+cd "C:\Users\Rapalle\Desktop\RAPALLE.NET\Rapalle.net" && git add --all && git commit -m "test" && git push -u origin main
+
+
