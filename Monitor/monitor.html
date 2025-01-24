@@ -4,16 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>System Monitor</title>
+    <title>RAPALLE.NET/Monitoring</title>
+    <link rel="icon" href="icon1.jpg" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
+        @font-face {
+            font-famaly: "Roboto Co";
+             src: url("font/Roboto.ttf") format("truetype");
+        }
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: "Roboto Co", sans-serif;
+            background-color: rgb(41, 42, 42);
             margin: 20px;
         }
 
-        h1 {
-            color: #333;
+        .h1 {
+            color: #666;
+        }
+        h2 {
+            color: #666;
         }
 
         canvas {
@@ -39,7 +49,6 @@
 
         .value {
             font-weight: bold;
-            color: #333;
             margin-bottom: 5px;
         }
 
@@ -63,19 +72,19 @@
     <div class="graphs">
         <!-- Raspi Metrics -->
         <div class="metric">
-            <div class="value" id="raspiCpuValue"></div>
+            <div class="value h1" id="raspiCpuValue"></div>
             <canvas id="raspiCpuChart"></canvas>
         </div>
         <div class="metric">
-            <div class="value" id="raspiRamValue"></div>
+            <div class="value h1" id="raspiRamValue"></div>
             <canvas id="raspiRamChart"></canvas>
         </div>
         <div class="metric">
-            <div class="value" id="raspiDiskValue"></div>
+            <div class="value h1" id="raspiDiskValue"></div>
             <canvas id="raspiDiskChart"></canvas>
         </div>
         <div class="metric">
-            <div class="value" id="raspiEthernetValue"></div>
+            <div class="value h1" id="raspiEthernetValue"></div>
             <canvas id="raspiEthernetChart"></canvas>
         </div>
         </div>
@@ -83,19 +92,19 @@
         <div class="graphs">
         <!-- Server Metrics -->
         <div class="metric">
-            <div class="value" id="serverCpuValue"></div>
+            <div class="value h1" id="serverCpuValue"></div>
             <canvas id="serverCpuChart"></canvas>
         </div>
         <div class="metric">
-            <div class="value" id="serverRamValue"></div>
+            <div class="value h1" id="serverRamValue"></div>
             <canvas id="serverRamChart"></canvas>
         </div>
         <div class="metric">
-            <div class="value" id="serverDiskValue"></div>
+            <div class="value h1" id="serverDiskValue"></div>
             <canvas id="serverDiskChart"></canvas>
         </div>
         <div class="metric">
-            <div class="value" id="serverEthernetValue"></div>
+            <div class="value h1" id="serverEthernetValue"></div>
             <canvas id="serverEthernetChart"></canvas>
         </div>
     </div>
