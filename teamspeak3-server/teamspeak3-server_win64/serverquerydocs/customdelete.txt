@@ -1,0 +1,15 @@
+Usage: customdelete cldbid={clientDBID} ident={ident}
+
+Permissions:
+  b_client_delete_dbproperties
+
+Description:
+  Removes a custom property from a client specified by the cldbid.
+
+Parameters:
+  cldbid : id of client in database
+  ident : identifier
+
+Example:
+  customdelete cldbid=4 ident=forum_nickname
+  error id=0 msg=ok

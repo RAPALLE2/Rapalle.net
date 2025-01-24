@@ -1,0 +1,1 @@
+update clients set client_login_name=null, client_login_password=null where client_id=:client_id: and server_id=:server_id:;

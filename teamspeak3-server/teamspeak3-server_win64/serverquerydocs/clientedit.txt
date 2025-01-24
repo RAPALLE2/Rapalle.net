@@ -1,0 +1,21 @@
+Usage: clientedit clid={clientID} [client_properties...]
+
+Permissions:
+  b_client_modify_description
+  b_client_set_talk_power
+
+Description:
+  Changes a clients settings using given properties.
+  For detailed information, see Client Properties.
+
+Parameters:
+  clid : integer : id of client
+  client_nickname : Nickname of the client
+  client_is_talker : Indicates whether the client is able to talk or not
+  client_description : Brief description of the client (max 200 chars)
+  client_is_channel_commander : Indicates whether the client is a channel commander or not
+  client_icon_id : CRC32 checksum of the client icon
+
+Example:
+  clientedit clid=10 client_description=Best\sguy\sever!
+  error id=0 msg=ok

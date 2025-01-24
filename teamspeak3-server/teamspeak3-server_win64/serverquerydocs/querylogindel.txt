@@ -1,0 +1,21 @@
+Usage: querylogindel cldbid={clientDBID}
+
+Permissions:
+  b_serverquery_login_delete
+
+Description:
+  Deletes an existing server query login on selected server.
+  When no virtual server has been selected, deletes global query logins instead.
+
+Parameters:
+  cldbid : integer : id of client in the database
+
+Example:
+    
+  Use 0
+  querylogindel cldbid=4
+  error id=0 msg=ok
+  
+  Use 2
+  querylogindel cldbid=223
+  error id=0 msg=ok

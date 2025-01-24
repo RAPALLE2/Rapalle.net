@@ -1,0 +1,7 @@
+alter table bans add column ban_mytsid varchar(44);
+alter table bans add column ban_lastnickname varchar(100);
+delete from perm_channel where perm_id = 'b_serverinstance_version_view' or perm_id = 'i_needed_modify_power_serverinstance_version_view' or perm_id = 'b_channel_create_private' or perm_id = 'i_needed_modify_power_channel_create_private';
+delete from perm_channel_clients where perm_id = 'b_serverinstance_version_view' or perm_id = 'i_needed_modify_power_serverinstance_version_view' or perm_id = 'b_channel_create_private' or perm_id = 'i_needed_modify_power_channel_create_private';
+delete from perm_channel_groups where perm_id = 'b_serverinstance_version_view' or perm_id = 'i_needed_modify_power_serverinstance_version_view' or perm_id = 'b_channel_create_private' or perm_id = 'i_needed_modify_power_channel_create_private';
+delete from perm_client where perm_id = 'b_serverinstance_version_view' or perm_id = 'i_needed_modify_power_serverinstance_version_view' or perm_id = 'b_channel_create_private' or perm_id = 'i_needed_modify_power_channel_create_private';
+delete from perm_server_group where perm_id = 'b_serverinstance_version_view' or perm_id = 'i_needed_modify_power_serverinstance_version_view' or perm_id = 'b_channel_create_private' or perm_id = 'i_needed_modify_power_channel_create_private';

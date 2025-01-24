@@ -1,0 +1,15 @@
+Usage: complaindelall tcldbid={targetClientDBID}
+
+Permissions:
+  b_client_complain_delete
+
+Description:
+  Deletes all complaints about the client with database ID `tcldbid` from the
+  server.
+
+Parameters:
+  tcldbid : The client to delete complaints about
+  
+Example:
+  complaindelall tcldbid=3
+  error id=0 msg=ok

@@ -1,0 +1,31 @@
+Usage: queryloginlist [pattern={clientLoginName}] [start={offset}] [duration={limit}] [-count]
+
+Permissions:
+  b_serverquery_login_list
+
+Description:
+  List existing query client logins. 
+  The pattern parameter can include regular characters and SQL wildcard characters (e.g. %).
+  Only displays query logins of the selected virtual server, or all query logins when no virtual server have been  selected.
+
+Parameters:
+  pattern : matches the value, allowing for sql style pattern matching
+  start : integer : skip the first `n` entries
+  duration : integer : only return `n` entries
+  -count : also return the total number of entries
+
+Example:
+  use 0
+  queryloginlist
+  cldbid=1 sid=0 client_login_name=serveradmin|cldbid=25 sid=1 client_login_name=max|cldbid=26 sid=2 client_login_name=maaaaax
+  error id=0 msg=ok
+
+  use 0
+  queryloginlist pattern=m%x
+  cldbid=25 sid=1 client_login_name=max|cldbid=26 sid=2 client_login_name=maaaaax
+  error id=0 msg=ok
+
+  use 2
+  queryloginlist
+  cldbid=26 sid=2 client_login_name=maaaaax
+  error id=0 msg=ok

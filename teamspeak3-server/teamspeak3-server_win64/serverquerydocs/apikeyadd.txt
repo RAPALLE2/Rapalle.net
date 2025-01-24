@@ -1,0 +1,20 @@
+Usage: apikeyadd scope={manage|write|read} [lifetime={days}] [cldbid={clientDBID}]
+
+Permissions:
+  b_virtualserver_apikey_add
+  b_virtualserver_apikey_manage
+
+Description:
+  Creates a new apikey using the specified scope, for the invoking user.
+  The default lifetime of a token is 14 days, a zero lifetime means no expiration.
+  It is possible to create apikeys for other users using `b_virtualserver_apikey_manage.`
+
+Parameters:
+  scope : `manage`,`write` or `read`
+  lifetime : integer : lifetime of the token in days; default `14`, `0` means unlimited
+  cldbid : integer : id of owner; Default is invoker
+
+Example:
+  apikeyadd scope=manage
+  apikey=AQB8J1sfuvq4wFAFdo6rsfFq+jAQO9asz3zGq5X id=4 sid=0 cldbid=1 scope=read time_left=1209599
+  error id=0 msg=ok

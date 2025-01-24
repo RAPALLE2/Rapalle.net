@@ -1,0 +1,21 @@
+Usage: clientdbfind [-uid] pattern={clientName|clientUID}
+       clientdbfind [-uid] pattern={clientName|clientUID}|pattern={clientName|clientUID}
+
+Permissions:
+  b_virtualserver_client_dbsearch
+
+Description:
+  Displays a list of client database IDs matching a given pattern. You can
+  either search for a clients last known nickname or his unique identity by
+  using the -uid option.
+  		The pattern parameter can include regular characters and SQL wildcard
+  characters (e.g. %).
+
+Parameters:
+  pattern : matches the value, allowing for sql style pattern matching
+  -uid : when set search in `client_unique_id`; otherwise search in `client_nickname`
+
+Example:
+  clientdbfind pattern=%Sven%
+  cldbid=56
+  error id=0 msg=ok

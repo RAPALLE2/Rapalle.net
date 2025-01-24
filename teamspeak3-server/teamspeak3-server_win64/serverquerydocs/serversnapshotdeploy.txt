@@ -1,0 +1,23 @@
+Usage: serversnapshotdeploy [-mapping] [-keepfiles] [password=secret] virtualserver_snapshot
+
+Permissions:
+  b_virtualserver_snapshot_deploy
+
+Description:
+  Restores the selected virtual servers configuration using the data from a
+  previously created server snapshot. Please note that the TeamSpeak 3 Server
+  does NOT check for necessary permissions while deploying a snapshot so the
+  command could be abused to gain additional privileges. With -keepfiles set,
+  the channels that exist on the virtualserver and the backup keep will have
+  there files preserved.
+
+Example:
+  serversnapshotdeploy -keepfiles version=3 data=KLUv/WC5xVV9AKpopBIq4I6IHliw+idbGVkQpP/D....
+  error id=0 msg=ok
+
+  serversnapshotdeploy -mapping version=3 data=KLUv/WC5xVV9AKpopBIq4I6IHliw+idbGVkQpP/D....
+  ocid=36 ncid=40|ocid=37 ncid=41|ocid=38 ncid=42|ocid=39 ncid=43
+  error id=0 msg=ok
+
+  serversnapshotdeploy password=test version=3 salt=531tJRs\/OPvBmjhqBfzewuPYa4a+bt5xH8oYWbUuyGM= data=TKHXDjY9OuK7DFtZg7...
+  error id=0 msg=ok

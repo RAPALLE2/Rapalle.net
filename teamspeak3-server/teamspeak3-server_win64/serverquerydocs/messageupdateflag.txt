@@ -1,0 +1,15 @@
+Usage: messageupdateflag msgid={messageID} flag={1|0}
+
+Permissions:
+
+Description:
+  Updates the flag_read property of the offline message specified with `msgid`.
+  If flag is set to `1`, the message will be marked as read.
+
+Parameters:
+  msgid : integer : id of message
+  flag : integer : when `1`, mark as read; otherwise unread
+
+Example:
+  messageupdateflag msgid=4 flag=1
+  error id=0 msg=ok

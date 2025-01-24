@@ -1,0 +1,25 @@
+Usage: queryloginadd client_login_name={loginName}
+       queryloginadd client_login_name={loginName} cldbid={clientDBID}
+
+Permissions:
+  b_serverquery_login_create
+
+Description:
+  Adds a new query client login, or enables query login for existing clients.
+  When no virtual server has been selected, the command will create global query logins. 
+  Otherwise the command enables query login for existing client, and cldbid must be specified.
+  
+Parameters:
+  client_login_name : requested login name
+  cldbid : integer : id of client in the database, defaults to invoker
+
+Example:
+  use 0
+  queryloginadd client_login_name=test
+  cldbid=7 sid=0 client_login_name=test client_login_password=WVcOEYtW
+  error id=0 msg=ok
+
+  use 1
+  queryloginadd client_login_name=test2 cldbid=5
+  cldbid=5 sid=1 client_login_name=test2 client_login_password=CMSJ5qXk
+  error id=0 msg=ok

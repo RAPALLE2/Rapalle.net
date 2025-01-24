@@ -1,0 +1,16 @@
+Usage: channelgroupdel cgid={groupID} force={1|0}
+
+Permissions:
+  b_virtualserver_channelgroup_delete
+
+Description:
+  Deletes a channel group by ID. If force is set to 1, the channel group will
+  be deleted even if there are clients within.
+
+Parameters:
+  cgid : integer : channel group id
+  force : integer : set to 1 to force deletion even if clients are present
+  
+Example:
+  channelgroupdel cgid=13
+  error id=0 msg=ok

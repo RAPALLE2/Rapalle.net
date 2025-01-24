@@ -1,0 +1,23 @@
+2025-01-20 18:13:50.165761|INFO    |ServerLibPriv |   |TeamSpeak 3 Server 3.13.7 (2022-06-20 12:21:53)
+2025-01-20 18:13:50.165761|INFO    |ServerLibPriv |   |SystemInformation: Windows 10 (22631) x64 (AMD or Intel) Binary: 64bit
+2025-01-20 18:13:50.165761|INFO    |ServerLibPriv |   |Using hardware aes
+2025-01-20 18:13:50.182769|INFO    |DatabaseQuery |   |dbPlugin name:    SQLite3 plugin, Version 3, (c)TeamSpeak Systems GmbH
+2025-01-20 18:13:50.182769|INFO    |DatabaseQuery |   |dbPlugin version: 3.11.1
+2025-01-20 18:13:50.182769|INFO    |DatabaseQuery |   |checking database integrity (may take a while)
+2025-01-20 18:13:50.233991|WARNING |Accounting    |   |Unable to open licensekey.dat, falling back to limited functionality
+2025-01-20 18:13:50.251032|INFO    |Accounting    |   |Licensing Information
+2025-01-20 18:13:50.251032|INFO    |Accounting    |   |licensed to       : Anonymous
+2025-01-20 18:13:50.251032|INFO    |Accounting    |   |type              : No License
+2025-01-20 18:13:50.251032|INFO    |Accounting    |   |starting date     : Tue Feb  1 00:00:00 2022
+2025-01-20 18:13:50.251032|INFO    |Accounting    |   |ending date       : Thu Jul  1 00:00:00 2027
+2025-01-20 18:13:50.251032|INFO    |Accounting    |   |max virtualservers: 1
+2025-01-20 18:13:50.251032|INFO    |Accounting    |   |max slots         : 32
+2025-01-20 18:13:51.652058|INFO    |              |   |Puzzle precompute time: 1372
+2025-01-20 18:13:51.697730|INFO    |FileManager   |   |listening on 0.0.0.0:30033, [::]:30033
+2025-01-20 18:13:51.915473|INFO    |Query         |   |Using a query thread pool size of 2
+2025-01-20 18:13:52.063243|INFO    |Query         |   |listening for query on 0.0.0.0:10011, [::]:10011
+2025-01-20 18:13:52.079259|INFO    |Query         |   |listening for ssh query on 0.0.0.0:10022, [::]:10022
+2025-01-20 18:13:52.079259|INFO    |Query         |   |listening for http query on 0.0.0.0:10080, [::]:10080
+2025-01-20 18:13:52.095275|INFO    |CIDRManager   |   |updated query_ip_allowlist ips: 127.0.0.1/32, ::1/128, 
+2025-01-20 18:13:52.191569|INFO    |              |   |myTeamSpeak identifier revocation list was downloaded successfully - all related features are activated
+2025-01-21 18:13:52.755113|INFO    |              |   |myTeamSpeak identifier revocation list was downloaded successfully - all related features are activated

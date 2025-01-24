@@ -1,0 +1,19 @@
+Usage: serversnapshotcreate [password=secret]
+
+Permissions:
+  b_virtualserver_snapshot_create
+
+Description:
+  Displays a snapshot of the selected virtual server containing all settings,
+  groups and known client identities. The data from a server snapshot can be
+  used to restore a virtual servers configuration, channels and permissions
+  using the serversnapshotdeploy command.
+
+Example:
+  serversnapshotcreate
+  version=3 data=KLUv/WC5xVV9AKpopBIq4I6IHliw+idbGVkQpP/DlWRtdyr6...
+  error id=0 msg=ok
+
+  serversnapshotcreate password=test
+  version=3 salt=531tJRs\/OPvBmjhqBfzewuPYa4a+bt5xH8oYWbUuyGM= data=TKHXDjY9OuK7DFtZg7...
+  error id=0 msg=ok

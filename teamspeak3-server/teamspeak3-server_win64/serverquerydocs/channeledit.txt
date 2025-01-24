@@ -1,0 +1,63 @@
+Usage: channeledit cid={channelID} [channel_properties...]
+
+Permissions:
+  i_channel_min_depth
+  i_channel_max_depth
+  b_channel_modify_parent
+  b_channel_modify_make_default
+  b_channel_modify_make_permanent
+  b_channel_modify_make_semi_permanent
+  b_channel_modify_make_temporary
+  b_channel_modify_name
+  b_channel_modify_topic
+  b_channel_modify_description
+  b_channel_modify_password
+  b_channel_modify_banner
+  b_channel_modify_codec
+  b_channel_modify_codec_quality
+  b_channel_create_modify_with_codec_maxquality
+  b_channel_modify_codec_latency_factor
+  b_channel_modify_make_codec_encrypted
+  b_channel_modify_maxclients
+  b_channel_modify_maxfamilyclients
+  b_channel_modify_sortorder
+  b_channel_modify_needed_talk_power
+  i_channel_modify_power
+  i_channel_needed_modify_power
+
+Description:
+  Changes a channels configuration using given properties. Note that this
+  command accepts multiple properties which means that you're able to change
+  all settings of the channel specified with cid at once.
+  For detailed information, see Channel Properties.
+
+Parameters:
+  cid : integer : id of channel
+  cpid : The channels parent ID
+  channel_name : Name of the channel
+  channel_topic : Topic of the channel
+  channel_description : Description of the channel
+  channel_password : Password of the channel
+  channel_codec : Codec used by the channel (`4` for opus voice, `5` for opus music)
+  channel_codec_quality : Codec quality used by the channel (from 0 as lowest, to 10 as highest). Higher quality may be higher bandwidth
+  channel_maxclients : Individual max number of clients for the channel
+  channel_maxfamilyclients : Individual max number of clients for the channel family
+  channel_order : ID of the channel below which the channel is positioned
+  channel_flag_permanent : Indicates whether the channel is permanent or not
+  channel_flag_semi_permanent : Indicates whether the channel is semi-permanent or not
+  channel_flag_default : Indicates whether the channel is the virtual servers default channel or not
+  channel_codec_is_unencrypted : Indicates whether speech data transmitted in this channel is encrypted or not
+  channel_delete_delay : Time in seconds before this channel will be auto deleted when empty (if set to do that)
+  channel_flag_maxclients_unlimited : Indicates whether the channel has a max clients limit or not
+  channel_flag_maxfamilyclients_unlimited : Indicates whether the channel has a max family clients limit or not
+  channel_flag_maxfamilyclients_inherited : Indicates whether the channel inherits the max family clients from his parent channel or not
+  channel_needed_talk_power : Needed talk power for this channel
+  channel_name_phonetic : Phonetic name of the channel
+  channel_icon_id : CRC32 checksum of the channel icon
+  channel_banner_gfx_url : URL of the channel banner
+  channel_banner_mode : The mode to render the channel banner (`0` to not adjust, `1` to adjust but ignore aspect ratio, `2` to adjust and keep aspect ratio)
+  
+
+Example:
+  channeledit cid=15 channel_codec_quality=3 channel_description=My\sDescription
+  error id=0 msg=ok

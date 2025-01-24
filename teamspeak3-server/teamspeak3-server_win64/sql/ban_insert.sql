@@ -1,0 +1,28 @@
+INSERT INTO bans 
+(server_id,
+ ban_ip,
+ ban_name,
+ ban_uid,
+ ban_timestamp,
+ ban_length,
+ ban_invoker_client_id,
+ ban_invoker_uid,
+ ban_invoker_name,
+ ban_reason,
+ ban_hash,
+ ban_mytsid,
+ ban_lastnickname)
+VALUES
+(:server_id:,
+ :ban_ip:,
+ :ban_name:,
+ :ban_uid:,
+ :ban_timestamp:,
+ :ban_length:,
+ :ban_invoker_client_id:,
+ :ban_invoker_uid:,
+ :ban_invoker_name:,
+ :ban_reason:,
+ :ban_hash:,
+ :ban_mytsid:,
+ :ban_lastnickname:)->ban_id;

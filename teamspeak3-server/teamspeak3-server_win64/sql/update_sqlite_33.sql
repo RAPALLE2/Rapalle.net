@@ -1,0 +1,9 @@
+CREATE TABLE api_keys (
+  api_key_id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+  server_id INTEGER UNSIGNED NOT NULL,
+  api_key_hash VARCHAR(44) NOT NULL,
+  api_key_owner_dbid INTEGER UNSIGNED NOT NULL,
+  api_key_scope INTEGER UNSIGNED NOT NULL,
+  api_key_created_at INTEGER UNSIGNED NOT NULL,
+  api_key_expires_at INTEGER UNSIGNED NOT NULL
+);

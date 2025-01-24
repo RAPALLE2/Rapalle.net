@@ -1,0 +1,22 @@
+Usage: channellist [-topic] [-flags] [-voice] [-limits] [-icon] [-secondsempty] [-banners]
+
+Permissions:
+  b_virtualserver_channel_list
+
+Description:
+  Displays a list of channels created on a virtual server including their ID,
+  order, name, etc. The output can be modified using several command options.
+
+Parameters:
+  -topic : include `channel_topic`
+  -flags : include `channel_flag_default`, `channel_flag_password`, `channel_flag_permanent` and `channel_flag_semi_permanent`
+  -voice : include `channel_codec`, `channel_codec_quality` and `channel_needed_talk_power`
+  -limits : include `total_clients_family`
+  -icon : include `channel_icon_id`
+  -secondsempty : include `seconds_empty`
+  -banners : include `channel_banner_gfx_url` and `channel_banner_mode`
+
+Example:
+  channellist -topic
+  cid=15 pid=0 channel_order=0 channel_name=Default\sChannel channel_topic=Default\sChannel\shas\sno\s[b]topic[\/b] total_clients=2|cid=16 ...
+  error id=0 msg=ok

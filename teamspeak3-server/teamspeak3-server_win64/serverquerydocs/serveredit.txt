@@ -1,0 +1,87 @@
+Usage: serveredit [virtualserver_properties...]
+
+Permissions:
+  b_virtualserver_modify_name
+  b_virtualserver_modify_welcomemessage
+  b_virtualserver_modify_maxclients
+  b_virtualserver_modify_reserved_slots
+  b_virtualserver_modify_password
+  b_virtualserver_modify_default_servergroup
+  b_virtualserver_modify_default_channelgroup
+  b_virtualserver_modify_default_channeladmingroup
+  b_virtualserver_modify_ft_settings
+  b_virtualserver_modify_ft_quotas
+  b_virtualserver_modify_channel_forced_silence
+  b_virtualserver_modify_complain
+  b_virtualserver_modify_antiflood
+  b_virtualserver_modify_hostmessage
+  b_virtualserver_modify_hostbanner
+  b_virtualserver_modify_hostbutton
+  b_virtualserver_modify_port
+  b_virtualserver_modify_autostart
+  b_virtualserver_modify_needed_identity_security_level
+  b_virtualserver_modify_priority_speaker_dimm_modificator
+  b_virtualserver_modify_log_settings
+  b_virtualserver_modify_icon_id
+  b_virtualserver_modify_weblist
+  b_virtualserver_modify_min_client_version
+  b_virtualserver_modify_codec_encryption_mode
+
+Description:
+  Changes the selected virtual servers configuration using given properties. 
+  Note that this command accepts multiple properties which means that you're
+  able to change all settings of the selected virtual server at once.
+  For detailed information, see Virtual Server Properties.
+
+Parameters:
+  virtualserver_name : The name of the virtual server
+  virtualserver_port : UDP port the virtual server is listening on
+  virtualserver_autostart : `1` if started automatically with the instance, or `0` otherwise
+  virtualserver_status : Status of the virtual server (online | virtual online | offline | booting up | shutting down)
+  virtualserver_log_client : Indicates whether the server logs events related to clients or not
+  virtualserver_log_query : Indicates whether the server logs events related to ServerQuery clients or not
+  virtualserver_log_channel : Indicates whether the server logs events related to channels or not
+  virtualserver_log_permissions : Indicates whether the server logs events related to permissions or not
+  virtualserver_log_server : Indicates whether the server logs events related to server changes or not
+  virtualserver_log_filetransfer : Indicates whether the server logs events related to file transfers or not
+  virtualserver_min_client_version : Minimal desktop client version required to connect
+  virtualserver_min_android_version : Minimal Android client version required to connect
+  virtualserver_min_ios_version : Minimal iOS client version required to connect
+  virtualserver_needed_identity_security_level : Minimum client identity security level required to connect to the virtual server
+  virtualserver_name_phonetic : Phonetic name of the virtual server
+  virtualserver_icon_id : CRC32 checksum of the virtual server icon
+  virtualserver_reserved_slots : Number of reserved slots available on the virtual server
+  virtualserver_weblist_enabled : Indicates whether the server appears in the global web server list or not
+  virtualserver_codec_encryption_mode : The global codec encryption mode of the virtual server
+  virtualserver_maxclients : integer : The maximum number of clients to allow
+  virtualserver_welcomemessage : The welcome message of the server
+  virtualserver_password : The password required to enter
+  virtualserver_hostmessage : The host message of the server
+  virtualserver_hostmessage_mode : The host message mode of the server (`0` for None, `1` for message in chatlog, `2` for message as a modal, `3` for modal dialog and then quit)
+  virtualserver_default_server_group : The default server group to use 
+  virtualserver_default_channel_group : The default channel group to use
+  virtualserver_default_channel_admin_group : The default channel administrator group to use
+  virtualserver_max_download_total_bandwidth : The max bandwidth for outgoing file transfers on the virtual server (Bytes/s)
+  virtualserver_max_upload_total_bandwidth : The max bandwidth for incoming file transfers on the virtual server (Bytes/s)
+  virtualserver_download_quota : Download quota for the virtual server (MByte)
+  virtualserver_upload_quota : Upload quota for the virtual server (MByte)
+  virtualserver_hostbanner_mode : The display mode for the virtual servers hostbanner 
+  virtualserver_hostbanner_url : URL for the host banner
+  virtualserver_hostbanner_gfx_url : URL for the host banner image
+  virtualserver_hostbanner_gfx_interval : Refresh time for the host banner image on the client side
+  virtualserver_complain_autoban_count : The number of complaints about a client we will tolerate before a ban
+  virtualserver_complain_autoban_time : The amount of time (in seconds) an autobanned client will be banned for
+  virtualserver_complain_remove_time : The amount of time (in seconds) before a complaint is deleted automatically
+  virtualserver_min_clients_in_channel_before_forced_silence : Number of clients in the same channel needed to force silence
+  virtualserver_priority_speaker_dimm_modificator : Client volume lowered automatically while a priority speaker is talking
+  virtualserver_antiflood_points_tick_reduce : Anti-flood points removed from a client for being good
+  virtualserver_antiflood_points_needed_command_block : Anti-flood points needed to block commands being executed by the client
+  virtualserver_antiflood_points_needed_plugin_block : Anti-flood points needed to block plugin commands from the client; if set to 0, the same as virtualserver_antiflood_points_needed_command_block is used
+  virtualserver_antiflood_points_needed_ip_block : Anti-flood points needed to block incoming connections from the client
+  virtualserver_hostbutton_tooltip : Text used for the tooltip of the host button on client-side
+  virtualserver_hostbutton_gfx_url : URL for the host button on client-side
+  virtualserver_hostbutton_url : URL opened on click on the host button
+
+Example:
+  serveredit virtualserver_name=TeamSpeak\s]\p[\sServer virtualserver_maxclients=32
+  error id=0 msg=ok

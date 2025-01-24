@@ -1,0 +1,17 @@
+Usage: complainadd tcldbid={targetClientDBID} message={text}
+
+Permissions:
+  i_client_complain_power
+  i_client_needed_complain_power
+
+Description:
+  Submits a complaint about a connected client with database ID `tcldbid` to the
+  server.
+
+Parameters:
+  tcldbid : integer : id of client in database
+  message : complain text
+
+Example:
+  complainadd tcldbid=3 message=Bad\sguy!
+  error id=0 msg=ok

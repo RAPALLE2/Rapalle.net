@@ -1,0 +1,16 @@
+Usage: clientpoke clid={clientID} msg={text}
+
+Permissions:
+  i_client_poke_power
+  i_client_needed_poke_power
+
+Description:
+  Sends a poke message to the client specified with clid.
+
+Parameters:
+  clid : integer : id of client
+  msg : message to send as a poke
+
+Example:
+  clientpoke clid=5 msg=Wake\sup!
+  error id=0 msg=ok

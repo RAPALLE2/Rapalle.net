@@ -1,0 +1,19 @@
+Usage: apikeylist [cldbid={clientDBID|*}] [start={offset}] [duration={limit}] [-count]
+
+Permissions:
+  b_virtualserver_apikey_manage
+
+Description:
+  Lists all apikeys owned by the user, or of all users using `cldbid`=`*.`
+  Usage of `cldbid`=... requires `b_virtualserver_apikey_manage`.
+
+Parameters:
+  cldbid : list the API keys of the client; Defaults to invoker, `*` to list API keys of all clients
+  start : integer : skip the first `n` entries
+  duration : integer : only return `n` entries
+  -count : also return the total number of entries
+
+Example:
+  apikeylist
+  id=2 sid=0 cldbid=1 scope=read time_left=327449 created_at=1580110002 expires_at=1580441202|id=4 sid=0 cldbid=1 scope=read time_left=1206186 created_at=1580110339 expires_at=1581319939
+  error id=0 msg=ok

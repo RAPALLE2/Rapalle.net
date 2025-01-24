@@ -1,0 +1,15 @@
+Usage: apikeydel id={ID}
+
+Permissions:
+  b_virtualserver_apikey_manage
+
+Description:
+  Delete an apikey. Any apikey owned by the current user can always be deleted.
+  Deleting apikeys from another user requires `b_virtualserver_apikey_manage`.
+  
+Parameters:
+  id : integer : Id of API key to be deleted
+
+Example:
+  apikeydel id=4
+  error id=0 msg=ok

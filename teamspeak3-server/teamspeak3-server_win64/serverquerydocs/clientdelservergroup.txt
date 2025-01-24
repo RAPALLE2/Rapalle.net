@@ -1,0 +1,19 @@
+Usage: clientdelservergroup cldbid={clientDBID} sgid={groupID}
+       clientdelservergroup [-continueonerror] cldbid={clientDBID} sgid={groupID}|sgid={groupID}
+
+Permissions:
+  i_group_member_remove_power
+  i_group_needed_member_remove_power
+
+Description:
+  Removes the client specified with `cldbid` from one or more the server groups specified with
+  `sgid`.
+
+Parameters:
+  -continueonerror : continue processing on some errors
+  cldbid : integer : id of client in database
+  sgid : integer : id of server group
+
+Example:
+  clientdelservergroup cldbid=3 sgid=16
+  error id=0 msg=ok

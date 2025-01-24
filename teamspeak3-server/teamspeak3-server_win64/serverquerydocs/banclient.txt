@@ -1,0 +1,24 @@
+Usage: banclient [-continueonerror] [time={timeInSeconds}] [banreason={text}] clid={clientID}...
+
+Permissions:
+  i_client_ban_power
+  i_client_needed_ban_power
+
+Description:
+  Bans one or more clients specified with the given client ids from the server. Please note that this
+  will create two or three separate ban rules for the each of the targeted clients IP address,
+  his unique identifier and, if available, the mytsid.
+
+  Specifying -continueonerror will ignore certain errors when processing.
+
+Parameters:  
+  -continueonerror : if specified, will skip to the next clid if an error occurs (rather than stopping)
+  clid : integer : id of client to be banned
+  time : integer : time in seconds the ban will be active
+  banreason : text describing the reason
+
+Example:
+  banclient time=3600 clid=4|clid=5
+  banid=2
+  banid=3
+  error id=0 msg=ok

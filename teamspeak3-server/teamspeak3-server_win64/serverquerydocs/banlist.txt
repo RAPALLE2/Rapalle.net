@@ -1,0 +1,19 @@
+Usage: banlist [start={offset}] [duration={limit}] [-count]
+
+Permissions:
+  b_client_ban_list
+
+Description:
+  Displays a list of active bans on the selected virtual server.
+
+  If provided, the `duration` argument is capped at 200.
+
+Parameters:
+  -count : also return the total number of entries
+  start : integer : skip the first `n` entries
+  duration : integer : only return `n` entries
+
+Example:
+  banlist
+  banid=7 ip=1.2.3.4 created=1259444002242 invokername=Sven invokercldbid=56 invokeruid=oHhi9WzXLNEFQOwAu4JYKGU+C+c= reason enforcements=0
+  error id=0 msg=ok
