@@ -1,0 +1,20 @@
+rapalle.net - website
+www.rapalle.net - website
+rapalle.net - java
+java.rapalle.net - java
+play.rapalle.net - java
+be.rapalle.net - bedrock
+bedrock.rapalle.net - bedrock
+discord.rapalle.net - discord
+dc.rapalle.net - discord
+youtube.rapalle.net - YouTube
+yt.rapalle.net - YouTube
+store.rapalle.net - shop
+shop.rapalle.net - shop
+
+support.mail@rapalle.net
+mail@rapalle.net
+
+mail.admin@admin.rapalle.net
+
+monitor.admin.rapalle.net - monitor

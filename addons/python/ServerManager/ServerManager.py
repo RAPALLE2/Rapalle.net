@@ -72,26 +72,6 @@ def Headder():
     Output("System", "Running version " + Fore.LIGHTBLACK_EX + Version)
     print()
 
-logger = logging.getLogger(__name__)
-logger.setLevel(logging.INFO)
-formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
-file_handler = logging.FileHandler("error.log")
-file_handler.setFormatter(formatter)
-logger.addHandler(file_handler)
-
-init(autoreset=True)
-
-Version = "1.0.0 Alpha Pre-release"
-
-# Configuration
-repo_owner = 'RAPALLE2'
-repo_name = 'Rapalle.net'
-branch = 'main'  # The branch to check for new commits
-repo_path = 'C:\\Users\\Rapalle\\Desktop\\RAPALLE.NET\\Rapalle.net'  # Path to the local cloned repository
-time.sleep(1)
-# GitHub API URL for the repository commits
-api_url = f'https://api.github.com/repos/{repo_owner}/{repo_name}/commits?sha={branch}'
-
 def Init():
     Headder()
 
@@ -155,12 +135,84 @@ def Startup(Time):
     input_thread.join(timeout=Time)
     if input_thread.is_alive():
         Output("Info", "Starting Server Autonomy Mode")
-        current = 1
+        current = 2
     else:
         current = ask()
         Clear()
     return(current)
 
+def StartScript(name, content_bat, contend_sh):
+    if platform.system() == "Windows":
+        FileName = f'{name}.bat'
+        if os.path.exists(FileName):
+            subprocess.run(['start', 'cmd', '/c', FileName], shell=True)
+        else:
+            with open(FileName, 'w') as file:
+                file.write(content_bat)
+                subprocess.run(['start', 'cmd', '/c', FileName], shell=True)
+    else:
+        FileName = f'{name}.sh'
+        if os.path.exists(FileName):
+            pass
+        else:
+            with open(FileName, 'w') as file:
+                file.write(contend_sh)
 
-current = Startup(10)
-print(current)
+
+if __name__ == "__main":
+    try:
+        logger = logging.getLogger(__name__)
+        logger.setLevel(logging.INFO)
+        formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
+        file_handler = logging.FileHandler("error.log")
+        file_handler.setFormatter(formatter)
+        logger.addHandler(file_handler)
+
+        init(autoreset=True)
+
+        Version = "1.0.0 Alpha Pre-release"
+
+        # Configuration
+        repo_owner = 'RAPALLE2'
+        repo_name = 'Rapalle.net'
+        branch = 'main'  # The branch to check for new commits
+        repo_path = 'C:\\Users\\Rapalle\\Desktop\\RAPALLE.NET\\Rapalle.net'  # Path to the local cloned repository
+        time.sleep(1)
+        # GitHub API URL for the repository commits
+        api_url = f'https://api.github.com/repos/{repo_owner}/{repo_name}/commits?sha={branch}'
+
+
+        current = Startup(10)
+        print(current)
+        if current == 1:
+            pass
+        elif current == 2:
+            pass
+        elif current == 3:
+            pass
+        elif current == 4:
+            pass
+        else:
+            Clear()
+            Output("Error", f"An error occurred with the Startup Routine")
+            time.sleep(0.1)
+            traceback.print_exc()
+            time.sleep(0.1)
+            logger.info("An error occurredwith the Startup Routine")
+            time.sleep(0.1)
+            Output("System", "Continue program with prefered Stratup Settings")
+            time.sleep(3)
+
+        while True:
+            break
+
+    except Exception as e:
+        Clear()
+        Output("Error", f"An error occurred: {e}")
+        time.sleep(0.1)
+        traceback.print_exc()
+        time.sleep(0.1)
+        logger.info("An error occurred: %s", e)
+        time.sleep(0.1)
+        Output("System", "Continue program")
+        time.sleep(3)
