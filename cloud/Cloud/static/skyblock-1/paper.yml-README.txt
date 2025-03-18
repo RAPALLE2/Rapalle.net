@@ -1,5 +1,0 @@
-The global and world default configuration files have moved to C:\Users\Tobi\Desktop\RAPALLE.NET\cloud\static\skyblock-1\config
-and the world-specific configuration file has been moved inside
-the respective world folder.
-
-See https://docs.papermc.io/paper/configuration for more information.

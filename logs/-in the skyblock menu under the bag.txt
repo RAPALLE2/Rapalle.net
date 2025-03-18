@@ -1,0 +1,3 @@
+-in the skyblock menu under the bags, it say timepocket is unlocked in TimiteIII collection, but its in TimiteII
+-if you open a NPC sell menu, and look at a item that can change in the inv, like Bottle of Jyrre, Training Weights, ... and it updates the time, held in the inv, it doesnt add the sell price and "click to sell!" text again
+-if you have a collection leven up in gunpowdercollection, it says, you dont have unlocked this collection yet, and i guess it tryes to open chillipeppers colleciton

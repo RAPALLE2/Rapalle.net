@@ -1,6 +1,0 @@
-execute if score player_count data matches 1..9 run summon zombie 7 20 27 {Silent:1b,Invulnerable:1b,NoAI:1b,IsBaby:0b,Tags:["joined"],CustomName:'{"text":"Dummy"}',DeathLootTable:"minecraft:empty"}
-execute if score player_count data matches 1..8 run summon zombie 45 20 7 {Silent:1b,Invulnerable:1b,NoAI:1b,IsBaby:0b,Tags:["joined"],CustomName:'{"text":"Seneca"}',DeathLootTable:"minecraft:empty"}
-execute if score player_count data matches 1..7 run summon zombie 72 20 37 {Silent:1b,Invulnerable:1b,NoAI:1b,IsBaby:0b,Tags:["joined"],CustomName:'{"text":"Schwanzus Longus"}',DeathLootTable:"minecraft:empty"}
-execute if score player_count data matches 1..6 run summon zombie 94 20 49 {Silent:1b,Invulnerable:1b,NoAI:1b,IsBaby:0b,Tags:["joined"],CustomName:'{"text":"Frank"}',DeathLootTable:"minecraft:empty"}
-execute if score player_count data matches 1..5 run summon zombie 84 20 37 {Silent:1b,Invulnerable:1b,NoAI:1b,IsBaby:0b,Tags:["joined"],CustomName:'{"text":"James"}',DeathLootTable:"minecraft:empty"}
-execute if score player_count data matches 1..4 run summon zombie 102 20 28 {Silent:1b,Invulnerable:1b,NoAI:1b,IsBaby:0b,Tags:["joined"],CustomName:'{"text":"Aurum"}',DeathLootTable:"minecraft:empty"}

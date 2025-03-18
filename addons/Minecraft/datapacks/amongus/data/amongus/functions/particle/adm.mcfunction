@@ -1,7 +1,0 @@
-
-execute if entity @s[scores={caf.upload.1=0}] as @e[type=minecraft:villager,limit=1,tag=adm.upload] at @s anchored eyes run particle minecraft:end_rod ^ ^-0.5 ^-0.5 0.0 0.0 0.0 1.0 0 normal @a[tag=ingame,tag=!impostor,scores={caf.upload.1=0}]
-execute if entity @s[scores={com.upload.1=0}] as @e[type=minecraft:villager,limit=1,tag=adm.upload] at @s anchored eyes run particle minecraft:end_rod ^ ^-0.5 ^-0.5 0.0 0.0 0.0 1.0 0 normal @a[tag=ingame,tag=!impostor,scores={com.upload.1=0}]
-execute if entity @s[scores={elec.upload.1=0}] as @e[type=minecraft:villager,limit=1,tag=adm.upload] at @s anchored eyes run particle minecraft:end_rod ^ ^-0.5 ^-0.5 0.0 0.0 0.0 1.0 0 normal @a[tag=ingame,tag=!impostor,scores={elec.upload.1=0}]
-execute if entity @s[scores={nav.upload.1=0}] as @e[type=minecraft:villager,limit=1,tag=adm.upload] at @s anchored eyes run particle minecraft:end_rod ^ ^-0.5 ^-0.5 0.0 0.0 0.0 1.0 0 normal @a[tag=ingame,tag=!impostor,scores={nav.upload.1=0}]
-execute if entity @s[scores={weap.upload.1=0}] as @e[type=minecraft:villager,limit=1,tag=adm.upload] at @s anchored eyes run particle minecraft:end_rod ^ ^-0.5 ^-0.5 0.0 0.0 0.0 1.0 0 normal @a[tag=ingame,tag=!impostor,scores={weap.upload.1=0}]
-execute if entity @s[scores={adm.card=0}] as @e[type=minecraft:villager,limit=1,tag=adm.card] at @s anchored eyes run particle minecraft:end_rod ^ ^ ^0.55 0.0 0.0 0.0 1.0 0 normal @a[tag=ingame,tag=!impostor,scores={adm.card=0}]

@@ -1,6 +1,0 @@
-owner: terreng
-repo: simple-web-server
-provider: github
-updaterCacheDirName: simple-web-server-updater
-publisherName:
-  - Simple Web Server

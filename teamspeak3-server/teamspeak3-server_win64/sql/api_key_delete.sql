@@ -1,1 +1,0 @@
-DELETE FROM api_keys WHERE api_key_id=:api_key_id:;

@@ -1,7 +1,0 @@
-2025-01-19 16:53:28.171567|INFO    |VirtualServerBase|1  |listening on 0.0.0.0:9987, [::]:9987
-2025-01-19 16:53:28.171567|WARNING |VirtualServer |1  |--------------------------------------------------------
-2025-01-19 16:53:28.171567|WARNING |VirtualServer |1  |ServerAdmin privilege key created, please use the line below
-2025-01-19 16:53:28.171567|WARNING |VirtualServer |1  |token=51h53c8aXDIsDquIzlwaLglRBQqDCoEhNGHk3u58
-2025-01-19 16:53:28.171567|WARNING |VirtualServer |1  |--------------------------------------------------------
-2025-01-19 17:01:11.479280|INFO    |VirtualServer |1  |client 'RAPALLE'(id:3) was added to servergroup 'Server Admin'(id:6) by client 'server'(id:0)
-2025-01-19 17:01:11.483617|INFO    |VirtualServer |1  |client 'RAPALLE'(id:3) used privilege key '51h53c8aXDIsDquIzlwaLglRBQqDCoEhNGHk3u58' and was added to servergroup 'Server Admin'(id:6)

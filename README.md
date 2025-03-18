@@ -10,22 +10,22 @@ Made by Rapalle <br>
 ### Information according to § 5 TMG:<br>
 
 <br>
-<!-- Tobias Neudert <br> -->
-<!-- An der Leiten 23 <br> -->
-<!-- 91795 Obereichstätt <br> -->
+Tobias Neudert <br>
+An der Leiten 23 <br>
+91795 Obereichstätt <br>
 
 ### Contact:<br>
 
 <br>
-<!-- Phone: +49 0162 8738577 <br> -->
+Phone: +49 0162 8738577 <br>
 Email: RAPALLE.net@web.de<br>
 
 #### Responsible for the content according to § 55 Abs. 2 RStV:<br>
 
 <br>
-<!-- Tobias Neudert <br> -->
-<!-- An der Leiten 23 <br> -->
-<!-- 91795 Obereichstätt <br> -->
+Tobias Neudert <br>
+An der Leiten 23 <br>
+91795 Obereichstätt <br>
 
 #### Liability for Content
 
