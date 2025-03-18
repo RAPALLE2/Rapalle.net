@@ -20,11 +20,11 @@ RUN mkdir -p /var/log/nginx /var/lib/nginx/body /var/lib/nginx/fastcgi /var/lib/
     chown -R nginx:nginx /var/www/html /var/log/nginx /var/lib/nginx /run/nginx
 
 # Copy your website's files into the container (replace with your actual files)
-COPY ./src /var/www/html/
+COPY ./src/html /var/www/html/
 
 # Configure Nginx (without the user directive in nginx.conf)
-COPY ./nginx.conf /etc/nginx/nginx.conf
-COPY ./default.conf /etc/nginx/sites-available/default
+COPY ./src/config/nginx.conf /etc/nginx/nginx.conf
+COPY ./src/config/default.conf /etc/nginx/sites-available/default
 
 # Expose port 80 to the outside world
 EXPOSE 80
