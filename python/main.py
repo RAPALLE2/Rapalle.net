@@ -4,7 +4,6 @@ from prompt_toolkit import PromptSession
 from prompt_toolkit.completion import NestedCompleter
 from prompt_toolkit.styles import Style
 
-# Stack-Kommandos mit Variablen
 main_completer = NestedCompleter.from_nested_dict({
     "service": {
         "web": {
@@ -18,6 +17,9 @@ main_completer = NestedCompleter.from_nested_dict({
     "exit": None
 })
 
+gray_style = Style.from_dict({'prompt': '#888888'})
+black_style = Style.from_dict({'prompt': "#000000"})
+
 print("      ______  ___  ______  ___   _      _      _____  _   _  _____ _____")
 print("      | ___ \\/ _ \\ | ___ \\/ _ \\ | |    | |    |  ___|| \\ | ||  ___|_   _|")
 print("      | |_/ / /_\\ \\| |_/ / /_\\ \\| |    | |    | |__  |  \\| || |__   | |")
@@ -28,9 +30,9 @@ print("      Made by Rapalle            Automatic Server Management Software")
 print("      Version "+colorama.Fore.LIGHTBLACK_EX+"1.0.0")
 
 while True:
-    style = Style.from_dict({'prompt': '#888888'})
+    
 
-    command = PromptSession().prompt([('class:prompt', ' >> ')], completer=main_completer, style=style)
+    command = PromptSession().prompt([('class:prompt', ' >> ')], completer=main_completer, style=gray_style)
 
     parts = command.split(" ")
     if parts[0] in ("exit", "stop", "break", "quit"): break
@@ -43,6 +45,9 @@ while True:
             elif parts[3] == "": pass
         elif parts[2] == "cloud":pass
         elif parts[2] == "network":pass
+
+
+
 
 
 
