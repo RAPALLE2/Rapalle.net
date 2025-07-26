@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  playit:
+    image: ghcr.io/playit-cloud/playit-agent:0.15
+    network_mode: host
+    environment:
+    - SECRET_KEY=<secret_key>

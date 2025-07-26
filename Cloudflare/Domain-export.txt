@@ -1,0 +1,66 @@
+;;
+;; Domain:     rapalle.net.
+;; Exported:   2025-07-26 21:14:02
+;;
+;; This file is intended for use for informational and archival
+;; purposes ONLY and MUST be edited before use on a production
+;; DNS server.  In particular, you must:
+;;   -- update the SOA record with the correct authoritative name server
+;;   -- update the SOA record with the contact e-mail address information
+;;   -- update the NS record(s) with the authoritative name servers for this domain.
+;;
+;; For further information, please consult the BIND documentation
+;; located on the following website:
+;;
+;; http://www.isc.org/
+;;
+;; And RFC 1035:
+;;
+;; http://www.ietf.org/rfc/rfc1035.txt
+;;
+;; Please note that we do NOT offer technical support for any use
+;; of this zone data, the BIND name server, or any other third-party
+;; DNS software.
+;;
+;; Use at your own risk.
+;; SOA Record
+rapalle.net	3600	IN	SOA	leonidas.ns.cloudflare.com. dns.cloudflare.com. 2050523104 10000 2400 604800 3600
+
+;; NS Records
+rapalle.net.	86400	IN	NS	leonidas.ns.cloudflare.com.
+rapalle.net.	86400	IN	NS	teagan.ns.cloudflare.com.
+
+;; A Records
+admin.rapalle.net.	1	IN	A	209.25.141.124 ; admin playit -rapalle cf_tags=cf-proxied:false
+dc.rapalle.net.	1	IN	A	192.0.2.1 ; discord cf_tags=cf-proxied:true
+mc.rapalle.net.	1	IN	A	209.25.141.124 ; cf_tags=cf-proxied:false
+rapalle.net.	1	IN	A	209.25.141.124 ; main domain -rapalle cf_tags=cf-proxied:true
+tw.rapalle.net.	1	IN	A	192.0.2.1 ; Created during Cloudflare Rules deployment process for twitch redirect cf_tags=cf-proxied:true
+web.rapalle.net.	1	IN	A	192.0.2.1 ; Created during Cloudflare Rules deployment process for web redirect fallback cf_tags=cf-proxied:true
+yt.rapalle.net.	1	IN	A	192.0.2.1 ; Created during Cloudflare Rules deployment process for youtube redirect cf_tags=cf-proxied:true
+
+;; CNAME Records
+store.rapalle.net.	1	IN	CNAME	kgy8-n5cv.cfdns.craftingstore.net. ; craftingstore -rapalle cf_tags=cf-proxied:true
+
+;; MX Records
+intern.rapalle.net.	1	IN	MX	81 route3.mx.cloudflare.net.
+intern.rapalle.net.	1	IN	MX	42 route2.mx.cloudflare.net.
+intern.rapalle.net.	1	IN	MX	2 route1.mx.cloudflare.net.
+rapalle.net.	1	IN	MX	81 route3.mx.cloudflare.net.
+rapalle.net.	1	IN	MX	42 route2.mx.cloudflare.net.
+rapalle.net.	1	IN	MX	2 route1.mx.cloudflare.net.
+support.rapalle.net.	1	IN	MX	2 route1.mx.cloudflare.net.
+support.rapalle.net.	1	IN	MX	42 route2.mx.cloudflare.net.
+support.rapalle.net.	1	IN	MX	81 route3.mx.cloudflare.net.
+
+;; SRV Records
+_minecraft._tcp.rapalle.net.	1	IN	SRV	0 5 25565 mc.rapalle.net.
+
+;; TXT Records
+cf2024-1._domainkey.rapalle.net.	1	IN	TXT	"v=DKIM1; h=sha256; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAiweykoi+o48IOGuP7GR3X0MOExCUDY/BCRHoWBnh3rChl7WhdyCxW3jgq1daEjPPqoi7sJvdg5hEQVsgVRQP4DcnQDVjGMbASQtrY4WmB1VebF+RPJB2ECPsEDTpeiI5ZyUAwJaVX7r6bznU67g7LvFq35yIo4sdlmtZGV+i0H4cpYH9+3JJ78k" "m4KXwaf9xUJCWF6nxeD+qG6Fyruw1Qlbds2r85U9dkNDVAS3gioCvELryh1TxKGiVTkg4wqHTyHfWsp7KD3WQHYJn0RyfJJu6YEmL77zonn7p2SRMvTMP3ZEXibnC9gz3nnhR6wcYL8Q7zXypKTMD58bTixDSJwIDAQAB"
+_discord.rapalle.net.	1	IN	TXT	"dh=5d55879e24d2384b0f56cc20114f389702555cc4"
+intern.rapalle.net.	1	IN	TXT	"v=spf1 include:_spf.mx.cloudflare.net ~all"
+rapalle.net.	3600	IN	TXT	"google-site-verification=S0P60B1wH2SXHxrHsw-NBqRyQptdyVB5nmm4fDs6FvY"
+rapalle.net.	1	IN	TXT	"v=spf1 include:_spf.mx.cloudflare.net ~all" ; email
+support.rapalle.net.	1	IN	TXT	"v=spf1 include:_spf.mx.cloudflare.net ~all" ; email
+verify.store.rapalle.net.	1	IN	TXT	"kgy8-n5cv" ; craftingstore -rapalle

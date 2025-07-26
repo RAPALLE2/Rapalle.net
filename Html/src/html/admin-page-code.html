@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAPALLE.NET/Admin-passwort</title>
+    <link rel="icon" href="img_folder/icons/icon1.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css-data/ultimate.css">
+    <style>
+        .text {
+            top: 240px;
+            left: 200px;
+            position: absolute;
+            text-decoration: none;
+            font-size: 120%;
+            color: gray
+        }
+
+        .submit-button {
+            color: white;
+            background-color: black;
+            border-radius: 10%;
+        }
+
+        .password {
+            color: black;
+            background-color: white;
+        }
+
+        @media (max-Width: 950px) {
+            .text {
+                left: 30px;
+            }
+
+            .nav-bar {
+                padding-bottom: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 class="nav-bar"> </h1>
+        <img src="img_folder/icons/icon1.jpg" class="profile-icon profile-icon-page">
+        <a class="home buttons button_1" href="index.html">Home</a>
+    </div>
+    <div class="text">
+        <h1>Protected Page</h1>
+        <input class="password" type="password" id="passwordInput" placeholder="Enter Password" autofocus>
+        <button class="submit-button" id="submit" onclick="checkPassword()">&#9745 Enter</button>
+
+        <script>
+            const correctPassword = "ww";
+            let trys = 0;
+            const maxTries = 3;
+            var input = document.getElementById("passwordInput");
+
+            input.addEventListener("keypress", function (event) {
+                if (event.key === "Enter") {
+                    event.preventDefault();
+                    document.getElementById("submit").click();
+                }
+            });
+
+            function checkPassword() {
+                const enteredPassword = document.getElementById("passwordInput").value;
+
+                if (enteredPassword === correctPassword) {
+                    window.location.href = "admin-page.html";
+                } else {
+                    input.value = '';
+                    trys++;
+                    alert("Incorrect password. Access denied.");
+                    if (trys === maxTries) {
+                        window.location.href = "index.html";
+                        alert("Incorrect to many Times!");
+                    }
+                }
+            }
+        </script>
+    </div>
+</body>
+
+</html>

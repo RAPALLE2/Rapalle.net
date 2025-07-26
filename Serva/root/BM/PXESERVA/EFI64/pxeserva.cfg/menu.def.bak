@@ -1,0 +1,34 @@
+############################################################################
+# Serva Community v5.0.0 multi-OS PXE Boot/Install Menu definition (EFI64)
+#  by Patrick Masotta © 2010-2024
+############################################################################
+
+NOESCAPE           1
+PROMPT             0
+
+F1                 pxeserva.cfg/F1
+
+menu color title   1;37;44     #FFFFFFFF *
+menu color border  37;44       #80FFFFFF #00000000 none
+menu color sel     *           #FFFFFFFF #76A1D0FF *
+menu color hotsel  1;7;37;40   #FFFFFFFF #76A1D0FF *
+menu color tabmsg  37;40       #FFFFFFFF #00000000 *
+menu color help    37;40       #FFDDDD00 #00000000 none
+
+menu margin        4
+menu width         78
+menu rows          15
+
+menu helpmsgrow    22
+menu helpmsgendrow 24
+menu tabmsgrow     21
+
+menu title         Serva Community v5.0.0 multi-OS PXE Boot/Install Menu (EFI64)
+menu notabmsg      Select an option and press ENTER to boot/install, or F1 for Help
+
+
+LABEL   WIA_WDS\Win10\
+   menu label   ^  1) Windows 10, AMD64
+   menu		default
+   kernel       pxechn.c32
+   append       ::WIA_WDS\Win10\_SERVA_\bootmgfw.efi
