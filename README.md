@@ -1,2 +1,2 @@
 # Rapalle.net
-Rapalle.net: dc.rapalle.net
+Rapalle.net: https://dc.rapalle.net
