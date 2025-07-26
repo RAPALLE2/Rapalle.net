@@ -4,3 +4,5 @@
 4. Systemsteuerung\System und Sicherheit\Windows Defender Firewall\Zugelassene Apps
     -> erlaube: "Serva64.exe", "Netzwerkerkennung", "Datei- und Druckerfreigabe (SMB-In)"
 5. restart Serva64.exe
+
+#TODO: start win10 installation -> boot in preinstalled win10 from disk in NAS
